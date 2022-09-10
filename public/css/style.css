@@ -1,0 +1,59 @@
+.header{
+  padding-bottom: 10px;
+  background: #05445E;
+  color: white;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+  padding-right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.header a:hover{
+  color: #D9E4EC;
+}
+.header button{
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-right:25px;
+  cursor: pointer;
+}
+.header button:hover{
+  background-color: #D9E4EC;
+  color: black;
+}
+
+.header h1{
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+  font-size: 80px;
+  cursor: pointer;
+}
+.header h1:hover{
+  color: #D9E4EC;
+  }
+
+h2 {
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #07102c;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  overflow-y: scroll;
+}
