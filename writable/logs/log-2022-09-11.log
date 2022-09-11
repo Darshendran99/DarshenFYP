@@ -1,0 +1,327 @@
+CRITICAL - 2022-09-11 07:51:31 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 118.
+ 1 APPPATH\Controllers\Home.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 07:52:13 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 119.
+ 1 APPPATH\Controllers\Home.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 07:53:26 --> Undefined variable $product
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(125): view('Home/Products.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 07:54:05 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 118.
+ 1 APPPATH\Controllers\Home.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:02:24 --> Undefined variable $product
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(125): view('Home/Products.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:03:50 --> Undefined variable $product
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(125): view('Home/Products.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:04:20 --> Undefined variable $product
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(125): view('Home/Products.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:04:21 --> Undefined variable $product
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(125): view('Home/Products.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:05:55 --> Undefined variable $product
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(125): view('Home/Products.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:10:30 --> Class "App\Controllers\App\Models\product_model" not found
+in APPPATH\Controllers\Home.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:11:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Controllers\Home.php(118): App\Models\Product_model->product_list()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:14:37 --> syntax error, unexpected token "protected"
+in APPPATH\Models\Product_model.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Product_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\product_model')
+ 3 APPPATH\Controllers\Home.php(117): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\product_model')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:15:05 --> syntax error, unexpected token "public"
+in APPPATH\Models\Product_model.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Product_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\product_model')
+ 3 APPPATH\Controllers\Home.php(117): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\product_model')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:15:57 --> Object of class App\Models\Product_model could not be converted to string
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Controllers\Home.php(118): App\Models\Product_model->product_list()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:16:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Controllers\Home.php(118): App\Models\Product_model->product_list()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:18:11 --> Undefined variable $product
+in APPPATH\Controllers\Home.php on line 118.
+ 1 APPPATH\Controllers\Home.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Controllers\\Home.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:18:17 --> Too few arguments to function App\Models\Product_model::product_list(), 0 passed in C:\xampp\htdocs\DarshenFYP\app\Controllers\Home.php on line 118 and exactly 1 expected
+in APPPATH\Models\Product_model.php on line 7.
+ 1 APPPATH\Controllers\Home.php(118): App\Models\Product_model->product_list()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:18:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Controllers\Home.php(118): App\Models\Product_model->product_list()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:22:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Controllers\Home.php(118): App\Models\Product_model->product_list()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:37:26 --> syntax error, unexpected variable "$product_model"
+in APPPATH\Controllers\Home.php on line 119.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Products')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Products')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Products')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:39:31 --> syntax error, unexpected variable "$product_model"
+in APPPATH\Controllers\Home.php on line 119.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Products')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Products')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Products')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:42:40 --> Undefined variable $db
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Models\Product_model.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Models\\Product_model.php', 9)
+ 2 APPPATH\Controllers\Home.php(119): App\Models\Product_model->product_list()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:48:06 --> Undefined variable $db
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Models\Product_model.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Models\\Product_model.php', 9)
+ 2 APPPATH\Controllers\Home.php(120): App\Models\Product_model->product_list()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:48:07 --> Undefined variable $db
+in APPPATH\Models\Product_model.php on line 9.
+ 1 APPPATH\Models\Product_model.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Models\\Product_model.php', 9)
+ 2 APPPATH\Controllers\Home.php(120): App\Models\Product_model->product_list()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:48:11 --> Attempt to read property "ProductImage" on array
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ProductImage" on array', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 08:48:38 --> Attempt to read property "ProductName" on array
+in APPPATH\Views\Home\Products.php on line 14.
+ 1 APPPATH\Views\Home\Products.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ProductName" on array', 'APPPATH\\Views\\Home\\Products.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:03:16 --> syntax error, unexpected token "."
+in APPPATH\Views\Home\Products.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 3 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:03:25 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\Home\Products.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 3 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:04:41 --> syntax error, unexpected token "."
+in APPPATH\Views\Home\Products.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 3 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:04:59 --> syntax error, unexpected token "."
+in APPPATH\Views\Home\Products.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 3 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:05:00 --> syntax error, unexpected token "."
+in APPPATH\Views\Home\Products.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 3 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:06:02 --> Undefined property: stdClass::$file_type
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$file_type', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:12:54 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 4 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 09:31:09 --> Undefined variable $ProductImage
+in APPPATH\Views\Home\Products.php on line 13.
+ 1 APPPATH\Views\Home\Products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductImage', 'APPPATH\\Views\\Home\\Products.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 5 APPPATH\Controllers\Home.php(121): view('Home/Products.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 10:04:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::fetch()
+in APPPATH\Models\Product_model.php on line 10.
+ 1 APPPATH\Controllers\Home.php(120): App\Models\Product_model->product_list()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 10:07:41 --> Undefined variable $ProductImage
+in APPPATH\Controllers\Home.php on line 121.
+ 1 APPPATH\Controllers\Home.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductImage', 'APPPATH\\Controllers\\Home.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 10:07:57 --> Undefined variable $product
+in APPPATH\Controllers\Home.php on line 121.
+ 1 APPPATH\Controllers\Home.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Controllers\\Home.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 10:08:15 --> Undefined variable $image
+in APPPATH\Controllers\Home.php on line 121.
+ 1 APPPATH\Controllers\Home.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Controllers\\Home.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

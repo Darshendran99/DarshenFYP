@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use App\Models\product_model;
 
 class Home extends BaseController
 {
@@ -114,7 +115,13 @@ class Home extends BaseController
     }
     public function Products()
     {
-        echo view("Home/Products.php");
+
+      $product_model = new product_model();
+      $data['product'] = $product_model->product_list();
+      return view ("Home/Products.php",$data);
+
+
+
     }
     public function Cart()
     {

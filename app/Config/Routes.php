@@ -40,6 +40,7 @@ $routes->get('/', 'Home::index');
 $routes->match(['get','post'],'Register', 'Home::Register');
 $routes->match(['get','post'],'Login', 'Home::Login');
 $routes->match(['get','post'],'logout', 'Home::logout');
+$routes->match(['get','post'],'Products', 'Home::Products');
 
 /*
  * --------------------------------------------------------------------
