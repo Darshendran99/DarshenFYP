@@ -117,7 +117,7 @@ class Home extends BaseController
     {
 
       $product_model = new product_model();
-      $data['product'] = $product_model->product_list();
+      $data['product'] = $product_model->orderBy('ProductId', 'DESC') ->findAll();
       return view ("Home/Products.php",$data);
 
 

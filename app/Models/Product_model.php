@@ -3,21 +3,8 @@
 use CodeIgniter\Model;
 
 class Product_model extends Model{
-
-  public function product_list(){
-    $db = \Config\Database::connect();
-    $query = $db->query('select * from product');
-    header("Content-type: image/png");
-
-    $result = $query->getResult();
-    if(count($result)>0)
-    {
-        return $result;
-    }
-    else
-    {
-        return false;
-    }
-  }
+  protected $table = 'product';
+  protected $primaryKey = 'ProductId';
+  protected $allowedFields = ['ProductImage', 'ProductName', 'ProductDetails', 'ProductPerformance', 'ProductPrice', 'CreatedOn'];
 }
 ?>

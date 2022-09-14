@@ -1,0 +1,53 @@
+.header{
+  padding-bottom: 10px;
+  background: #05445E;
+  color: white;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+  margin-right: 20px;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+.header a:hover{
+  color: #D9E4EC;
+}
+.header button{
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.header button:hover{
+  background-color: #D9E4EC;
+  color: black;
+}
+
+.header h1{
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+  font-size: 75px;
+  cursor: pointer;
+}
+.header h1:hover{
+  color: #D9E4EC;
+}
+.loginbtn{
+    display: inline-block;
+}
+.header_left{
+  margin-left: 40px;
+}
