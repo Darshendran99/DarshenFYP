@@ -1,11 +1,11 @@
 .productContainer{
   padding-top: 50px;
-  padding-left: 150px;
+  padding-left: 175px;
   padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
+  min-height: 500px;
 }
-
 .products{
   display: inline-block;
   padding: 10px;
@@ -16,7 +16,6 @@
   width: 300px;
   text-align: center;
 }
-
 .products img{
   display: block;
   margin-left: auto;
@@ -24,16 +23,14 @@
   width:200px;
   height:200px;
 }
-
-.productName, .productPrice{
+.productName{
   text-align: center;
   font-size: 1em;
 }
-
 .productPrice{
+  text-align: center;
   font-size: 2em;
 }
-
 .products button{
   background-color: #088F8F;
   text-align: center;
@@ -45,8 +42,58 @@
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  transition: 0.5s;
 }
-
 .products button:hover{
   background-color: #0cd7d7;
+  transition: 0.5s;
+}
+
+.home_Container{
+  padding-top: 100px;
+  padding-left: 160px;
+  padding-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+.ImageSection {
+ float: left;
+ width: 300px;
+ height: 500px;
+ font-size: 10px;
+ text-align: center;
+ margin-top: 35px;
+}
+.ImageSection img{
+    width:300px;
+    height:300px;
+}
+.ImageSection button{
+  background-color: #D9E4EC;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.ImageSection button:hover{
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.DescSection{
+  margin-left: 400px;
+  padding-right:200px;
+  font-size: 20px;
+}
+.ProductPrice{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  color: #c4a747;
 }

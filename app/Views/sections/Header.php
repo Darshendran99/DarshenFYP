@@ -6,7 +6,7 @@
   <title>Stellar PC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/header.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>">
 
@@ -37,3 +37,4 @@
    <?php endif; ?>
  </div>
 </div>
+  <hr>

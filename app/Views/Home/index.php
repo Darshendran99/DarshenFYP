@@ -11,7 +11,7 @@
 			<?php if (session()->get('isLoggedIn')): ?>
 			<h1>Hello, <?= session()->get('firstname') ?></h1>
 			<?php endif; ?>
-			
+
 	</div>
 
 

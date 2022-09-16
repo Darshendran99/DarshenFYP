@@ -105,24 +105,28 @@ class Home extends BaseController
   		return redirect()->to('/');
   	}
 
-    public function Promotion()
-    {
-        echo view("Home/Promotion.php");
-    }
     public function Build_PC()
     {
         echo view("Home/Build_PC.php");
     }
     public function Products()
     {
-
       $product_model = new product_model();
       $data['product'] = $product_model->orderBy('ProductId', 'DESC') ->findAll();
       return view ("Home/Products.php",$data);
-
-
-
     }
+
+    public function ProductDetails($ProductId = null){
+      $product_model = new product_model();
+      $data['product'] = $product_model->where('ProductId', $ProductId)->first();
+      return view("Home/ProductDetails.php", $data);
+    }
+
+    public function Promotion()
+    {
+        echo view("Home/Promotion.php");
+    }
+
     public function Cart()
     {
         echo view("Home/Cart.php");
