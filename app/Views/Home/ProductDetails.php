@@ -1,8 +1,4 @@
-<?php
 
-	echo view('sections/header.php');
-
-?>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/product.css'); ?>">
   <script type="text/javascript" src="<?php echo base_url('js/custom.js'); ?>"></script>
 			<h2>Product Details Page</h2>

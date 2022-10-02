@@ -9,8 +9,9 @@ class Home extends BaseController
 {
     public function index()
     {
-
+        echo view("sections/Header.php");
         echo view("Home/index.php");
+
     }
 
     public function Login()
@@ -46,7 +47,9 @@ class Home extends BaseController
       			}
       		}
 
+        echo view("sections/Header.php");
         echo view("Home/Login.php", $data);
+        echo view("sections/Footer.php");
     }
       private function setUserSession($user){
     		  $data = [
@@ -96,7 +99,9 @@ class Home extends BaseController
 				return redirect()->to('Login');
 			}
 		}
+        echo view("sections/Header.php");
         echo view("Home/Register.php",$data);
+        echo view("sections/Footer.php");
 
     }
 
@@ -113,12 +118,15 @@ class Home extends BaseController
     {
       $product_model = new product_model();
       $data['product'] = $product_model->orderBy('ProductId', 'DESC') ->findAll();
+
+      echo view("sections/Header.php");
       return view ("Home/Products.php",$data);
     }
 
     public function ProductDetails($ProductId = null){
       $product_model = new product_model();
       $data['product'] = $product_model->where('ProductId', $ProductId)->first();
+      echo view("sections/Header.php");
       return view("Home/ProductDetails.php", $data);
     }
 

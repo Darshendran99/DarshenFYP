@@ -1,0 +1,60 @@
+ERROR - 2022-10-02 02:29:31 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'stellarpc' in C:\xampp\htdocs\DarshenFYP\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\DarshenFYP\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'stellarpc', 3306, '', 0)
+#1 C:\xampp\htdocs\DarshenFYP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\DarshenFYP\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\DarshenFYP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DarshenFYP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DarshenFYP\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\DarshenFYP\app\Controllers\Home.php(115): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php(904): App\Controllers\Home->Products()
+#8 C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DarshenFYP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'stellarpc' in C:\xampp\htdocs\DarshenFYP\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\DarshenFYP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\DarshenFYP\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\DarshenFYP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\DarshenFYP\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\DarshenFYP\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\DarshenFYP\app\Controllers\Home.php(115): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php(904): App\Controllers\Home->Products()
+#7 C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\DarshenFYP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-02 02:29:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'stellarpc'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+ORDER BY `ProductId` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(115): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 02:46:19 --> Invalid file: section/Header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('section/Header.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('section/Header.php', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('section/Header.php')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Login()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 03:17:07 --> syntax error, unexpected end of file
+in APPPATH\Views\sections\Header.php on line 87.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('sections/Header.php', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('sections/Header.php')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

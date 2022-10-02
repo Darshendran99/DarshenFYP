@@ -22,6 +22,14 @@
 
 </footer>
 
+<!-- BOOTSTRAP JS -->
+<script type="text/javascript" src="<?php echo base_url('assets/JS/bootstrap.min.js'); ?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/JS/custom.js'); ?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/JS/isotope.js'); ?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/JS/isotope.min.js'); ?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/JS/owl-carousel.js'); ?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/JS/popup.js'); ?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/JS/tabs.js'); ?>"></script>
 
 
 
