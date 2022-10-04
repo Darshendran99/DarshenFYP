@@ -1,13 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="page-content">
 
-  <script type="text/javascript" src="<?php echo base_url('js/custom.js'); ?>"></script>
-  <h2>/ Register Page</h2>
+        <!-- ***** Banner Start ***** -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main-profile ">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="<?php echo base_url('assets/image/registerImage.jpg'); ?>" alt="" style="border-radius: 23px;">
+                </div>
 
-	<div class="registerContainer">
-		<div class="registerRow">
-			<div class"registerInnerContainer">
-				<hr>
-				<h3>Register</h3>
-				<hr>
+                <div class="col-lg-4 align-self-center">
+                  <div class="main-info header-text">
+
 				<form class="" action="/Register" method="post">
 
           <div class="row">
@@ -71,7 +78,15 @@
 					              <a href='<?php echo base_url();?>/Home/Login'>Already have an account?</a>
 					            </div>
 
-				</form>
-			</div>
-		</div>
-	</div>
+                    </form>
+    	      </div>
+    	    </div>
+    	  </div>
+    	</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div>

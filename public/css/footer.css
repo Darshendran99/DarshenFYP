@@ -1,34 +1,10 @@
-footer{
-  position: absolute;
-  background: #111;
-  height: auto;
-  width: 100vw;
-  padding-top: 10px;
-  color: #fff;
-}
 
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content h3{
-    font-size: 2.1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 5px;
-}
 
 .socials{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 2rem 0;
-
 }
 
 .socials li{
@@ -53,27 +29,5 @@ footer{
 }
 
 .socials a:hover i{
-    color: #D9E4EC;
-}
-.footer-bottom{
-    background: #111111;
-    width: 100vw;
-    padding: 20px;
-    text-align: center;
-}
-.footer-bottom p{
-   float: left;
-   font-size: 14px;
-   word-spacing: 2px;
-   text-transform: capitalize;
-}
-.footer-bottom p a{
-  color:#44bae8;
-  font-size: 16px;
-  text-decoration: none;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+    color: #e75e8d !important
 }

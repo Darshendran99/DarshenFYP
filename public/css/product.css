@@ -1,99 +1,83 @@
-.productContainer{
-  padding-top: 50px;
-  padding-left: 175px;
-  padding-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 500px;
+.productImg{
+  width: 250px;
+  height: 250px;
+  display: block;
+margin-left: auto;
+margin-right: auto;
 }
-.products{
-  display: inline-block;
-  padding: 10px;
-  border-color: white;
-  border-radius: 5px;
-  border-style: groove;
-  margin: 25px;
-  width: 300px;
-  text-align: center;
+.product{
+  padding: 50px;
 }
-.products img{
+
+.col-lg-3 h4, .productPrice {
+  font-size: 15px;
+ text-align: center;
+}
+.main-button a{
+  width: 170px;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:200px;
-  height:200px;
+  text-align: center;
 }
 .productName{
-  text-align: center;
-  font-size: 1em;
-}
-.productPrice{
-  text-align: center;
-  font-size: 2em;
-}
-.products button{
-  background-color: #088F8F;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  font-size: 20px;
-  padding: 15px;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.products button:hover{
-  background-color: #0cd7d7;
-  transition: 0.5s;
+  margin-top: 1em;
 }
 
-.home_Container{
-  padding-top: 100px;
-  padding-left: 160px;
-  padding-bottom: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-}
-.ImageSection {
- float: left;
- width: 300px;
- height: 500px;
- font-size: 10px;
- text-align: center;
- margin-top: 35px;
-}
-.ImageSection img{
-    width:300px;
-    height:300px;
-}
-.ImageSection button{
-  background-color: #D9E4EC;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  border: none;
+.left h4{
   font-size: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 30px;
-  transition: 0.5s;
+  text-align: center;
+  color: #ec6090;
 }
-.ImageSection button:hover{
-  background-color: black;
+
+.left h4:hover{
   color: white;
   transition: 0.5s;
 }
-.DescSection{
-  margin-left: 400px;
-  padding-right:200px;
+
+.right-info h4{
   font-size: 20px;
+  text-align: center;
+    color: #ec6090;
 }
-.ProductPrice{
-  font-family: 'Roboto', sans-serif;
-  font-size: 40px;
-  color: #c4a747;
+.right-info h4:hover{
+  color: white;
+    transition: 0.5s;
+}
+.col-lg-4{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-lg-12 h5{
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  font-size: 15px;
+  color: #C0C0C0;
+}
+.iconImg{
+  max-height: 30px;
+  max-width: 30px;
+  filter: invert(1);
+}
+.productDetails{
+    display: flex;
+}
+.iconImg2{
+  max-height: 60px;
+  max-width: 60px;
+  filter: invert(1);
+}
+.iconImg3{
+  max-height: 60px;
+  max-width: 60px;
+}
+.col-lg-6 h5{
+    color: #C0C0C0;
+    margin-top: 5px;
+}
+.col-lg-6-p{
+    text-align: center;
 }

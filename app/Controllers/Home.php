@@ -9,9 +9,12 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo view("sections/Header.php");
-        echo view("Home/index.php");
+      $product_model = new product_model();
+      $data['product'] = $product_model->orderBy('ProductPrice', 'ASC')->first();
 
+        echo view("sections/Header.php");
+        echo view("Home/index.php",$data);
+        echo view("sections/Footer.php");
     }
 
     public function Login()

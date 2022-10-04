@@ -14,6 +14,6 @@ hr{
   color: white;
 }
 
-.home_Container, .promotion_Container, .Login_Container, .BuildPc_Container, .Cart_Container{
+.page-content, .promotion_Container, .Login_Container, .BuildPc_Container, .Cart_Container{
   min-height: 500px;
 }
