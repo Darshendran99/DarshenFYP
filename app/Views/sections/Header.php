@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Stellar PC</title>
+
+
   <!-- BOOTSTRAP FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -15,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/CSS/fontawesome.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/CSS/owl.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/CSS/templatemo-cyborg-gaming.css'); ?>">
-      <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <!-- Custom CSS -->
 </head>
 <body>

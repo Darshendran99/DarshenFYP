@@ -6,6 +6,7 @@ use App\Models\UserModel;
 use App\Models\product_model;
 use App\Models\promotion_model;
 use App\Models\gpu_model;
+use App\Models\cpu_model;
 
 class Home extends BaseController
 {
@@ -15,6 +16,39 @@ class Home extends BaseController
       $promotion_model = new promotion_model();
       $data['product'] = $product_model->orderBy('ProductPrice', 'ASC')->first();
       $data['promotion'] = $promotion_model->orderBy('PromotionPrice', 'ASC')->first();
+
+      $db = \Config\Database::connect();
+              $builder = $db->table('gpuchart');
+              $query = $builder->select("COUNT(gpuId) as count, gpuPrice as s, DAYNAME(gpuUpdatedDate) as day");
+              $query = $builder->where("DAY(gpuUpdatedDate) GROUP BY DAYNAME(gpuUpdatedDate), s");
+              $query = $builder->orderBy("DAY(gpuUpdatedDate)","asc")->get();
+              $record = $query->getResult();
+              $gpuchart = [];
+              foreach($record as $row) {
+                  $gpuchart[] = array(
+                      'day'   => $row->day,
+                      'sell' => floatval($row->s)
+                  );
+              }
+
+              $data['gpuchart'] = ($gpuchart);
+
+              $db = \Config\Database::connect();
+                      $builder = $db->table('cpuchart');
+                      $query = $builder->select("COUNT(cpuId) as count, cpuPrice as s, DAYNAME(cpuUpdatedDate) as day");
+                      $query = $builder->where("DAY(cpuUpdatedDate) GROUP BY DAYNAME(cpuUpdatedDate), s");
+                      $query = $builder->orderBy("DAY(cpuUpdatedDate)","asc")->get();
+                      $record = $query->getResult();
+                      $cpuchart = [];
+                      foreach($record as $row) {
+                          $cpuchart[] = array(
+                              'day'   => $row->day,
+                              'sell' => floatval($row->s)
+                          );
+                      }
+
+                      $data['cpuchart'] = ($cpuchart);
+
 
       echo view("sections/Header.php");
       return view("Home/index.php", $data);

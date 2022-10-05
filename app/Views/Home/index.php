@@ -1,12 +1,14 @@
 
+
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="page-content">
-
+				<div class="helloText">
 			<?php if (session()->get('isLoggedIn')): ?>
 			<h1>Hello, <?= session()->get('firstname') ?></h1>
 			<?php endif; ?>
+		</div>
 
 <!-- Banner -->
 			<div class="main-banner">
@@ -70,7 +72,7 @@
 					<div class="item">
 						<img src="data:image/png;base64,"/>
 						<h4>  </h4>
-						<h4>BuildYourPC<span>Prebuilt Custom PC</span></h4>
+						<h4>More<span>Soon</span></h4>
 						<ul>
 							<br>
 							<li><i class="fa fa-star"></i> RM </li>
@@ -84,7 +86,7 @@
 						<a href="<?php echo base_url();?>/Home/Promotion">Discover Promotion</a>
 						<a href="<?php echo base_url();?>/Home/Build_PC">Build Your Own PC</a>
 						<a href="">More Soon</a>
-											</div>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -100,8 +102,28 @@
 		<div class="item">
 			<ul>
 				<li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-				<li><h4>GPU</h4><span>Price</span></li>
-				<li><h4>C	PU</h4><span>Price</span></li>
+				<li><h4>GPU</h4><span>Price</span>
+				</li>
+					<div class="container">
+						<div class="mb-5 mt-5">
+								<div id="GoogleLineChart" style="height: 300px; width: 100%"></div>
+						</div>
+					</div>
+	</ul>
+		</div>
+
+		<div class="item">
+			<ul>
+				<li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
+				<li><h4>CPU</h4><span>Price</span></li>
+				</li>
+			<div class="container">
+				<div class="mb-5 mt-5">
+						<div id="GoogleLineChart2" style="height: 300px; width: 100%"></div>
+				</div>
+			</div>
+			</ul>
+
 		</div>
 		</div>
 		</div>
@@ -110,8 +132,9 @@
 
 
 
+	</div>
+	</div>
+	</div>
 
-	</div>
-	</div>
-	</div>
+
 	<?php echo view('sections/footer.php');?>

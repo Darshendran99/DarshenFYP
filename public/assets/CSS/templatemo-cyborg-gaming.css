@@ -1775,3 +1775,12 @@ label{
   background-color: white;
         color: #ec6090;
 }
+
+.helloText h1{
+font-size: 20px;
+padding-left: 59px;
+}
+
+path[Attributes Style] {
+  stroke: #FFC0CB;
+}
