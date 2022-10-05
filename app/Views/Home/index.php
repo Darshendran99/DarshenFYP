@@ -34,11 +34,10 @@
 				<!-- Product -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,<?php echo base64_encode($product["ProductImage"]); ?>"/>
+						<img src="data:image/png;base64,<?php echo base64_encode($product["ProductImage"]); ?>" style="width:220px;height:200px;"/>
 						<h4> <?php echo $product["ProductName"]; ?> </h4>
 					  <h4>Product <span>Prebuilt Custom PC</span></h4>
 						<ul>
-							<br>
 							<li><i class="fa fa-star"></i> RM <?php echo $product["ProductPrice"];?></li>
 						</ul>
 					</div>
@@ -46,12 +45,11 @@
 				<!-- Promotion -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,"/>
-						<h4>  </h4>
+						<img src="data:image/png;base64,<?php echo base64_encode($promotion["PromotionImage"]); ?>" style="width:220px;height:200px;"/>
+						<h4> <?php echo $promotion["PromotionName"]; ?>	 </h4>
 						<h4>Promotion <span>Bang for the buck</span></h4>
 						<ul>
-							<br>
-							<li><i class="fa fa-star"></i> RM </li>
+							<li><i class="fa fa-star"></i> RM <?php echo $promotion["PromotionPrice"];?></li>
 						</ul>
 					</div>
 				</div>
@@ -116,3 +114,4 @@
 	</div>
 	</div>
 	</div>
+	<?php echo view('sections/footer.php');?>

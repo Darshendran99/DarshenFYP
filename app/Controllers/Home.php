@@ -5,20 +5,20 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\product_model;
 use App\Models\promotion_model;
+use App\Models\gpu_model;
 
 class Home extends BaseController
 {
     public function index()
     {
       $product_model = new product_model();
-      $data['product'] = $product_model->orderBy('ProductPrice', 'ASC')->first();
-
       $promotion_model = new promotion_model();
-      $data2['promotion'] = $promotion_model->where('PromotionId', 'ASC')->first();
+      $data['product'] = $product_model->orderBy('ProductPrice', 'ASC')->first();
+      $data['promotion'] = $promotion_model->orderBy('PromotionPrice', 'ASC')->first();
 
-        echo view("sections/Header.php");
-        echo view("Home/index.php",$data);
-        echo view("sections/Footer.php");
+      echo view("sections/Header.php");
+      return view("Home/index.php", $data);
+
     }
 
     public function Login()
