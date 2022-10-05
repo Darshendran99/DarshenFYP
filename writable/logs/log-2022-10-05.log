@@ -1,0 +1,383 @@
+CRITICAL - 2022-10-05 01:01:30 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\Home\ProductDetails.php on line 67.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(133): view('Home/ProductDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:04:14 --> syntax error, unexpected token "echo"
+in APPPATH\Views\Home\ProductDetails.php on line 62.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(133): view('Home/ProductDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:04:58 --> Unclosed '{' on line 62
+in APPPATH\Views\Home\ProductDetails.php on line 155.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(133): view('Home/ProductDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:06:17 --> Unclosed '{' on line 62
+in APPPATH\Views\Home\ProductDetails.php on line 155.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(133): view('Home/ProductDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:06:24 --> Unclosed '{' on line 62
+in APPPATH\Views\Home\ProductDetails.php on line 155.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(133): view('Home/ProductDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:09:45 --> Unclosed '{' on line 67
+in APPPATH\Views\Home\ProductDetails.php on line 155.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(133): view('Home/ProductDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:42:30 --> Class "App\Controllers\promotion_model" not found
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:42:48 --> Class "App\Controllers\promotion_model" not found
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:43:24 --> Class "App\Controllers\promotion_model" not found
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:43:26 --> Class "App\Controllers\promotion_model" not found
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:43:37 --> Class "App\Controllers\promotion_model" not found
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:44:12 --> Class "App\Controllers\promotion_model" not found
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:44:54 --> Class "App\Controllers\promotion_model" not found
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:45:43 --> Undefined array key "PromotiontName"
+in APPPATH\Views\Home\Promotion.php on line 15.
+ 1 APPPATH\Views\Home\Promotion.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotiontName"', 'APPPATH\\Views\\Home\\Promotion.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Promotion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 5 APPPATH\Controllers\Home.php(143): view('Home/Promotion.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 01:46:12 --> Undefined array key "promotionName"
+in APPPATH\Views\Home\Promotion.php on line 15.
+ 1 APPPATH\Views\Home\Promotion.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "promotionName"', 'APPPATH\\Views\\Home\\Promotion.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Promotion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 5 APPPATH\Controllers\Home.php(143): view('Home/Promotion.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:01:48 --> syntax error, unexpected token ";"
+in APPPATH\Views\Home\PromotionDetails.php on line 36.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(150): view('Home/PromotionDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:02:36 --> Undefined variable $Promotion
+in APPPATH\Views\Home\PromotionDetails.php on line 137.
+ 1 APPPATH\Views\Home\PromotionDetails.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Promotion', 'APPPATH\\Views\\Home\\PromotionDetails.php', 137)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(150): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:08:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\index.php on line 49.
+ 1 APPPATH\Views\Home\index.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\index.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(20): view('Home/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:08:44 --> Undefined variable $promotion
+in APPPATH\Views\Home\index.php on line 49.
+ 1 APPPATH\Views\Home\index.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $promotion', 'APPPATH\\Views\\Home\\index.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/index.php', [...], true)
+ 5 APPPATH\Controllers\Home.php(20): view('Home/index.php', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:09:19 --> Undefined variable $product
+in APPPATH\Views\Home\index.php on line 37.
+ 1 APPPATH\Views\Home\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Home\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(20): view('Home/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:09:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\index.php on line 49.
+ 1 APPPATH\Views\Home\index.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\index.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(20): view('Home/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:10:29 --> Undefined array key "PromotionName"
+in APPPATH\Views\Home\index.php on line 50.
+ 1 APPPATH\Views\Home\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionName"', 'APPPATH\\Views\\Home\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(20): view('Home/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:12:31 --> Undefined variable $promotion
+in APPPATH\Views\Home\index.php on line 49.
+ 1 APPPATH\Views\Home\index.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $promotion', 'APPPATH\\Views\\Home\\index.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(20): view('Home/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 02:13:00 --> Undefined variable $promotion
+in APPPATH\Views\Home\index.php on line 49.
+ 1 APPPATH\Views\Home\index.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $promotion', 'APPPATH\\Views\\Home\\index.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(20): view('Home/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:20:49 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\Home\PromotionDetails.php on line 130.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(153): view('Home/PromotionDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:25:30 --> Unclosed '{' on line 80
+in APPPATH\Views\Home\PromotionDetails.php on line 172.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 3 APPPATH\Controllers\Home.php(153): view('Home/PromotionDetails.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:39:13 --> syntax error, unexpected single-quoted string "promotion", expecting variable
+in APPPATH\Models\Home_model.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Home_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\home_model')
+ 3 APPPATH\Controllers\Home.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\home_model')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:50:10 --> Undefined variable $PromotionStatus
+in APPPATH\Views\Home\Promotion.php on line 13.
+ 1 APPPATH\Views\Home\Promotion.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $PromotionStatus', 'APPPATH\\Views\\Home\\Promotion.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Promotion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 5 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:50:54 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:52:10 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:52:58 --> Undefined array key "PromotionStatus"
+in APPPATH\Views\Home\Promotion.php on line 12.
+ 1 APPPATH\Views\Home\Promotion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionStatus"', 'APPPATH\\Views\\Home\\Promotion.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Promotion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 5 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:53:12 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:53:28 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:54:01 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:55:48 --> Undefined variable $promotions
+in APPPATH\Views\Home\Promotion.php on line 28.
+ 1 APPPATH\Views\Home\Promotion.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $promotions', 'APPPATH\\Views\\Home\\Promotion.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Promotion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 5 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:56:08 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\Home\Promotion.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 3 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:56:17 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\Home\Promotion.php on line 23.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 3 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:58:01 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:59:05 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:59:46 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 03:59:52 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\Promotion.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Promotion.php', [], true)
+ 4 APPPATH\Controllers\Home.php(146): view('Home/Promotion.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Promotion()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

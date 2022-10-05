@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 use App\Models\product_model;
+use App\Models\promotion_model;
 
 class Home extends BaseController
 {
@@ -11,6 +12,9 @@ class Home extends BaseController
     {
       $product_model = new product_model();
       $data['product'] = $product_model->orderBy('ProductPrice', 'ASC')->first();
+
+      $promotion_model = new promotion_model();
+      $data2['promotion'] = $promotion_model->where('PromotionId', 'ASC')->first();
 
         echo view("sections/Header.php");
         echo view("Home/index.php",$data);
@@ -120,7 +124,7 @@ class Home extends BaseController
     public function Products()
     {
       $product_model = new product_model();
-      $data['product'] = $product_model->orderBy('ProductId', 'DESC') ->findAll();
+      $data['product'] = $product_model->orderBy('CreatedOn', 'DESC') ->findAll();
 
       echo view("sections/Header.php");
       return view ("Home/Products.php",$data);
@@ -135,7 +139,18 @@ class Home extends BaseController
 
     public function Promotion()
     {
-        echo view("Home/Promotion.php");
+      $promotion_model = new promotion_model();
+      $data['promotion'] = $promotion_model->orderBy('PromoCreatedOn', 'DESC') ->findAll();
+
+      echo view("sections/Header.php");
+      return view ("Home/Promotion.php",$data);
+    }
+
+    public function PromotionDetails($PromotionId = null){
+      $promotion_model = new promotion_model();
+      $data['promotion'] = $promotion_model->where('PromotionId', $PromotionId)->first();
+      echo view("sections/Header.php");
+      return view("Home/PromotionDetails.php", $data);
     }
 
     public function Cart()

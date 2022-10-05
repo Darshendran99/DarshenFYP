@@ -1,5 +1,5 @@
 
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/product.css'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
 
 	  <div class="container">
 	    <div class="row">
@@ -9,7 +9,7 @@
 						<div class="game-details">
 							<div class="row">
 								<div class="col-lg-12">
-									<h2>Product	 Details</h2>
+									<h2>Product Details</h2>
 								</div>
 
 								<div class="col-lg-12">
@@ -59,6 +59,11 @@
 														<img class="iconImg" src="<?php echo base_url('assets/image/casingIcon.png'); ?>">
 														<h5>Casing: &emsp;<?php echo $product["ProductCasing"]; ?> </h5>
 														</div>
+														<?php if ($product["ProductOther"] != "") { ?>
+															<div class="productDetails">
+																<span>Additional parts include [ <?php echo $product["ProductOther"]; ?> ] </span>
+															</div>
+														<?php } ?>
 
 													</div>
 													<div class="col-lg-12">
@@ -129,7 +134,7 @@
 										</div>
 
 										<div class="col-lg-6-p">
-												<p>Created on <?php echo $product["CreatedOn"]; ?></p>
+												<p>Posted on <?php echo $product["CreatedOn"]; ?></p>
 												<br>
 										</div>
 

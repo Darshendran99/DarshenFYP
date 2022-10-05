@@ -1,5 +1,5 @@
 
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/product.css'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
 
 <div class="container">
 	<div class="row">

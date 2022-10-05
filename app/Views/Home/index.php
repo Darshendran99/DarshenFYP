@@ -46,34 +46,47 @@
 				<!-- Promotion -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,<?php echo base64_encode($product["ProductImage"]); ?>"/>
-						<h4> <?php echo $product["ProductName"]; ?> </h4>
-						<h4>Promotion <span>Prebuilt Custom PC</span></h4>
+						<img src="data:image/png;base64,"/>
+						<h4>  </h4>
+						<h4>Promotion <span>Bang for the buck</span></h4>
 						<ul>
 							<br>
-							<li><i class="fa fa-star"></i> RM <?php echo $product["ProductPrice"];?></li>
+							<li><i class="fa fa-star"></i> RM </li>
 						</ul>
 					</div>
 				</div>
 				<!-- BuildYourPC -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,<?php echo base64_encode($product["ProductImage"]); ?>"/>
-						<h4> <?php echo $product["ProductName"]; ?> </h4>
+						<img src="data:image/png;base64,"/>
+						<h4>  </h4>
 						<h4>BuildYourPC<span>Prebuilt Custom PC</span></h4>
 						<ul>
 							<br>
-							<li><i class="fa fa-star"></i> RM <?php echo $product["ProductPrice"];?></li>
+							<li><i class="fa fa-star"></i> RM </li>
+						</ul>
+					</div>
+				</div>
+				<!-- BuildYourPC -->
+				<div class="col-lg-3 col-sm-6">
+					<div class="item">
+						<img src="data:image/png;base64,"/>
+						<h4>  </h4>
+						<h4>BuildYourPC<span>Prebuilt Custom PC</span></h4>
+						<ul>
+							<br>
+							<li><i class="fa fa-star"></i> RM </li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-lg-12">
 					<div class="main-button">
-						<a href="browse.html">Discover Products</a>
-						<a href="browse.html">Discover Promotion</a>
-						<a href="browse.html">Build Your Own PC</a>
-					</div>
+						<a href="<?php echo base_url();?>/Home/Products">Discover Products</a>
+						<a href="<?php echo base_url();?>/Home/Promotion">Discover Promotion</a>
+						<a href="<?php echo base_url();?>/Home/Build_PC">Build Your Own PC</a>
+						<a href="">More Soon</a>
+											</div>
 				</div>
 			</div>
 		</div>
