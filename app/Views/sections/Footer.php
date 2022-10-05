@@ -33,58 +33,7 @@
   <script type="text/javascript" src="<?php echo base_url('assets/JS/tabs.js'); ?>"></script>
 
 
-  	<script type="text/javascript" src="<?php echo base_url('assets/JS/loader.js'); ?>"></script>
-  	<script>
-  		google.charts.load('current', {'packages':['corechart']});
-  		google.charts.setOnLoadCallback(drawLineChart);
 
-  					// Line Chart
-  		function drawLineChart() {
-  			var data = google.visualization.arrayToDataTable([
-  				['Day', 'RTX 4090 price'],
-  					<?php
-  						foreach ($gpuchart as $row){
-  							 echo "['".$row['day']."',".$row['sell']."],";
-  					} ?>
-  			]);
-  			var options = {
-  				title: 'Line chart product sell wise',
-  				curveType: 'function',
-  				legend: {
-  					position: 'top'
-  				}
-  			};
-  			var chart = new google.visualization.LineChart(document.getElementById('GoogleLineChart'));
-  			chart.draw(data, options);
-  		}
-
-  	</script>
-
-    <script>
-  		google.charts.load('current', {'packages':['corechart']});
-  		google.charts.setOnLoadCallback(drawLineChart);
-
-  					// Line Chart
-  		function drawLineChart() {
-  			var data = google.visualization.arrayToDataTable([
-  				['Day', 'Intel® Core™ i9-13900KF'],
-  					<?php
-  						foreach ($cpuchart as $row){
-  							 echo "['".$row['day']."',".$row['sell']."],";
-  					} ?>
-  			]);
-  			var options = {
-  				title: 'Line chart product sell wise',
-  				curveType: 'function',
-  				legend: {
-  					position: 'top'
-  				}
-  			};
-  			var chart = new google.visualization.LineChart(document.getElementById('GoogleLineChart2'));
-  			chart.draw(data, options);
-  		}
-
-  	</script>
 
 </body>
 </html>

@@ -136,5 +136,82 @@
 	</div>
 	</div>
 
+	<script type="text/javascript" src="<?php echo base_url('assets/JS/loader.js'); ?>"></script>
+	<script>
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawLineChart);
 
+					// Line Chart
+		function drawLineChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Day', 'RTX 4090 price (RM)'],
+					<?php
+						foreach ($gpuchart as $row){
+							 echo "['".$row['day']."',".$row['sell']."],";
+					} ?>
+			]);
+			var options = {
+				title: 'Line chart of Nvidia GeForce RTX 4090 series Price',
+				titleTextStyle:{color: '#FFF'},
+				curveType: 'function',
+				legend: {
+					position: 'top',
+					textStyle:{color: '#FFF'}
+				},
+				colors: ['#ec6090'],
+				backgroundColor: 'transparent',
+				hAxis: {
+					    textStyle:{color: '#FFF'}
+					},
+				vAxis: {
+							textStyle:{color: '#FFF'}
+					},
+					data: {
+								textStyle:{color: '#FFF'}
+						}
+			};
+			var chart = new google.visualization.LineChart(document.getElementById('GoogleLineChart'));
+			chart.draw(data, options);
+		}
+
+	</script>
+
+	<script>
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawLineChart);
+
+					// Line Chart
+		function drawLineChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Day', 'Intel i9-13900KF (RM) '],
+					<?php
+						foreach ($cpuchart as $row){
+							 echo "['".$row['day']."',".$row['sell']."],";
+					} ?>
+			]);
+			var options = {
+				title: 'Line chart of Intel® Core™ i9-13900KF series Price',
+				titleTextStyle:{color: '#FFF'},
+				curveType: 'function',
+				legend: {
+					position: 'top',
+					textStyle:{color: '#FFF'}
+				},
+				colors: ['#ec6090'],
+				backgroundColor: 'transparent',
+				hAxis: {
+					    textStyle:{color: '#FFF'}
+					},
+				vAxis: {
+							textStyle:{color: '#FFF'}
+					},
+					data: {
+								textStyle:{color: '#FFF'}
+						}
+			};
+			var chart = new google.visualization.LineChart(document.getElementById('GoogleLineChart2'));
+			chart.draw(data, options);
+		}
+
+	</script>
 	<?php echo view('sections/footer.php');?>

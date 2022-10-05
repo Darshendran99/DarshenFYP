@@ -664,3 +664,18 @@ in APPPATH\Controllers\Home.php on line 23.
  5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
  6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 12:03:28 --> Undefined variable $gpuchart
+in APPPATH\Views\sections\Footer.php on line 46.
+ 1 APPPATH\Views\sections\Footer.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gpuchart', 'APPPATH\\Views\\sections\\Footer.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sections\\Footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('sections/footer.php', [], true)
+ 5 APPPATH\Views\Home\Products.php(37): view('sections/footer.php')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Products.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Products.php', [], true)
+ 9 APPPATH\Controllers\Home.php(164): view('Home/Products.php', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Products()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
