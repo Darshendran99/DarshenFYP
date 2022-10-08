@@ -101,8 +101,10 @@
 		</div>
 		<div class="item">
 			<ul>
+
 				<li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
 				<li><h4>GPU</h4><span>Price</span>
+
 				</li>
 					<div class="container">
 						<div class="mb-5 mt-5">

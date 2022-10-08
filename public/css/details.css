@@ -95,3 +95,42 @@ margin-right: auto;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
+
+.componentTitles{
+  font-size: 25px;
+}
+
+.componentTitles em{
+  font-size: 15px;
+  font-style: normal;
+  padding-top: 10px;
+  float: right;
+  color: #ec6090;
+}
+.ComponentDivider{
+  color: white;
+}
+
+.ComponentItem h5{
+  font-size: 20px;
+  float: left;
+  width: 150px;
+}
+.ComponentItem select{
+  border-radius:15px;
+  font-size: 20px;
+  width: 500px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  background-color: rgba(0,0,0,0.1);
+  color: white;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  padding-left: 16px;
+}
+.ComponentItem select:hover{
+background-color: #4B1B2A;
+transition: 0.2s;
+}

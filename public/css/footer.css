@@ -31,3 +31,16 @@
 .socials a:hover i{
     color: #e75e8d !important
 }
+
+.whatsappbutton p{
+  padding: 0px 0px;
+  margin-top: 40px;
+}
+.whatsappbutton a{
+  border-radius: 8px;
+  border: 2px solid #e75e8d;
+  padding:16px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}

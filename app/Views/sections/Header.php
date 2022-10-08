@@ -17,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/CSS/fontawesome.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/CSS/owl.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/CSS/templatemo-cyborg-gaming.css'); ?>">
-  <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
   <!-- Custom CSS -->
 </head>
 <body>

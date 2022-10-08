@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\product_model;
 use App\Models\promotion_model;
+use App\Models\component_model;
 use App\Models\gpu_model;
 use App\Models\cpu_model;
 
@@ -153,7 +154,11 @@ class Home extends BaseController
 
     public function Build_PC()
     {
-        echo view("Home/Build_PC.php");
+      $component_model = new component_model();
+      $data['component'] = $component_model->orderBy('ComponentId', 'ASC') ->findAll();
+
+      echo view("sections/Header.php");
+      return view ("Home/Build_PC.php",$data);
     }
     public function Products()
     {
