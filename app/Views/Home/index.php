@@ -146,10 +146,10 @@
 					// Line Chart
 		function drawLineChart() {
 			var data = google.visualization.arrayToDataTable([
-				['Day', 'RTX 4090 price (RM)'],
+				['Month', 'RTX 4090 price (RM)'],
 					<?php
 						foreach ($gpuchart as $row){
-							 echo "['".$row['day']."',".$row['sell']."],";
+							 echo "['".$row['month']."',".$row['sell']."],";
 					} ?>
 			]);
 			var options = {
@@ -185,10 +185,10 @@
 					// Line Chart
 		function drawLineChart() {
 			var data = google.visualization.arrayToDataTable([
-				['Day', 'Intel i9-13900KF (RM) '],
+				['Month', 'Intel i9-13900KF (RM) '],
 					<?php
 						foreach ($cpuchart as $row){
-							 echo "['".$row['day']."',".$row['sell']."],";
+							 echo "['".$row['month']."',".$row['sell']."],";
 					} ?>
 			]);
 			var options = {

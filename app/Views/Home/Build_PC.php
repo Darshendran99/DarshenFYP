@@ -19,7 +19,7 @@
 										<hr class="ComponentDivider">
 										<div class="ComponentItem">
 										<h5>Intel CPU:</h5>
-										<select id="list" onchange="">
+										<select id="intelCpu" onchange="update1()">
 											<option> -- Select an option -- </option>
 											<?php foreach ($component as $cpu => $intelCpu) { ?>
 												<?php if ($intelCpu["ComponentType"] == "CPU") { ?>
@@ -29,7 +29,7 @@
 										</select>
 										<br><br>
 										<h5>AMD CPU:</h5>
-										<select id="list" onchange="">
+										<select id="amdCpu" onchange="update2()">
 											<option> -- Select an option -- </option>
 											<?php foreach ($component as $cpu => $amdCpu) { ?>
 												<?php if ($amdCpu["ComponentType"] == "CPU") { ?>
@@ -47,7 +47,7 @@
 									<hr class="ComponentDivider">
 									<div class="ComponentItem">
 									<h5>Intel Motherboard:</h5>
-									<select id="list" onchange="">
+									<select id="intelMobo" onchange="update3()">
 										<option> -- Select an option -- </option>
 										<?php foreach ($component as $mobo => $intelMobo) { ?>
 											<?php if ($intelMobo["ComponentType"] == "Mobo") { ?>
@@ -57,7 +57,7 @@
 									</select>
 									<br><br>
 									<h5>AMD Motherboard:</h5>
-									<select id="list" onchange="">
+									<select id="amdMobo" onchange="update4()">
 										<option> -- Select an option -- </option>
 										<?php foreach ($component as $mobo => $amdMobo) { ?>
 											<?php if ($amdMobo["ComponentType"] == "Mobo") { ?>
@@ -75,7 +75,7 @@
 								<hr class="ComponentDivider">
 								<div class="ComponentItem">
 								<h5>Intel GPU:</h5>
-								<select id="list" onchange="">
+								<select id="intelGpu" onchange="update5()">
 									<option> -- Select an option -- </option>
 									<?php foreach ($component as $gpu => $intelGpu) { ?>
 										<?php if ($intelGpu["ComponentType"] == "GPU") { ?>
@@ -85,7 +85,7 @@
 								</select>
 								<br><br>
 								<h5>AMD GPU:</h5>
-								<select id="list" onchange="">
+								<select id="amdGpu" onchange="update6()">
 									<option> -- Select an option -- </option>
 									<?php foreach ($component as $gpu => $amdGpu) { ?>
 										<?php if ($amdGpu["ComponentType"] == "GPU") { ?>
@@ -95,7 +95,7 @@
 								</select>
 								<br><br>
 								<h5>NIVDIA GPU:</h5>
-								<select id="list" onchange="">
+								<select id="nvidiaGpu" onchange="update7()">
 									<option> -- Select an option -- </option>
 									<?php foreach ($component as $gpu => $nvidiaGpu) { ?>
 										<?php if ($nvidiaGpu["ComponentType"] == "GPU") { ?>
@@ -113,7 +113,7 @@
 								<hr class="ComponentDivider">
 								<div class="ComponentItem">
 								<h5>Avaiable Options:</h5>
-								<select id="list" onchange="">
+								<select id="ram_" onchange="update8()">
 									<option> -- Select an option -- </option>
 									<?php foreach ($component as $ram => $ram_) { ?>
 										<?php if ($ram_["ComponentType"] == "RAM") { ?>
@@ -131,7 +131,7 @@
 							<hr class="ComponentDivider">
 							<div class="ComponentItem">
 							<h5>Avaiable Options:</h5>
-							<select id="list" onchange="">
+							<select id="ssd_" onchange="update9()">
 								<option> -- Select an option -- </option>
 								<?php foreach ($component as $ssd => $ssd_) { ?>
 									<?php if ($ssd_["ComponentType"] == "SSD") { ?>
@@ -149,7 +149,7 @@
 						<hr class="ComponentDivider">
 						<div class="ComponentItem">
 						<h5>Avaiable Options:</h5>
-						<select id="list" onchange="">
+						<select id="psu_" onchange="update10()">
 							<option> -- Select an option -- </option>
 							<?php foreach ($component as $psu => $psu_) { ?>
 								<?php if ($psu_["ComponentType"] == "PSU") { ?>
@@ -167,7 +167,7 @@
 						<hr class="ComponentDivider">
 						<div class="ComponentItem">
 						<h5>Avaiable Options:</h5>
-						<select id="list" onchange="">
+						<select id="casing_" onchange="update11()">
 							<option> -- Select an option -- </option>
 							<?php foreach ($component as $casing => $casing_) { ?>
 								<?php if ($casing_["ComponentType"] == "Casing") { ?>
@@ -199,39 +199,62 @@
 
 						<ul>
 							<li>
+
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-								<h4>Fortnite</h4>
+
+                <input type="text" id="text1" readonly>
+
 							</li>
 
 							<li>
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-								<h4>Fortnite</h4>
+                <input type="text" id="text2" readonly>
 							</li>
 
 							<li>
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-								<h4>Fortnite</h4>
+                <input type="text" id="text3" readonly>
 							</li>
 
 							<li>
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-								<h4>Fortnite</h4>
+                <input type="text" id="text4" readonly>
 							</li>
 
 							<li>
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-								<h4>Fortnite</h4>
+                <input type="text" id="text5" readonly>
 							</li>
 
 							<li>
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-								<h4>Fortnite</h4>
+                <input type="text" id="text6" readonly>
 							</li>
 
 							<li>
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-								<h4>Fortnite</h4>
+                <input type="text" id="text7" readonly>
 							</li>
+
+              <li>
+                <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                <input type="text" id="text8" readonly>
+              </li>
+
+              <li>
+                <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                <input type="text" id="text9" readonly>
+              </li>
+
+              <li>
+                <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                <input type="text" id="text10" readonly>
+              </li>
+
+              <li>
+                <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                <input type="text" id="text11" readonly>
+              </li>
 						</ul>
 
 						</div>
@@ -242,4 +265,8 @@
 	</div>
 	</div>
 
+
+
+
+  <script type="text/javascript" src="<?php echo base_url('js/computer.js'); ?>"></script>
 		<?php echo view('sections/footer.php');?>

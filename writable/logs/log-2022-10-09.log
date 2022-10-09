@@ -1,0 +1,29 @@
+CRITICAL - 2022-10-09 12:19:38 --> syntax error, unexpected end of file
+in APPPATH\Views\Home\Cart.php on line 59.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(198): view('Home/Cart.php')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:19:49 --> syntax error, unexpected token ":", expecting ";"
+in APPPATH\Views\Home\Cart.php on line 20.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(198): view('Home/Cart.php')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:21:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

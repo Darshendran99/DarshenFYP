@@ -20,14 +20,14 @@ class Home extends BaseController
 
       $db = \Config\Database::connect();
               $builder = $db->table('gpuchart');
-              $query = $builder->select("COUNT(gpuId) as count, gpuPrice as s, DAYNAME(gpuUpdatedDate) as day");
-              $query = $builder->where("DAY(gpuUpdatedDate) GROUP BY DAYNAME(gpuUpdatedDate), s");
-              $query = $builder->orderBy("DAY(gpuUpdatedDate)","asc")->get();
+              $query = $builder->select("COUNT(gpuId) as count, gpuPrice as s, MONTHNAME(gpuUpdatedDate) as month");
+              $query = $builder->where("MONTH(gpuUpdatedDate) GROUP BY MONTHNAME(gpuUpdatedDate), s");
+              $query = $builder->orderBy("MONTH(gpuUpdatedDate)","asc")->get();
               $record = $query->getResult();
               $gpuchart = [];
               foreach($record as $row) {
                   $gpuchart[] = array(
-                      'day'   => $row->day,
+                      'month'   => $row->month,
                       'sell' => floatval($row->s)
                   );
               }
@@ -36,14 +36,14 @@ class Home extends BaseController
 
               $db = \Config\Database::connect();
                       $builder = $db->table('cpuchart');
-                      $query = $builder->select("COUNT(cpuId) as count, cpuPrice as s, DAYNAME(cpuUpdatedDate) as day");
-                      $query = $builder->where("DAY(cpuUpdatedDate) GROUP BY DAYNAME(cpuUpdatedDate), s");
-                      $query = $builder->orderBy("DAY(cpuUpdatedDate)","asc")->get();
+                      $query = $builder->select("COUNT(cpuId) as count, cpuPrice as s, MONTHNAME(cpuUpdatedDate) as month");
+                      $query = $builder->where("MONTH(cpuUpdatedDate) GROUP BY MONTHNAME(cpuUpdatedDate), s");
+                      $query = $builder->orderBy("MONTH(cpuUpdatedDate)","asc")->get();
                       $record = $query->getResult();
                       $cpuchart = [];
                       foreach($record as $row) {
                           $cpuchart[] = array(
-                              'day'   => $row->day,
+                              'month'   => $row->month,
                               'sell' => floatval($row->s)
                           );
                       }
@@ -194,6 +194,7 @@ class Home extends BaseController
 
     public function Cart()
     {
+        echo view("sections/Header.php");
         echo view("Home/Cart.php");
     }
 }
