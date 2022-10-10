@@ -99,7 +99,7 @@
 													<div class="col-lg-12">
 			                      <div class="main-border-button">
 															<?php if (session()->get('isLoggedIn')): ?>
-			                        		<a href="<?php echo base_url();?>/Home/Promotion">Add To Cart</a>
+			                        		<a href="<?php echo base_url();?>/Home/AddCart1/<?php echo $promotion["PromotionId"]; ?>">Add To Cart</a>
 															<?php else: ?>
 																<a href="<?php echo base_url();?>/Home/Login">Login to Add to Cart</a>
 															<?php endif; ?>

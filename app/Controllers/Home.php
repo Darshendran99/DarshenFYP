@@ -125,7 +125,7 @@ class Home extends BaseController
 			if (! $this->validate($rules)) {
 				$data['validation'] = $this->validator;
 			}else{
-        //Storing user reistration into database
+        //Storing user registration into database
 				$model = new UserModel();
 
 				$newData = [
@@ -192,9 +192,60 @@ class Home extends BaseController
       return view("Home/PromotionDetails.php", $data);
     }
 
+public function AddCart1($ProductId){
+
+  if (session()->get('isLoggedIn')){
+
+      $product_model = new product_model();
+      $theItem = $product_model->find($ProductId);
+      $item = array(
+            'ProductId' => $theItem['ProductId'],
+            'ProductName' => $theItem['ProductName'],
+            'ProductImage' => $theItem['ProductImage'],
+            'ProductPrice' => $theItem['ProductPrice'],
+            'quantity' => 1,
+      );
+      $session = session();
+        if ($session->has('cart')){
+          $index = $this->exists($ProductId);
+          $cart = array_values(session('cart'));
+          if($index == -1){
+            array_push($cart, $item);
+          }else{
+            $cart[$index]['quantity']++;
+          }
+          $session->set('cart', $cart);
+        }else {
+          $cart = array($item);
+          $session->set('cart', $cart);
+        }
+          return $this->response->redirect(site_url('Cart'));
+        }else {
+          return redirect()->to('Login');
+      }
+}
+
+      private function exists($ProductId){
+        $items = array_values(session('cart'));
+        for ($i=0; $i < count($items); $i++) {
+            if($items[$i]['ProductId'] == $ProductId){
+              return $i;
+            }
+        }
+        return -1;
+      }
+
+
+
     public function Cart()
     {
-        echo view("sections/Header.php");
-        echo view("Home/Cart.php");
-    }
+      $data['items'] = array_values(session('cart'));
+
+
+      echo view("sections/Header.php");
+      return view("Home/Cart.php",$data);
+
+
+       }
+
 }

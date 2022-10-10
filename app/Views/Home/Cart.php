@@ -31,19 +31,22 @@
                      <th>IMAGE</th>
                      <th>ITEM</th>
                      <th>PRICE</th>
+                     <th>Quantity</th>
+                     <th>TotalPrice</th>
                    </tr>
+
+                   <?php if ($items):  ?>
+                     <?php foreach ($items as $item): ?>
                    <tr>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
+                     <td class="counterCell"><//td>
+                     <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($item["ProductImage"]); ?>" alt="" style="max-height: 100px; max-width: 100px;"></td>
+                       <td><?php echo $item["ProductName"];?></td>
+                       <td>RM <?php echo $item["ProductPrice"];?></td>
+                       <td><?php echo $item['quantity'];?></td>
+                       <td>RM <?php echo round($item["ProductPrice"] * $item["quantity"]);?></td>
                    </tr>
-                   <tr>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                   </tr>
+                    <?php endforeach  ?>
+                <?php endif  ?>
                  </table>
                 </div>
     					</div>
@@ -53,6 +56,4 @@
     	</div>
     	</div>
     </div>
-
-
 <?php echo view('sections/footer.php');?>

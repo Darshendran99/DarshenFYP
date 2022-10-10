@@ -45,6 +45,8 @@ $routes->match(['get','post'],'ProductDetails', 'Home::ProductDetails');
 $routes->match(['get','post'],'Promotion', 'Home::Promotion');
 $routes->match(['get','post'],'PromotionDetails', 'Home::PromotionDetails');
 $routes->match(['get','post'],'Build_PC', 'Home::Build_PC');
+$routes->match(['get','post'],'AddCart', 'Home::AddCart');
+$routes->match(['get','post'],'Cart', 'Home::Cart');
 $routes->get('ProductDetails/(:num)', 'Home::ProductDetails/$1');
 $routes->get('PromotionDetails/(:num)', 'Home::PromotionDetails/$1');
 
