@@ -3575,3 +3575,43 @@ in APPPATH\Views\Home\ProductDetails.php on line 21.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 20:42:35 --> array_values(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 242.
+ 1 APPPATH\Controllers\Home.php(242): array_values(null)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 20:42:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 20:42:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 20:42:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

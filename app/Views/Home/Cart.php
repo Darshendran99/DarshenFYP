@@ -35,18 +35,19 @@
                      <th>TotalPrice</th>
                    </tr>
 
-                   <?php if ($items):  ?>
-                     <?php foreach ($items as $item): ?>
+
+                   <?php foreach ($cart as $cart){ ?>
                    <tr>
-                     <td class="counterCell"><//td>
-                     <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($item["ProductImage"]); ?>" alt="" style="max-height: 100px; max-width: 100px;"></td>
-                       <td><?php echo $item["ProductName"];?></td>
-                       <td>RM <?php echo $item["ProductPrice"];?></td>
-                       <td><?php echo $item['quantity'];?></td>
-                       <td>RM <?php echo round($item["ProductPrice"] * $item["quantity"]);?></td>
+
+                     <td class="counterCell"></td>
+                     <td><?php echo $cart["ProductId"]; ?></td>
+
+
+
+
                    </tr>
-                    <?php endforeach  ?>
-                <?php endif  ?>
+
+                 <?php } ?>
                  </table>
                 </div>
     					</div>

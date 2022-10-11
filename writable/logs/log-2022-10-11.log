@@ -1,0 +1,1516 @@
+CRITICAL - 2022-10-11 08:46:55 --> Undefined variable $component_model
+in APPPATH\Controllers\Home.php on line 244.
+ 1 APPPATH\Controllers\Home.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $component_model', 'APPPATH\\Controllers\\Home.php', 244)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:47:05 --> Undefined variable $id
+in APPPATH\Controllers\Home.php on line 244.
+ 1 APPPATH\Controllers\Home.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Home.php', 244)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:48:14 --> Too few arguments to function App\Controllers\Home::Cart(), 0 passed in C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 241.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:48:21 --> Too few arguments to function App\Controllers\Home::Cart(), 0 passed in C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 241.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:48:35 --> Too few arguments to function App\Controllers\Home::Cart(), 0 passed in C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 241.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:54:02 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(247): view('Home/Cart.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:54:41 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 244.
+ 1 APPPATH\Controllers\Home.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 244)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:54:56 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 244.
+ 1 APPPATH\Controllers\Home.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 244)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:55:01 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(247): view('Home/Cart.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:57:50 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 86.
+ 1 APPPATH\Controllers\Home.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:59:29 --> Too few arguments to function App\Controllers\Home::Cart(), 0 passed in C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 242.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:00:32 --> syntax error, unexpected token "[", expecting ")"
+in APPPATH\Controllers\Home.php on line 241.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:00:43 --> syntax error, unexpected token "(", expecting ")"
+in APPPATH\Controllers\Home.php on line 241.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:10:27 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(202): view('Home/Cart.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:12:07 --> Undefined variable $component_model
+in APPPATH\Controllers\Home.php on line 245.
+ 1 APPPATH\Controllers\Home.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $component_model', 'APPPATH\\Controllers\\Home.php', 245)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:12:41 --> Undefined variable $item
+in APPPATH\Views\Home\Cart.php on line 41.
+ 1 APPPATH\Views\Home\Cart.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\Home\\Cart.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(249): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:13:05 --> Undefined array key "ProductImage"
+in APPPATH\Views\Home\Cart.php on line 41.
+ 1 APPPATH\Views\Home\Cart.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductImage"', 'APPPATH\\Views\\Home\\Cart.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(249): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:14:07 --> Undefined array key "quantity"
+in APPPATH\Views\Home\Cart.php on line 44.
+ 1 APPPATH\Views\Home\Cart.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'APPPATH\\Views\\Home\\Cart.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(249): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:32:09 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 248.
+ 1 APPPATH\Controllers\Home.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:37:00 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 258.
+ 1 APPPATH\Controllers\Home.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 258)
+ 2 APPPATH\Controllers\Home.php(248): App\Controllers\Home->getCartData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:37:23 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 248.
+ 1 APPPATH\Controllers\Home.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:05:31 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Home.php on line 253.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:05:38 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(254): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:05:52 --> Undefined variable $query
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(254): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:11:21 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Home.php on line 250.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:12:54 --> syntax error, unexpected single-quoted string "productId", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Home.php on line 250.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:13:20 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Home.php on line 250.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:13:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Home.php on line 248.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:16:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Home.php on line 248.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:17:18 --> Undefined variable $record
+in APPPATH\Controllers\Home.php on line 249.
+ 1 APPPATH\Controllers\Home.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $record', 'APPPATH\\Controllers\\Home.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:17:44 --> Cannot use object of type mysqli as array
+in APPPATH\Controllers\Home.php on line 251.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:18:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Controllers\Home.php on line 249.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:25:00 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(254): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:25:09 --> Cannot use object of type mysqli as array
+in APPPATH\Views\Home\Cart.php on line 44.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(254): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:25:43 --> Cannot use object of type mysqli as array
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(254): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:29:36 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 261.
+ 1 APPPATH\Controllers\Home.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 261)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:30:31 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:30:40 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:30:57 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 44.
+ 1 APPPATH\Views\Home\Cart.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:31:12 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:31:21 --> Undefined variable $row
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:37:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::esult_array()
+in APPPATH\Controllers\Home.php on line 250.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:37:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Controllers\Home.php on line 250.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:43:38 --> Undefined variable $row
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(262): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:43:45 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(262): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:46:20 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 48.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(262): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:46:30 --> Undefined array key "ComponentId"
+in APPPATH\Views\Home\Cart.php on line 50.
+ 1 APPPATH\Views\Home\Cart.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ComponentId"', 'APPPATH\\Views\\Home\\Cart.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(262): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:46:45 --> Undefined array key "itemQuantity"
+in APPPATH\Views\Home\Cart.php on line 54.
+ 1 APPPATH\Views\Home\Cart.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "itemQuantity"', 'APPPATH\\Views\\Home\\Cart.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(263): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:47:35 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 54.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:47:42 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:49:37 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Home.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:50:42 --> syntax error, unexpected single-quoted string "ProductId", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Home.php on line 252.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 10:50:56 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:35:22 --> syntax error, unexpected variable "$cartRecord"
+in APPPATH\Controllers\Home.php on line 248.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:35:30 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:36:01 --> Array to string conversion
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 APPPATH\Views\Home\Cart.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Home\\Cart.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:36:11 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:38:16 --> Undefined array key "ProductId"
+in APPPATH\Views\Home\Cart.php on line 44.
+ 1 APPPATH\Views\Home\Cart.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductId"', 'APPPATH\\Views\\Home\\Cart.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:38:27 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:39:36 --> syntax error, unexpected token "."
+in APPPATH\Views\Home\Cart.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:39:48 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:40:32 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:40:50 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:40:54 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:42:20 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\Home\Cart.php on line 60.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:42:37 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:43:08 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:43:55 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 46.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:45:02 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 46.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:46:26 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(265): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:49:20 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 251.
+ 1 APPPATH\Controllers\Home.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 11:51:54 --> Undefined variable $component_model
+in APPPATH\Controllers\Home.php on line 245.
+ 1 APPPATH\Controllers\Home.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $component_model', 'APPPATH\\Controllers\\Home.php', 245)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:07:20 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 248.
+ 1 APPPATH\Controllers\Home.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:08:55 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 246.
+ 1 APPPATH\Controllers\Home.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 246)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:11:28 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 248.
+ 1 APPPATH\Controllers\Home.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:11:50 --> Too few arguments to function App\Controllers\Home::Cart(), 0 passed in C:\xampp\htdocs\DarshenFYP\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 241.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:17:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:40:53 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Home.php on line 248.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:41:09 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 247.
+ 1 APPPATH\Controllers\Home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:41:37 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 247.
+ 1 APPPATH\Controllers\Home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:43:06 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 247.
+ 1 APPPATH\Controllers\Home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:44:12 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 252.
+ 1 APPPATH\Controllers\Home.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:44:24 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(252): view('Home/Cart.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:45:09 --> Undefined array key "ProductId"
+in APPPATH\Controllers\Home.php on line 247.
+ 1 APPPATH\Controllers\Home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductId"', 'APPPATH\\Controllers\\Home.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:45:33 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 247.
+ 1 APPPATH\Controllers\Home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:46:13 --> syntax error, unexpected token "foreach", expecting ")"
+in APPPATH\Controllers\Home.php on line 247.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:46:36 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 247.
+ 1 APPPATH\Controllers\Home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:46:56 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Home.php on line 248.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 12:47:00 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 247.
+ 1 APPPATH\Controllers\Home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:57:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:57:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:58:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:58:27 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 228.
+ 1 APPPATH\Controllers\Home.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 228)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:58:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:58:45 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 227.
+ 1 APPPATH\Controllers\Home.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:58:52 --> Undefined variable $cart
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(227): view('Home/Cart.php')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:59:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 13:59:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:04:37 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Home.php on line 248.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:05:59 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Home.php on line 252.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:06:12 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 252.
+ 1 APPPATH\Controllers\Home.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:07:25 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 251.
+ 1 APPPATH\Controllers\Home.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:11:09 --> Undefined variable $item
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 APPPATH\Views\Home\Cart.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\Home\\Cart.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(255): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:19:45 --> Unmatched '}'
+in APPPATH\Views\Home\Cart.php on line 56.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:20:01 --> Unclosed '{' on line 47
+in APPPATH\Views\Home\Cart.php on line 70.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:24:46 --> Undefined variable $data
+in APPPATH\Views\Home\Cart.php on line 45.
+ 1 APPPATH\Views\Home\Cart.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\Home\\Cart.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:26:11 --> Undefined variable $ProductId
+in APPPATH\Controllers\Home.php on line 250.
+ 1 APPPATH\Controllers\Home.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProductId', 'APPPATH\\Controllers\\Home.php', 250)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:26:19 --> Undefined variable $productCart
+in APPPATH\Views\Home\Cart.php on line 47.
+ 1 APPPATH\Views\Home\Cart.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productCart', 'APPPATH\\Views\\Home\\Cart.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(257): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:27:22 --> Undefined array key "ProductId"
+in APPPATH\Controllers\Home.php on line 252.
+ 1 APPPATH\Controllers\Home.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductId"', 'APPPATH\\Controllers\\Home.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:28:27 --> Undefined variable $item
+in APPPATH\Controllers\Home.php on line 248.
+ 1 APPPATH\Controllers\Home.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Controllers\\Home.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:28:52 --> Undefined array key "ProductId"
+in APPPATH\Controllers\Home.php on line 248.
+ 1 APPPATH\Controllers\Home.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductId"', 'APPPATH\\Controllers\\Home.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:29:04 --> Undefined array key "ProductId"
+in APPPATH\Controllers\Home.php on line 248.
+ 1 APPPATH\Controllers\Home.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductId"', 'APPPATH\\Controllers\\Home.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:31:25 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Home.php on line 250.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:43:04 --> syntax error, unexpected identifier "cart", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 253.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:43:19 --> syntax error, unexpected variable "$productItem", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 255.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:43:39 --> syntax error, unexpected variable "$productItem", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 255.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:44:24 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 256.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:45:28 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 256.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:49:34 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 254.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:51:11 --> syntax error, unexpected double-quote mark, expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 253.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:51:52 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 253.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:51:54 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 253.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:52:15 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 253.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:53:07 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 253.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:56:43 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 250.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:02:19 --> syntax error, unexpected variable "$productItem", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 259.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:02:22 --> syntax error, unexpected variable "$productItem", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 259.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:06:22 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\Home\Cart.php on line 49.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(260): view('Home/Cart.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:08:46 --> syntax error, unexpected token "echo", expecting "function" or "const"
+in APPPATH\Controllers\Home.php on line 256.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:09:08 --> syntax error, unexpected token "echo", expecting "function" or "const"
+in APPPATH\Controllers\Home.php on line 256.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:09:39 --> syntax error, unexpected token "echo", expecting "function" or "const"
+in APPPATH\Controllers\Home.php on line 256.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:09:42 --> syntax error, unexpected token "echo", expecting "function" or "const"
+in APPPATH\Controllers\Home.php on line 256.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Cart')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Cart')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:10:17 --> Undefined variable $item
+in APPPATH\Views\Home\Cart.php on line 46.
+ 1 APPPATH\Views\Home\Cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\Home\\Cart.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(255): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:10:28 --> Class "product_model" not found
+in APPPATH\Views\Home\Cart.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(255): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:10:44 --> syntax error, unexpected token "use"
+in APPPATH\Views\Home\Cart.php on line 46.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 3 APPPATH\Controllers\Home.php(255): view('Home/Cart.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:12:00 --> Class "product_model" not found
+in APPPATH\Views\Home\Cart.php on line 48.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 4 APPPATH\Controllers\Home.php(255): view('Home/Cart.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:24:20 --> Cannot use [] for reading
+in APPPATH\Controllers\Home.php on line 256.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-11 15:24:49 --> Undefined variable $items
+in APPPATH\Controllers\Home.php on line 256.
+ 1 APPPATH\Controllers\Home.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Controllers\\Home.php', 256)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:27:28 --> Undefined variable $productValue
+in APPPATH\Controllers\Home.php on line 252.
+ 1 APPPATH\Controllers\Home.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productValue', 'APPPATH\\Controllers\\Home.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:36:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:41:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:41:51 --> Undefined array key "PromotionId"
+in APPPATH\Controllers\Home.php on line 274.
+ 1 APPPATH\Controllers\Home.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionId"', 'APPPATH\\Controllers\\Home.php', 274)
+ 2 APPPATH\Controllers\Home.php(253): App\Controllers\Home->exists2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:43:09 --> Undefined array key "PromotionId"
+in APPPATH\Controllers\Home.php on line 274.
+ 1 APPPATH\Controllers\Home.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionId"', 'APPPATH\\Controllers\\Home.php', 274)
+ 2 APPPATH\Controllers\Home.php(253): App\Controllers\Home->exists2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:43:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:43:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:43:18 --> Undefined array key "PromotionId"
+in APPPATH\Controllers\Home.php on line 274.
+ 1 APPPATH\Controllers\Home.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionId"', 'APPPATH\\Controllers\\Home.php', 274)
+ 2 APPPATH\Controllers\Home.php(253): App\Controllers\Home->exists2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:43:47 --> Undefined array key "PromotionId"
+in APPPATH\Controllers\Home.php on line 274.
+ 1 APPPATH\Controllers\Home.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionId"', 'APPPATH\\Controllers\\Home.php', 274)
+ 2 APPPATH\Controllers\Home.php(253): App\Controllers\Home->exists2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:44:47 --> Undefined array key "PromotionId"
+in APPPATH\Controllers\Home.php on line 274.
+ 1 APPPATH\Controllers\Home.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionId"', 'APPPATH\\Controllers\\Home.php', 274)
+ 2 APPPATH\Controllers\Home.php(253): App\Controllers\Home->exists2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:44:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:44:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:45:01 --> Undefined variable $items
+in APPPATH\Views\Home\Cart.php on line 38.
+ 1 APPPATH\Views\Home\Cart.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\Home\\Cart.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(288): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:45:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:45:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:46:00 --> Undefined array key "PromotionId"
+in APPPATH\Controllers\Home.php on line 274.
+ 1 APPPATH\Controllers\Home.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PromotionId"', 'APPPATH\\Controllers\\Home.php', 274)
+ 2 APPPATH\Controllers\Home.php(253): App\Controllers\Home->exists2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:49:22 --> Undefined variable $item
+in APPPATH\Controllers\Home.php on line 262.
+ 1 APPPATH\Controllers\Home.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Controllers\\Home.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:49:54 --> Undefined variable $item
+in APPPATH\Controllers\Home.php on line 262.
+ 1 APPPATH\Controllers\Home.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Controllers\\Home.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:50:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:50:32 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:50:33 --> Undefined variable $item
+in APPPATH\Controllers\Home.php on line 262.
+ 1 APPPATH\Controllers\Home.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Controllers\\Home.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:52:01 --> Undefined variable $cart
+in APPPATH\Controllers\Home.php on line 263.
+ 1 APPPATH\Controllers\Home.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Home.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->AddCart2('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:54:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:54:03 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:54:05 --> array_values(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 284.
+ 1 APPPATH\Controllers\Home.php(284): array_values(null)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:54:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:54:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:55:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\ProductDetails.php on line 21.
+ 1 APPPATH\Views\Home\ProductDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\ProductDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\ProductDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/ProductDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(176): view('Home/ProductDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ProductDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:55:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:57:19 --> array_values(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 283.
+ 1 APPPATH\Controllers\Home.php(283): array_values(null)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:57:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:57:51 --> array_values(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 283.
+ 1 APPPATH\Controllers\Home.php(283): array_values(null)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 16:20:22 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\PromotionDetails.php on line 21.
+ 1 APPPATH\Views\Home\PromotionDetails.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Home\\PromotionDetails.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\PromotionDetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/PromotionDetails.php', [], true)
+ 5 APPPATH\Controllers\Home.php(193): view('Home/PromotionDetails.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->PromotionDetails('FCPATH\\assets', 'images', 'profile-header.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 16:20:38 --> Undefined array key "ProductName"
+in APPPATH\Views\Home\Cart.php on line 43.
+ 1 APPPATH\Views\Home\Cart.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductName"', 'APPPATH\\Views\\Home\\Cart.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\Cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Cart.php', [], true)
+ 5 APPPATH\Controllers\Home.php(262): view('Home/Cart.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Cart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

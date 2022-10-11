@@ -8,6 +8,7 @@ use App\Models\promotion_model;
 use App\Models\component_model;
 use App\Models\gpu_model;
 use App\Models\cpu_model;
+use App\Models\cart_model;
 
 class Home extends BaseController
 {
@@ -239,7 +240,23 @@ public function AddCart1($ProductId){
 
     public function Cart()
     {
-      $data['items'] = array_values(session('cart'));
+      $id = session('id');
+      $cart_model = new cart_model();
+      $data['cart'] = $cart_model->where('id', $id)->findAll();
+      foreach($data['cart'] as $item){
+
+         $productValue = $item["ProductId"];
+
+         $product_model = new product_model();
+         $data['productCart'] = $product_model->where('ProductId', $productValue)->findAll();
+
+         foreach($data['productCart'] as $productItem){
+
+          echo $productItem["ProductName"];
+         }
+
+      }
+
 
 
       echo view("sections/Header.php");
@@ -247,5 +264,7 @@ public function AddCart1($ProductId){
 
 
        }
+
+
 
 }
