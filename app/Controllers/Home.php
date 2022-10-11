@@ -251,20 +251,12 @@ public function AddCart1($ProductId){
          $data['productCart'] = $product_model->where('ProductId', $productValue)->findAll();
 
          foreach($data['productCart'] as $productItem){
-
+           //Prints out the product name
           echo $productItem["ProductName"];
          }
-
       }
-
-
-
+      // Unable to pass value outside loop
       echo view("sections/Header.php");
       return view("Home/Cart.php",$data);
-
-
        }
-
-
-
 }

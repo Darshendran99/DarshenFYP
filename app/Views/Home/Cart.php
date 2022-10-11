@@ -40,10 +40,19 @@
                    <tr>
 
                      <td class="counterCell"></td>
-                     <td><?php echo $cart["ProductId"]; ?></td>
-
-
-
+                     <td></td>
+                     <?php if ($cart["ProductId"] != ""){ ?>
+                       <td><?php echo $cart["ProductId"]; ?></td>
+                    <?php } ?>
+                    <?php if ($cart["PromotionId"] != ""){ ?>
+                      <td><?php echo $cart["PromotionId"]; ?></td>
+                    <?php } ?>
+                    <?php if ($cart["ComponentId"] != ""){ ?>
+                      <td><?php echo $cart["ComponentId"]; ?></td>
+                    <?php } ?>
+                      <td></td>
+                      <td><?php echo $cart["itemQuantity"]; ?></td>
+                      <td><?php echo $cart["ItemTotalPrice"]; ?></td>
 
                    </tr>
 
