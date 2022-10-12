@@ -40,19 +40,20 @@
                    <tr>
 
                      <td class="counterCell"></td>
-                     <td></td>
-                     <?php if ($cart["ProductId"] != ""){ ?>
-                       <td><?php echo $cart["ProductId"]; ?></td>
-                    <?php } ?>
-                    <?php if ($cart["PromotionId"] != ""){ ?>
-                      <td><?php echo $cart["PromotionId"]; ?></td>
-                    <?php } ?>
-                    <?php if ($cart["ComponentId"] != ""){ ?>
-                      <td><?php echo $cart["ComponentId"]; ?></td>
-                    <?php } ?>
-                      <td></td>
-                      <td><?php echo $cart["itemQuantity"]; ?></td>
-                      <td><?php echo $cart["ItemTotalPrice"]; ?></td>
+
+                       <?php if ($cart["ProductId"] != ""){ ?>
+                          <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($cart["itemImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
+                          <?php } ?>
+                       <?php if ($cart["PromotionId"] != ""){ ?>
+                         <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($cart["itemImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
+                        <?php } ?>
+                      <?php if ($cart["ComponentId"] != ""){ ?>
+                        <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($cart["itemImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
+                        <?php } ?>
+                        <td><?php echo $cart["itemName"]; ?></td>
+                        <td>RM <?php echo $cart["itemPrice"]; ?></td>
+                        <td><?php echo $cart["itemQuantity"]; ?></td>
+                        <td>RM <?php echo round(($cart["itemPrice"] * $cart["itemQuantity"]));?></td>
 
                    </tr>
 

@@ -198,64 +198,75 @@ public function AddCart1($ProductId){
   if (session()->get('isLoggedIn')){
 
       $product_model = new product_model();
-      $theItem = $product_model->find($ProductId);
-      $item = array(
-            'ProductId' => $theItem['ProductId'],
-            'ProductName' => $theItem['ProductName'],
-            'ProductImage' => $theItem['ProductImage'],
-            'ProductPrice' => $theItem['ProductPrice'],
-            'quantity' => 1,
-      );
-      $session = session();
-        if ($session->has('cart')){
-          $index = $this->exists($ProductId);
-          $cart = array_values(session('cart'));
-          if($index == -1){
-            array_push($cart, $item);
-          }else{
-            $cart[$index]['quantity']++;
-          }
-          $session->set('cart', $cart);
-        }else {
-          $cart = array($item);
-          $session->set('cart', $cart);
-        }
-          return $this->response->redirect(site_url('Cart'));
+      $data['product'] = $product_model->where('ProductId', $ProductId)->findAll();
+      $productCartitem = $data['product'];
+
+      $cart_model = new cart_model();
+      foreach ($productCartitem as $productCartitem) {
+
+        $cartData1 = [
+          'uid' => session('id'),
+          'ProductId' => $productCartitem['ProductId'],
+          'itemName' => $productCartitem['ProductName'],
+          'itemImage' => $productCartitem['ProductImage'],
+          'itemPrice' => $productCartitem['ProductPrice'],
+        ];
+}
+        $result1 = $cart_model->save($cartData1);
+        if($result1) {
+        echo "Added To Cart.";
+      } else {
+        echo "Something went wrong";
+      }
+        return redirect()->to('Cart');
         }else {
           return redirect()->to('Login');
       }
 }
 
-      private function exists($ProductId){
-        $items = array_values(session('cart'));
-        for ($i=0; $i < count($items); $i++) {
-            if($items[$i]['ProductId'] == $ProductId){
-              return $i;
-            }
-        }
-        return -1;
+public function AddCart2($PromotionId){
+
+  if (session()->get('isLoggedIn')){
+
+      $promotion_model = new promotion_model();
+      $data['promotion'] = $promotion_model->where('PromotionId', $PromotionId)->findAll();
+      $promotionCartitem = $data['promotion'];
+
+      $cart_model = new cart_model();
+      foreach ($promotionCartitem as $promotionCartitem) {
+
+        $cartData2 = [
+
+          'uid' => session('id'),
+          'PromotionId' => $promotionCartitem['PromotionId'],
+          'itemName' => $promotionCartitem['PromotionName'],
+          'itemImage' => $promotionCartitem['PromotionImage'],
+          'itemPrice' => $promotionCartitem['PromotionPrice'],
+
+        ];
+
+}
+
+        $result2 = $cart_model->save($cartData2);
+
+        if($result2) {
+        echo "Added To Cart.";
+      } else {
+        echo "Something went wrong";
       }
 
-
+        return redirect()->to('Cart');
+        }else {
+          return redirect()->to('Login');
+      }
+}
 
     public function Cart()
     {
       $id = session('id');
       $cart_model = new cart_model();
-      $data['cart'] = $cart_model->where('id', $id)->findAll();
-      foreach($data['cart'] as $item){
+      $data['cart'] = $cart_model->where('uid', $id)->findAll();
 
-         $productValue = $item["ProductId"];
-
-         $product_model = new product_model();
-         $data['productCart'] = $product_model->where('ProductId', $productValue)->findAll();
-
-         foreach($data['productCart'] as $productItem){
-           //Prints out the product name
-          echo $productItem["ProductName"];
-         }
-      }
-      // Unable to pass value outside loop
       echo view("sections/Header.php");
       return view("Home/Cart.php",$data);
        }
