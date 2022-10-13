@@ -19,6 +19,7 @@
 										<hr class="ComponentDivider">
 										<div class="ComponentItem">
 										<h5>Intel CPU:</h5>
+
 										<select id="intelCpu" onchange="update1()">
 											<option> -- Select an option -- </option>
 											<?php foreach ($component as $cpu => $intelCpu) { ?>
@@ -171,39 +172,30 @@
 							<option> -- Select an option -- </option>
 							<?php foreach ($component as $casing => $casing_) { ?>
 								<?php if ($casing_["ComponentType"] == "Casing") { ?>
-									<option value="<?php echo $casing_["ComponentId"]; ?>"><?php echo $casing_["ComponentName"]; ?></option>
+									<option id="casing_" value="<?php echo $casing_["ComponentId"]; ?>"><?php echo $casing_["ComponentName"]; ?></option>
 								<?php } } ?>
 						</select>
 						<br><br>
 					</div>
 					<br><br>
 					</div>
-					<div class="col-lg-12">
-						<div class="main-button">
-							<?php if (session()->get('isLoggedIn')): ?>
-									<a href="<?php echo base_url();?>/Home/Promotion">Add To Cart</a>
-							<?php else: ?>
-								<a href="<?php echo base_url();?>/Home/Login">Login to Add to Cart</a>
-							<?php endif; ?>
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
+
+
+          </div>
+          </div>
+          </div>
+
 					<div class="col-lg-4">
 						<div class="top-downloaded">
 							<div class="heading-section">
 								<h4 style="font-size: 25px; text-align: center;"><em>Your</em> Selected Options</h4>
 							</div>
 							<br>
-
+              <form class="" action="/AddCart3" method="post">
 						<ul>
 							<li>
-
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-
                 <input type="text" id="text1" readonly>
-
 							</li>
 
 							<li>
@@ -259,6 +251,23 @@
 
 						</div>
 					</div>
+
+          <div class="col-lg-12">
+            <div class="main-button">
+              <?php if (session()->get('isLoggedIn')): ?>
+                <div class="col-12 col-sm-4">
+                  <button type="submit" class="btn btn-primary">Add To Cart</button>
+                </div>
+                  </form>
+              <?php else: ?>
+                <a href="<?php echo base_url();?>/Home/Login">Login to Add to Cart</a>
+              <?php endif; ?>
+            </div>
+          </div>
+
+
+
+
 				</div>
 			</div>
 		</div>
