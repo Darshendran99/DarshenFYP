@@ -9,6 +9,7 @@ use App\Models\component_model;
 use App\Models\gpu_model;
 use App\Models\cpu_model;
 use App\Models\cart_model;
+use App\Models\payment_model;
 
 class Home extends BaseController
 {
@@ -205,6 +206,8 @@ public function AddCart1($ProductId){
         $cart_model = new cart_model();
         $data['cart'] = $cart_model->where('uid', $id)->findAll();
         $cart = $data['cart'];
+        // If table is empty, nothing in this foreach loop work
+        echo count($cart);  
         foreach ($cart as $cart ) {
 
           if ($productValidation['ProductName'] == $cart['itemName'] ) {
@@ -235,8 +238,6 @@ public function AddCart1($ProductId){
               echo $ProductId;
             }
 
-            // echo "Item already in Cart";
-            return redirect()->to();
 
           }else if ($productValidation['ProductName'] != $cart['itemName'] ) {
 
@@ -275,7 +276,6 @@ public function AddCart1($ProductId){
             } else {
               echo "Something went wrong";
             }
-            return redirect()->to('Cart');
           }
 
         }
@@ -284,7 +284,7 @@ public function AddCart1($ProductId){
 
 
 
-        return redirect()->to('Cart');
+        return redirect()->to();
         }else {
           return redirect()->to('Login');
       }
@@ -359,9 +359,6 @@ public function AddCart3()
 
 
 
-
-
-
     public function Cart()
     {
       $id = session('id');
@@ -371,4 +368,79 @@ public function AddCart3()
       echo view("sections/Header.php");
       return view("Home/Cart.php",$data);
        }
+
+       public function Payment()
+       {
+         $id = session('id');
+         $cart_model = new cart_model();
+         $data['cart'] = $cart_model->where('uid', $id)->findAll();
+
+
+
+         helper(['form']);
+
+         if ($this->request->getMethod() == 'post') {
+         //Validation
+         $rules = [
+           'name' => 'required|min_length[2]|max_length[25]|alpha_space',
+           'email' => 'required|min_length[6]|max_length[50]|valid_email',
+           'address' => 'required|min_length[10]|max_length[255]|alpha_numeric_punct',
+           'city' => 'required|min_length[4]|max_length[50]|alpha_space',
+           'state' => 'required|min_length[4]|max_length[50]|alpha',
+           'zip' => 'required|min_length[4]|max_length[50]|integer',
+           'cardname' => 'required|min_length[4]|max_length[26]|alpha',
+           'cardnumber' => 'required|min_length[14]|max_length[16]|integer',
+           'expmonth' => 'required|min_length[3]|max_length[9]|alpha',
+           'expyear' => 'required|min_length[3]|max_length[9]|integer',
+           'cvv' => 'required|min_length[3]|max_length[3]|integer',
+
+         ];
+
+         $PaymentAddress = $this->request->getVar('address').",".$this->request->getVar('city').",".$this->request->getVar('state').",".$this->request->getVar('zip');
+         $CardDetails = $this->request->getVar('cardname').",".$this->request->getVar('cardnumber').",".$this->request->getVar('expmonth').",".$this->request->getVar('expyear').",".$this->request->getVar('cvv');
+         $total_price_sum = $this->request->getVar('totalPrice');
+
+         if (! $this->validate($rules)) {
+           $data['validation'] = $this->validator;
+         }else{
+           $payment_model = new payment_model();
+
+           $newData = [
+             'userid' => session('id'),
+             'Name' => $this->request->getVar('name'),
+             'PaymentEmail' => $this->request->getVar('email'),
+             'PaymentAddress' => $PaymentAddress,
+             'CardDetails' => $CardDetails,
+             'PaymentTotal' => $total_price_sum,
+             'PaidItems' => $this->request->getVar('totalItem'),
+           ];
+           $paymentReward = $payment_model->save($newData);
+           if($paymentReward) {
+           echo "Added To Cart.";
+         } else {
+
+           echo "Something went wrong";
+         }
+         if ($total_price_sum > 6000) {
+           return redirect()->to();
+         }else{
+          return redirect()->to('');
+           }
+         }
+       }
+       echo view("sections/Header.php");
+       return view("Home/Payment.php",$data);
+
+         }
+
+
+      public function Game()
+      {
+        $data = [];
+
+        echo view("sections/Header.php");
+        echo view("Home/Game.php",$data);
+        echo view("sections/Footer.php");
+      }
+
 }

@@ -15,7 +15,7 @@
                 <a href="<?php echo base_url();?>/Home/Build_PC">View Order Status</a>
               </div>
               <div class="main-button" style=" float: right; margin-right: 20px;">
-                <a href="<?php echo base_url();?>/Home/Build_PC">CheckOut</a>
+                <a href="<?php echo base_url();?>/Home/Payment">CheckOut</a>
               </div>
             <?php endif; ?>
               <h4><em>Cart</em> Page</h4>
