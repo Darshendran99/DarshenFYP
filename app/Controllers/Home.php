@@ -202,64 +202,47 @@ public function AddCart1($ProductId){
       $data['product'] = $product_model->where('ProductId', $ProductId)->findAll();
       $productCartitem = $data['product'];
 
-      foreach ($productCartitem as $productValidation) {
+
         $cart_model = new cart_model();
-        $data['cart'] = $cart_model->where('uid', $id)->findAll();
+        $array = ['uid' => $id, 'ProductId' => $ProductId];
+        $data['cart'] = $cart_model->where($array)->findAll();
         $cart = $data['cart'];
-        // If table is empty, nothing in this foreach loop work
-        echo count($cart);  
-        foreach ($cart as $cart ) {
 
-          if ($productValidation['ProductName'] == $cart['itemName'] ) {
+        $NumberOfCartItem = count($cart);
 
-            $array = ['uid' => $id, 'ProductId' => $ProductId];
-            $data['updateCart'] = $cart_model->where($array)->findAll();
-            $updateCart = $data['updateCart'];
-            foreach ($updateCart as $updateCart ) {
-              $QuantityValue = $updateCart['itemQuantity'];
-              }
+        if ($NumberOfCartItem > 0 ) {
+          // Does not work
+          //   foreach ($cart as $cart ) {
+          //
+          //   $array = ['uid' => $id, 'ProductId' => $ProductId];
+          //   $data['updateCart'] = $cart_model->where($array)->findAll();
+          //   $updateCart = $data['updateCart'];
+          //   foreach ($updateCart as $updateCart ) {
+          //     $QuantityValue = $updateCart['itemQuantity'];
+          //     }
+          //
+          //     $Update_cart_model = new cart_model();
+          //     $Update_cart_model->set('itemQuantity', $QuantityValue + 1);
+          //     $Update_cart_model->where('id', $id);
+          //     $Update_cart_model->where('ProductId', $ProductId);
+          //     $updateResult = $Update_cart_model->update();
+          //
+          //
+          //     if($updateResult) {
+          //     echo "Added To Cart.";
+          //   } else {
+          //     echo "Something went wrong";
+          //     echo "<br>";
+          //     echo $QuantityValue + 1;
+          //     echo "<br>";
+          //     echo $id;
+          //     echo "<br>";
+          //     echo $ProductId;
+          //   }
+          // }
+          echo "Does not work";
+          }else {
 
-              $Update_cart_model = new cart_model();
-              $Update_cart_model->set('itemQuantity', $QuantityValue + 1);
-              $Update_cart_model->where('id', $id);
-              $Update_cart_model->where('ProductId', $ProductId);
-              $updateResult = $Update_cart_model->update();
-
-
-              if($updateResult) {
-              echo "Added To Cart.";
-            } else {
-              echo "Something went wrong";
-              echo "<br>";
-              echo $QuantityValue + 1;
-              echo "<br>";
-              echo $id;
-              echo "<br>";
-              echo $ProductId;
-            }
-
-
-          }else if ($productValidation['ProductName'] != $cart['itemName'] ) {
-
-            foreach ($productCartitem as $productCartitem) {
-              $cart_model = new cart_model();
-              $cartData1 = [
-                'uid' => session('id'),
-                'ProductId' => $productCartitem['ProductId'],
-                'itemName' => $productCartitem['ProductName'],
-                'itemImage' => $productCartitem['ProductImage'],
-                'itemPrice' => $productCartitem['ProductPrice'],
-              ];
-        }
-              $result1 = $cart_model->save($cartData1);
-              if($result1) {
-              echo "Added To Cart.";
-            } else {
-              echo "Something went wrong";
-            }
-
-
-          }else{
             foreach ($productCartitem as $productCartitem) {
               $cart_model = new cart_model();
               $cartData1 = [
@@ -277,14 +260,8 @@ public function AddCart1($ProductId){
               echo "Something went wrong";
             }
           }
+          return redirect()->to('Cart');
 
-        }
-
-      }
-
-
-
-        return redirect()->to();
         }else {
           return redirect()->to('Login');
       }
@@ -293,35 +270,69 @@ public function AddCart1($ProductId){
 public function AddCart2($PromotionId){
 
   if (session()->get('isLoggedIn')){
-
+      $id = session('id');
       $promotion_model = new promotion_model();
       $data['promotion'] = $promotion_model->where('PromotionId', $PromotionId)->findAll();
       $promotionCartitem = $data['promotion'];
 
-
-      foreach ($promotionCartitem as $promotionCartitem) {
         $cart_model = new cart_model();
-        $cartData2 = [
+        $array = ['uid' => $id, 'PromotionId' => $PromotionId];
+        $data['cart'] = $cart_model->where($array)->findAll();
+        $cart = $data['cart'];
 
-          'uid' => session('id'),
-          'PromotionId' => $promotionCartitem['PromotionId'],
-          'itemName' => $promotionCartitem['PromotionName'],
-          'itemImage' => $promotionCartitem['PromotionImage'],
-          'itemPrice' => $promotionCartitem['PromotionPrice'],
+        $NumberOfCartItem = count($cart);
 
-        ];
+        if ($NumberOfCartItem > 0 ) {
+          // Does not work
+          //   foreach ($cart as $cart ) {
+          //
+          //   $array = ['uid' => $id, 'PromotionId' => $PromotionId];
+          //   $data['updateCart'] = $cart_model->where($array)->findAll();
+          //   $updateCart = $data['updateCart'];
+          //   foreach ($updateCart as $updateCart ) {
+          //     $QuantityValue = $updateCart['itemQuantity'];
+          //     }
+          //
+          //     $Update_cart_model = new cart_model();
+          //     $Update_cart_model->set('itemQuantity', $QuantityValue + 1);
+          //     $Update_cart_model->where('id', $id);
+          //     $Update_cart_model->where('PromotionId', $PromotionId);
+          //     $updateResult = $Update_cart_model->update();
+          //
+          //
+          //     if($updateResult) {
+          //     echo "Added To Cart.";
+          //   } else {
+          //     echo "Something went wrong";
+          //     echo "<br>";
+          //     echo $QuantityValue + 1;
+          //     echo "<br>";
+          //     echo $id;
+          //     echo "<br>";
+          //     echo $PromotionId;
+          //   }
+          // }
+          echo "Does not work";
+          }else {
 
-}
-
-        $result2 = $cart_model->save($cartData2);
-
-        if($result2) {
-        echo "Added To Cart.";
-      } else {
-        echo "Something went wrong";
-      }
-
-        return redirect()->to('Cart');
+            foreach ($promotionCartitem as $promotionCartitem) {
+              $cart_model = new cart_model();
+              $cartData2 = [
+                'uid' => session('id'),
+                'PromotionId' => $promotionCartitem['PromotionId'],
+                'itemName' => $promotionCartitem['PromotionName'],
+                'itemImage' => $promotionCartitem['PromotionImage'],
+                'itemPrice' => $promotionCartitem['PromotionPrice'],
+              ];
+            }
+              $result2 = $cart_model->save($cartData2);
+              if($result2) {
+              echo "Added To Cart.";
+            } else {
+              echo "Something went wrong";
+            }
+          return redirect()->to('Cart');
+        }
         }else {
           return redirect()->to('Login');
       }

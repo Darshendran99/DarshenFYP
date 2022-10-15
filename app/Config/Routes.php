@@ -55,6 +55,7 @@ $routes->match(['get','post'],'Game', 'Home::Game');
 $routes->get('ProductDetails/(:num)', 'Home::ProductDetails/$1');
 $routes->get('PromotionDetails/(:num)', 'Home::PromotionDetails/$1');
 $routes->get('Home/AddCart1/(:num)', 'Home::AddCart1/$1');
+$routes->get('Home/AddCart2/(:num)', 'Home::AddCart2/$1');
 
 /*
  * --------------------------------------------------------------------
