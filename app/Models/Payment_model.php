@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 class Payment_model extends Model{
   protected $table = 'payment';
   protected $primaryKey = 'PaymentId';
-  protected $allowedFields = ['userid','Name','PaymentEmail','PaymentAddress','CardDetails','PaymentTotal','PaidItems'];
+  protected $allowedFields = ['userid','Name','PaymentEmail','PaymentAddress','CardDetails','PaymentTotal','PaidItems', 'paymentTime'];
   protected $beforeInsert = ['beforeInsert'];
 
   protected function beforeInsert(array $data){

@@ -10,6 +10,7 @@ use App\Models\gpu_model;
 use App\Models\cpu_model;
 use App\Models\cart_model;
 use App\Models\payment_model;
+use App\Models\order_model;
 
 class Home extends BaseController
 {
@@ -211,7 +212,11 @@ public function AddCart1($ProductId){
         $NumberOfCartItem = count($cart);
 
         if ($NumberOfCartItem > 0 ) {
-          // Does not work
+          //                 $deleteCart = new cart_model();
+                          // $data['post'] = $deleteCart->where('uid', $id)->delete();
+                          // $abc = $data['post'];
+
+                          
           //   foreach ($cart as $cart ) {
           //
           //   $array = ['uid' => $id, 'ProductId' => $ProductId];
@@ -283,7 +288,8 @@ public function AddCart2($PromotionId){
         $NumberOfCartItem = count($cart);
 
         if ($NumberOfCartItem > 0 ) {
-          // Does not work
+          // NEED PRIMARY KEY
+          //
           //   foreach ($cart as $cart ) {
           //
           //   $array = ['uid' => $id, 'PromotionId' => $PromotionId];
@@ -386,8 +392,6 @@ public function AddCart3()
          $cart_model = new cart_model();
          $data['cart'] = $cart_model->where('uid', $id)->findAll();
 
-
-
          helper(['form']);
 
          if ($this->request->getMethod() == 'post') {
@@ -410,6 +414,8 @@ public function AddCart3()
          $PaymentAddress = $this->request->getVar('address').",".$this->request->getVar('city').",".$this->request->getVar('state').",".$this->request->getVar('zip');
          $CardDetails = $this->request->getVar('cardname').",".$this->request->getVar('cardnumber').",".$this->request->getVar('expmonth').",".$this->request->getVar('expyear').",".$this->request->getVar('cvv');
          $total_price_sum = $this->request->getVar('totalPrice');
+         date_default_timezone_set("Asia/Kuala_Lumpur");
+         $paymentTime= date("Y-m-d H:i:s");
 
          if (! $this->validate($rules)) {
            $data['validation'] = $this->validator;
@@ -424,18 +430,61 @@ public function AddCart3()
              'CardDetails' => $CardDetails,
              'PaymentTotal' => $total_price_sum,
              'PaidItems' => $this->request->getVar('totalItem'),
+             'paymentTime' => $paymentTime,
            ];
            $paymentReward = $payment_model->save($newData);
+
+
            if($paymentReward) {
            echo "Added To Cart.";
-         } else {
+           echo "<br>";
 
-           echo "Something went wrong";
+           $checkPaymentID = new payment_model();
+           $array = ['userId' => $id, 'paymentTime' => $paymentTime];
+           $data['paymentDate'] = $checkPaymentID->where($array)->findAll();
+           $paymentDate = $data['paymentDate'];
+
+           foreach ($paymentDate as $paymentDate ) {
+             $orderPaymentId = $paymentDate["PaymentId"];
+           }
+
+           $order_model = new order_model();
+
+           $newOrderData = [
+             'userId' => session('id'),
+             'paymentId' => $orderPaymentId,
+             'shippingAddress' => $this->request->getVar('email'),
+             'shippingAddress' => $PaymentAddress,
+             'itemsOrdered' => $this->request->getVar('totalItem'),
+             'grandTotal' => $total_price_sum,
+             'orderStatus' => "0",
+
+           ];
+           $orderStatusResult = $order_model->save($newOrderData);
+              if($orderStatusResult) {
+                echo "Added To OrderTable.";
+                echo "<br>";
+
+                $deleteCart = new cart_model();
+                $data['post'] = $deleteCart->where('uid', $id)->delete();
+                $abc = $data['post'];
+                  if($abc) {
+                    echo "Removed items from cart";
+                  }else{
+                    echo "SQL Error";
+                  }
+
+              } else {
+                echo "Something went wrong when adding order";
+              }
+
+         } else {
+           echo "Something went wrong when completing payment";
          }
          if ($total_price_sum > 6000) {
-           return redirect()->to();
+           return redirect()->to('Game');
          }else{
-          return redirect()->to('');
+          return redirect()->to('OrderStatus');
            }
          }
        }
@@ -452,6 +501,16 @@ public function AddCart3()
         echo view("sections/Header.php");
         echo view("Home/Game.php",$data);
         echo view("sections/Footer.php");
+      }
+
+      public function OrderStatus()
+      {
+        $id = session('id');
+        $viewCart = new order_model();
+        $data['orderView'] = $viewCart->where('userId', $id)->findAll();
+
+        echo view("sections/Header.php");
+        return view("Home/OrderStatus.php",$data);
       }
 
 }

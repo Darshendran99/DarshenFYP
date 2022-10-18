@@ -12,7 +12,7 @@
 
               <?php if (session()->get('isLoggedIn')): ?>
               <div class="main-button" style=" float: left; margin-left: 20px;">
-                <a href="<?php echo base_url();?>/Home/Build_PC">View Order Status</a>
+                <a href="<?php echo base_url();?>/Home/OrderStatus">View Order Status</a>
               </div>
               <div class="main-button" style=" float: right; margin-right: 20px;">
                 <a href="<?php echo base_url();?>/Home/Payment">CheckOut</a>
