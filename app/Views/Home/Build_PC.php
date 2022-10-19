@@ -12,6 +12,7 @@
                 <div class="heading-section"style="text-align: center;">
                   <h4>Build <em>YOUR</em> PC</h4>
                 </div>
+                <form class="" action="/AddCart3" method="post">
 								<div class="row">
 									<!-- CPU -->
                   <div class="item">
@@ -20,8 +21,8 @@
 										<div class="ComponentItem">
 										<h5>Intel CPU:</h5>
 
-										<select id="intelCpu" onchange="update1()">
-											<option> -- Select an option -- </option>
+										<select name="intelCpu" id="intelCpu" onchange="update1()">
+											<option value=""> -- Select an option -- </option>
 											<?php foreach ($component as $cpu => $intelCpu) { ?>
 												<?php if ($intelCpu["ComponentType"] == "CPU") { ?>
 													<?php if ($intelCpu["ComponentBrand"] == "Intel") { ?>
@@ -30,8 +31,8 @@
 										</select>
 										<br><br>
 										<h5>AMD CPU:</h5>
-										<select id="amdCpu" onchange="update2()">
-											<option> -- Select an option -- </option>
+										<select name="amdCpu" id="amdCpu" onchange="update2()">
+											<option value=""> -- Select an option -- </option>
 											<?php foreach ($component as $cpu => $amdCpu) { ?>
 												<?php if ($amdCpu["ComponentType"] == "CPU") { ?>
 													<?php if ($amdCpu["ComponentBrand"] == "Amd") { ?>
@@ -48,8 +49,8 @@
 									<hr class="ComponentDivider">
 									<div class="ComponentItem">
 									<h5>Intel Motherboard:</h5>
-									<select id="intelMobo" onchange="update3()">
-										<option> -- Select an option -- </option>
+									<select name="intelMobo" id="intelMobo" onchange="update3()">
+										<option  name="amdCpu" value=""> -- Select an option -- </option>
 										<?php foreach ($component as $mobo => $intelMobo) { ?>
 											<?php if ($intelMobo["ComponentType"] == "Mobo") { ?>
 												<?php if ($intelMobo["ComponentBrand"] == "Intel") { ?>
@@ -58,8 +59,8 @@
 									</select>
 									<br><br>
 									<h5>AMD Motherboard:</h5>
-									<select id="amdMobo" onchange="update4()">
-										<option> -- Select an option -- </option>
+									<select name="amdMobo" id="amdMobo" onchange="update4()">
+										<option  name="amdCpu" value=""> -- Select an option -- </option>
 										<?php foreach ($component as $mobo => $amdMobo) { ?>
 											<?php if ($amdMobo["ComponentType"] == "Mobo") { ?>
 												<?php if ($amdMobo["ComponentBrand"] == "Amd") { ?>
@@ -76,8 +77,8 @@
 								<hr class="ComponentDivider">
 								<div class="ComponentItem">
 								<h5>Intel GPU:</h5>
-								<select id="intelGpu" onchange="update5()">
-									<option> -- Select an option -- </option>
+								<select name="intelGpu" id="intelGpu" onchange="update5()">
+									<option value=""> -- Select an option -- </option>
 									<?php foreach ($component as $gpu => $intelGpu) { ?>
 										<?php if ($intelGpu["ComponentType"] == "GPU") { ?>
 											<?php if ($intelGpu["ComponentBrand"] == "Intel") { ?>
@@ -86,8 +87,8 @@
 								</select>
 								<br><br>
 								<h5>AMD GPU:</h5>
-								<select id="amdGpu" onchange="update6()">
-									<option> -- Select an option -- </option>
+								<select name="amdGpu" id="amdGpu" onchange="update6()">
+									<option value=""> -- Select an option -- </option>
 									<?php foreach ($component as $gpu => $amdGpu) { ?>
 										<?php if ($amdGpu["ComponentType"] == "GPU") { ?>
 											<?php if ($amdGpu["ComponentBrand"] == "Amd") { ?>
@@ -96,8 +97,8 @@
 								</select>
 								<br><br>
 								<h5>NIVDIA GPU:</h5>
-								<select id="nvidiaGpu" onchange="update7()">
-									<option> -- Select an option -- </option>
+								<select name="nvidiaGpu" id="nvidiaGpu" onchange="update7()">
+									<option value=""> -- Select an option -- </option>
 									<?php foreach ($component as $gpu => $nvidiaGpu) { ?>
 										<?php if ($nvidiaGpu["ComponentType"] == "GPU") { ?>
 											<?php if ($nvidiaGpu["ComponentBrand"] == "NVIDIA") { ?>
@@ -114,8 +115,8 @@
 								<hr class="ComponentDivider">
 								<div class="ComponentItem">
 								<h5>Avaiable Options:</h5>
-								<select id="ram_" onchange="update8()">
-									<option> -- Select an option -- </option>
+								<select name="ram_" id="ram_" onchange="update8()">
+									<option value=""> -- Select an option -- </option>
 									<?php foreach ($component as $ram => $ram_) { ?>
 										<?php if ($ram_["ComponentType"] == "RAM") { ?>
 											<option value="<?php echo $ram_["ComponentId"]; ?>"><?php echo $ram_["ComponentName"]; ?></option>
@@ -132,8 +133,8 @@
 							<hr class="ComponentDivider">
 							<div class="ComponentItem">
 							<h5>Avaiable Options:</h5>
-							<select id="ssd_" onchange="update9()">
-								<option> -- Select an option -- </option>
+							<select name="ssd_" id="ssd_" onchange="update9()">
+								<option value=""> -- Select an option -- </option>
 								<?php foreach ($component as $ssd => $ssd_) { ?>
 									<?php if ($ssd_["ComponentType"] == "SSD") { ?>
 										<option value="<?php echo $ssd_["ComponentId"]; ?>"><?php echo $ssd_["ComponentName"]; ?></option>
@@ -150,8 +151,8 @@
 						<hr class="ComponentDivider">
 						<div class="ComponentItem">
 						<h5>Avaiable Options:</h5>
-						<select id="psu_" onchange="update10()">
-							<option> -- Select an option -- </option>
+						<select name="psu_" id="psu_" onchange="update10()">
+							<option value=""> -- Select an option -- </option>
 							<?php foreach ($component as $psu => $psu_) { ?>
 								<?php if ($psu_["ComponentType"] == "PSU") { ?>
 									<option value="<?php echo $psu_["ComponentId"]; ?>"><?php echo $psu_["ComponentName"]; ?></option>
@@ -168,18 +169,17 @@
 						<hr class="ComponentDivider">
 						<div class="ComponentItem">
 						<h5>Avaiable Options:</h5>
-						<select id="casing_" onchange="update11()">
-							<option> -- Select an option -- </option>
+						<select name="casing_" id="casing_" onchange="update11()">
+							<option value=""> -- Select an option -- </option>
 							<?php foreach ($component as $casing => $casing_) { ?>
 								<?php if ($casing_["ComponentType"] == "Casing") { ?>
 									<option id="casing_" value="<?php echo $casing_["ComponentId"]; ?>"><?php echo $casing_["ComponentName"]; ?></option>
-								<?php } } ?>
+                <?php } } ?>
 						</select>
 						<br><br>
 					</div>
 					<br><br>
 					</div>
-
 
           </div>
           </div>
@@ -191,7 +191,7 @@
 								<h4 style="font-size: 25px; text-align: center;"><em>Your</em> Selected Options</h4>
 							</div>
 							<br>
-              <form class="" action="/AddCart3" method="post">
+
 						<ul>
 							<li>
 								<img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
@@ -245,7 +245,7 @@
 
               <li>
                 <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
-                <input type="text" id="text11" readonly>
+                <input type="text" id="text11" name="text11" readonly>
               </li>
 						</ul>
 

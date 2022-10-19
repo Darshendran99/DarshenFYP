@@ -36,7 +36,7 @@
 				<!-- Product -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,<?php echo base64_encode($product["ProductImage"]); ?>" style="width:220px;height:200px;"/>
+						<img src="data:image/png;base64,<?php echo base64_encode($product["ProductImage"]); ?>" style="width:220px;height:200px;"/></img>
 						<h4> <?php echo $product["ProductName"]; ?> </h4>
 					  <h4>Product <span>Prebuilt Custom PC</span></h4>
 						<ul>
@@ -47,7 +47,7 @@
 				<!-- Promotion -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,<?php echo base64_encode($promotion["PromotionImage"]); ?>" style="width:220px;height:200px;"/>
+						<img src="data:image/png;base64,<?php echo base64_encode($promotion["PromotionImage"]); ?>" style="width:220px;height:200px;"/></img>
 						<h4> <?php echo $promotion["PromotionName"]; ?>	 </h4>
 						<h4>Promotion <span>Bang for the buck</span></h4>
 						<ul>
@@ -58,7 +58,7 @@
 				<!-- BuildYourPC -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,"/>
+						<img src="data:image/png;base64,"/></img>
 						<h4>  </h4>
 						<h4>BuildYourPC<span>Prebuilt Custom PC</span></h4>
 						<ul>
@@ -70,7 +70,7 @@
 				<!-- BuildYourPC -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,"/>
+						<img src="data:image/png;base64,"/></img>
 						<h4>  </h4>
 						<h4>More<span>Soon</span></h4>
 						<ul>

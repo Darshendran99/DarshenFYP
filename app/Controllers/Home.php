@@ -11,6 +11,7 @@ use App\Models\cpu_model;
 use App\Models\cart_model;
 use App\Models\payment_model;
 use App\Models\order_model;
+use App\Models\reward_model;
 
 class Home extends BaseController
 {
@@ -212,39 +213,28 @@ public function AddCart1($ProductId){
         $NumberOfCartItem = count($cart);
 
         if ($NumberOfCartItem > 0 ) {
-          //                 $deleteCart = new cart_model();
-                          // $data['post'] = $deleteCart->where('uid', $id)->delete();
-                          // $abc = $data['post'];
+            foreach ($cart as $cart ) {
 
-                          
-          //   foreach ($cart as $cart ) {
-          //
-          //   $array = ['uid' => $id, 'ProductId' => $ProductId];
-          //   $data['updateCart'] = $cart_model->where($array)->findAll();
-          //   $updateCart = $data['updateCart'];
-          //   foreach ($updateCart as $updateCart ) {
-          //     $QuantityValue = $updateCart['itemQuantity'];
-          //     }
-          //
-          //     $Update_cart_model = new cart_model();
-          //     $Update_cart_model->set('itemQuantity', $QuantityValue + 1);
-          //     $Update_cart_model->where('id', $id);
-          //     $Update_cart_model->where('ProductId', $ProductId);
-          //     $updateResult = $Update_cart_model->update();
-          //
-          //
-          //     if($updateResult) {
-          //     echo "Added To Cart.";
-          //   } else {
-          //     echo "Something went wrong";
-          //     echo "<br>";
-          //     echo $QuantityValue + 1;
-          //     echo "<br>";
-          //     echo $id;
-          //     echo "<br>";
-          //     echo $ProductId;
-          //   }
-          // }
+            $array = ['uid' => $id, 'ProductId' => $ProductId];
+            $data['updateCart'] = $cart_model->where($array)->findAll();
+            $updateCart = $data['updateCart'];
+            foreach ($updateCart as $updateCart ) {
+              $QuantityValue = $updateCart['itemQuantity'];
+              }
+
+              $Update_cart_model = new cart_model();
+              $Update_cart_model->set('itemQuantity', $QuantityValue + 1);
+              $Update_cart_model->where('uid', $id);
+              $Update_cart_model->where('ProductId', $ProductId);
+              $updateResult = $Update_cart_model->update();
+
+
+              if($updateResult) {
+              echo "Added To Cart.";
+            } else {
+              echo "Something went wrong";
+            }
+          }
           echo "Does not work";
           }else {
 
@@ -288,36 +278,28 @@ public function AddCart2($PromotionId){
         $NumberOfCartItem = count($cart);
 
         if ($NumberOfCartItem > 0 ) {
-          // NEED PRIMARY KEY
-          //
-          //   foreach ($cart as $cart ) {
-          //
-          //   $array = ['uid' => $id, 'PromotionId' => $PromotionId];
-          //   $data['updateCart'] = $cart_model->where($array)->findAll();
-          //   $updateCart = $data['updateCart'];
-          //   foreach ($updateCart as $updateCart ) {
-          //     $QuantityValue = $updateCart['itemQuantity'];
-          //     }
-          //
-          //     $Update_cart_model = new cart_model();
-          //     $Update_cart_model->set('itemQuantity', $QuantityValue + 1);
-          //     $Update_cart_model->where('id', $id);
-          //     $Update_cart_model->where('PromotionId', $PromotionId);
-          //     $updateResult = $Update_cart_model->update();
-          //
-          //
-          //     if($updateResult) {
-          //     echo "Added To Cart.";
-          //   } else {
-          //     echo "Something went wrong";
-          //     echo "<br>";
-          //     echo $QuantityValue + 1;
-          //     echo "<br>";
-          //     echo $id;
-          //     echo "<br>";
-          //     echo $PromotionId;
-          //   }
-          // }
+          foreach ($cart as $cart ) {
+
+          $array = ['uid' => $id, 'PromotionId' => $PromotionId];
+          $data['updateCart'] = $cart_model->where($array)->findAll();
+          $updateCart = $data['updateCart'];
+          foreach ($updateCart as $updateCart ) {
+            $QuantityValue = $updateCart['itemQuantity'];
+            }
+
+            $Update_cart_model = new cart_model();
+            $Update_cart_model->set('itemQuantity', $QuantityValue + 1);
+            $Update_cart_model->where('uid', $id);
+            $Update_cart_model->where('PromotionId', $PromotionId);
+            $updateResult = $Update_cart_model->update();
+
+
+            if($updateResult) {
+            echo "Added To Cart.";
+          } else {
+            echo "Something went wrong";
+          }
+        }
           echo "Does not work";
           }else {
 
@@ -337,8 +319,9 @@ public function AddCart2($PromotionId){
             } else {
               echo "Something went wrong";
             }
+            }
           return redirect()->to('Cart');
-        }
+
         }else {
           return redirect()->to('Login');
       }
@@ -351,30 +334,277 @@ public function AddCart3()
   helper(['form']);
 
   if ($this->request->getMethod() == 'post') {
+// IntelCPU
+    $intelCpuComponent = $this->request->getVar('intelCpu');
+    if ($intelCpuComponent != ""){
+      $Componentmodel = new component_model();
+      $data['component1'] = $Componentmodel->where('ComponentId', $intelCpuComponent)->first();
+      $getComponentData1 = $data['component1'];
 
-    //Storing user registration into database
-    $ComponentCartmodel = new cart_model();
-
-    $newData = [
-      'ComponentId' => $this->request->getVar('text11'),
-
+    $ComponentCartmodel1 = new cart_model();
+    $cartData3 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData1['ComponentId'],
+      'itemName' => $getComponentData1['ComponentName'],
+      'itemImage' => $getComponentData1['ComponentImage'],
+      'itemPrice' => $getComponentData1['ComponentPrice'],
     ];
 
-    $ComponentResult = $ComponentCartmodel->save($newData);
-    if($ComponentResult) {
-    echo "Added To Cart.";
+    $ComponentResult1 = $ComponentCartmodel1->save($cartData3);
+    if($ComponentResult1) {
+    echo "Intel CPU Added To Cart.";
+    echo "<br>";
   } else {
     echo "Something went wrong";
   }
-    return redirect()->to();
+}
+// AMD CPU
+
+    $amdCpuComponent = $this->request->getVar('amdCpu');
+
+    if ($amdCpuComponent != ""){
+      $Componentmodel2 = new component_model();
+      $data['component2'] = $Componentmodel2->where('ComponentId', $amdCpuComponent)->first();
+      $getComponentData2 = $data['component2'];
+
+    $ComponentCartmodel2 = new cart_model();
+    $cartData4 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData2['ComponentId'],
+      'itemName' => $getComponentData2['ComponentName'],
+      'itemImage' => $getComponentData2['ComponentImage'],
+      'itemPrice' => $getComponentData2['ComponentPrice'],
+    ];
+
+    $ComponentResult2 = $ComponentCartmodel2->save($cartData4);
+    if($ComponentResult2) {
+    echo "AMD CPU Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// Intel Motherboard
+    $intelMoboComponent = $this->request->getVar('intelMobo');
+
+    if ($intelMoboComponent != ""){
+      $Componentmodel3 = new component_model();
+      $data['component3'] = $Componentmodel3->where('ComponentId', $intelMoboComponent)->first();
+      $getComponentData3 = $data['component3'];
+
+    $ComponentCartmodel3 = new cart_model();
+    $cartData5 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData3['ComponentId'],
+      'itemName' => $getComponentData3['ComponentName'],
+      'itemImage' => $getComponentData3['ComponentImage'],
+      'itemPrice' => $getComponentData3['ComponentPrice'],
+    ];
+
+    $ComponentResult3 = $ComponentCartmodel3->save($cartData5);
+    if($ComponentResult3) {
+    echo "Intel Motherboard Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// AMD Motherboard
+    $amdMoboComponent = $this->request->getVar('amdMobo');
+    if ($amdMoboComponent != ""){
+      $Componentmodel4 = new component_model();
+      $data['component4'] = $Componentmodel4->where('ComponentId', $amdMoboComponent)->first();
+      $getComponentData4 = $data['component4'];
+
+    $ComponentCartmodel4 = new cart_model();
+    $cartData6 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData4['ComponentId'],
+      'itemName' => $getComponentData4['ComponentName'],
+      'itemImage' => $getComponentData4['ComponentImage'],
+      'itemPrice' => $getComponentData4['ComponentPrice'],
+    ];
+
+    $ComponentResult4 = $ComponentCartmodel4->save($cartData6);
+    if($ComponentResult4) {
+    echo "AMD Motherboard Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// Intel GPU
+    $intelGpuComponent = $this->request->getVar('intelGpu');
+    if ($intelGpuComponent != ""){
+      $Componentmodel5 = new component_model();
+      $data['component5'] = $Componentmodel5->where('ComponentId', $intelGpuComponent)->first();
+      $getComponentData5 = $data['component5'];
+
+    $ComponentCartmodel5 = new cart_model();
+    $cartData7 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData5['ComponentId'],
+      'itemName' => $getComponentData5['ComponentName'],
+      'itemImage' => $getComponentData5['ComponentImage'],
+      'itemPrice' => $getComponentData5['ComponentPrice'],
+    ];
+
+    $ComponentResult5 = $ComponentCartmodel5->save($cartData7);
+    if($ComponentResult5) {
+    echo "Intel GPU Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// AMD GPU
+    $amdGpuComponent = $this->request->getVar('amdGpu');
+    if ($amdGpuComponent != ""){
+      $Componentmodel6 = new component_model();
+      $data['component6'] = $Componentmodel6->where('ComponentId', $amdGpuComponent)->first();
+      $getComponentData6 = $data['component6'];
+
+    $ComponentCartmodel6 = new cart_model();
+    $cartData7 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData6['ComponentId'],
+      'itemName' => $getComponentData6['ComponentName'],
+      'itemImage' => $getComponentData6['ComponentImage'],
+      'itemPrice' => $getComponentData6['ComponentPrice'],
+    ];
+
+    $ComponentResult6 = $ComponentCartmodel6->save($cartData7);
+    if($ComponentResult6) {
+    echo "AMD GPU Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// NIVDIA GPU
+    $nvidiaGpuComponent = $this->request->getVar('nvidiaGpu');
+    if ($nvidiaGpuComponent != ""){
+      $Componentmodel6 = new component_model();
+      $data['component7'] = $Componentmodel6->where('ComponentId', $nvidiaGpuComponent)->first();
+      $getComponentData7 = $data['component7'];
+
+    $ComponentCartmodel7 = new cart_model();
+    $cartData8 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData7['ComponentId'],
+      'itemName' => $getComponentData7['ComponentName'],
+      'itemImage' => $getComponentData7['ComponentImage'],
+      'itemPrice' => $getComponentData7['ComponentPrice'],
+    ];
+
+    $ComponentResult7 = $ComponentCartmodel7->save($cartData8);
+    if($ComponentResult7) {
+    echo "NIVDIA GPU Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// RAM
+    $ram_Component = $this->request->getVar('ram_');
+    if ($ram_Component != ""){
+      $Componentmodel7 = new component_model();
+      $data['component8'] = $Componentmodel7->where('ComponentId', $ram_Component)->first();
+      $getComponentData7 = $data['component8'];
+
+    $ComponentCartmodel8 = new cart_model();
+    $cartData9 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData7['ComponentId'],
+      'itemName' => $getComponentData7['ComponentName'],
+      'itemImage' => $getComponentData7['ComponentImage'],
+      'itemPrice' => $getComponentData7['ComponentPrice'],
+    ];
+
+    $ComponentResult8 = $ComponentCartmodel8->save($cartData9);
+    if($ComponentResult8) {
+    echo "RAM Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// SSD
+    $ssd_Component = $this->request->getVar('ssd_');
+    if ($ssd_Component != ""){
+      $Componentmodel8 = new component_model();
+      $data['component9'] = $Componentmodel8->where('ComponentId', $ssd_Component)->first();
+      $getComponentData8 = $data['component9'];
+
+    $ComponentCartmodel9 = new cart_model();
+    $cartData10 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData8['ComponentId'],
+      'itemName' => $getComponentData8['ComponentName'],
+      'itemImage' => $getComponentData8['ComponentImage'],
+      'itemPrice' => $getComponentData8['ComponentPrice'],
+    ];
+
+    $ComponentResult9 = $ComponentCartmodel9->save($cartData10);
+    if($ComponentResult9) {
+    echo "SSD Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// PSU
+    $psu_Component = $this->request->getVar('psu_');
+    if ($psu_Component != ""){
+      $Componentmodel9 = new component_model();
+      $data['component10'] = $Componentmodel9->where('ComponentId', $psu_Component)->first();
+      $getComponentData9 = $data['component10'];
+
+    $ComponentCartmodel10 = new cart_model();
+    $cartData11 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData9['ComponentId'],
+      'itemName' => $getComponentData9['ComponentName'],
+      'itemImage' => $getComponentData9['ComponentImage'],
+      'itemPrice' => $getComponentData9['ComponentPrice'],
+    ];
+
+    $ComponentResult10 = $ComponentCartmodel10->save($cartData11);
+    if($ComponentResult10) {
+    echo "PSU Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+// Casing
+    $casing_Component = $this->request->getVar('casing_');
+    if ($casing_Component != ""){
+      $Componentmodel10 = new component_model();
+      $data['component11'] = $Componentmodel10->where('ComponentId', $casing_Component)->first();
+      $getComponentData10 = $data['component11'];
+
+    $ComponentCartmodel11 = new cart_model();
+    $cartData12 = [
+      'uid' => session('id'),
+      'ComponentId' => $getComponentData10['ComponentId'],
+      'itemName' => $getComponentData10['ComponentName'],
+      'itemImage' => $getComponentData10['ComponentImage'],
+      'itemPrice' => $getComponentData10['ComponentPrice'],
+    ];
+
+    $ComponentResult11 = $ComponentCartmodel11->save($cartData12);
+    if($ComponentResult11) {
+    echo "Casing Added To Cart.";
+    echo "<br>";
+  } else {
+    echo "Something went wrong";
+  }
+}
+    return redirect()->to('Cart');
   }
 
-
-
-
 }
-
-
 
     public function Cart()
     {
@@ -496,11 +726,11 @@ public function AddCart3()
 
       public function Game()
       {
-        $data = [];
+        $reward_model = new reward_model();
+        $data['reward'] = $reward_model->orderBy('RewardScore', 'ASC') ->findAll();
 
         echo view("sections/Header.php");
-        echo view("Home/Game.php",$data);
-        echo view("sections/Footer.php");
+        return view("Home/Game.php",$data);
       }
 
       public function OrderStatus()
