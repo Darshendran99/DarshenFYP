@@ -6,9 +6,9 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "#EC6090", 10, 200);
+    myGamePiece = new component(28, 28, "#EC6090", 10, 200);
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "yellow", 300, 20, "text");
+    myScore = new component();
     myGameArea.start();
     btn.style.display = 'none';
 
@@ -86,6 +86,7 @@ function component(width, height, color, x, y, type) {
         if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
             crash = false;
         }
+        document.getElementById("theScore").innerHTML = myScore.text;
         return crash;
     }
 }
@@ -118,6 +119,7 @@ function updateGameArea() {
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
+
 }
 
 function everyinterval(n) {
