@@ -21,42 +21,42 @@
             <div class="col-12 col-sm-6">
               <div class="form-group">
                <label for="firstname">First Name</label>
-               <input type="text" class="form-control" name="firstname" id="firstname" value="<?= set_value('firstname') ?>">
+               <input type="text" class="form-control" name="firstname" id="firstname" value="<?= set_value('firstname') ?>"> </input>
               </div>
             </div>
 
             <div class="col-12 col-sm-6">
               <div class="form-group">
                <label for="lastname">Last Name</label>
-               <input type="text" class="form-control" name="lastname" id="lastname" value="<?= set_value('lastname') ?>">
+               <input type="text" class="form-control" name="lastname" id="lastname" value="<?= set_value('lastname') ?>"> </input>
               </div>
             </div>
 
 						<div class="col-12">
               <div class="form-group">
-               <label for="email">Address</label>
-               <input type="text" class="form-control" name="address" id="address" value="<?= set_value('address') ?>">
+               <label for="address">Address</label>
+               <input type="text" class="form-control" name="address" id="address" value="<?= set_value('address') ?>"> </input>
               </div>
             </div>
 
 						<div class="col-12">
               <div class="form-group">
                <label for="email">Email</label>
-               <input type="text" class="form-control" name="email" id="email" value="<?= set_value('email') ?>">
+               <input type="text" class="form-control" name="email" id="email" value="<?= set_value('email') ?>"></input>
               </div>
             </div>
 
             <div class="col-12 col-sm-6">
               <div class="form-group">
                <label for="password">Password</label>
-               <input type="password" class="form-control" name="password" id="password" value="">
+               <input type="password" class="form-control" name="password" id="password" value=""> </input>
              </div>
            </div>
 
            <div class="col-12 col-sm-6">
              <div class="form-group">
               <label for="password_confirm">Confirm Password</label>
-              <input type="password" class="form-control" name="password_confirm" id="password_confirm" value="">
+              <input type="password" class="form-control" name="password_confirm" id="password_confirm" value=""> </input>
             </div>
           </div>
 

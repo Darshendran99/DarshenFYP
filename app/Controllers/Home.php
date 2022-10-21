@@ -788,4 +788,56 @@ public function AddCart3()
         return view("Home/OrderStatus.php",$data);
       }
 
+      public function AccountManagement()
+      {
+        $id = session('id');
+        $usermodel = new UserModel();
+        $data['users'] = $usermodel->where('id', $id)->first();
+
+        echo view("sections/Header.php");
+        return view("Home/AccountManagement.php",$data);
+      }
+
+      public function updateAccount()
+      {
+        $id = session('id');
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'firstname' => 'required|min_length[2]|max_length[25]',
+          'lastname' => 'required|min_length[2]|max_length[25]',
+          'address' => 'required|min_length[10]|max_length[255]',
+          'email' => 'required|min_length[6]|max_length[50]|valid_email',
+          'password' => 'required|min_length[8]|max_length[255]',
+          'password_confirm' => 'matches[password]',
+        ];
+
+        if (! $this->validate($rules)) {
+          $data['validation'] = $this->validator;
+        }else{
+          //Storing user registration into database
+          $updateUsermodel = new UserModel();
+
+          $newUserData = [
+            'firstname' => $this->request->getVar('firstname'),
+            'lastname' => $this->request->getVar('lastname'),
+            'address' => $this->request->getVar('address'),
+            'email' => $this->request->getVar('email'),
+            'password' => $this->request->getVar('password'),
+          ];
+          $updateUsermodel->set($newUserData);
+          $updateUsermodel->where('id', $id);
+          $updateUsermodelResult = $updateUsermodel->update();
+          if($updateUsermodelResult) {
+          echo "Updated";
+        } else {
+          echo "Something went wrong";
+        }
+        }
+        return redirect()->to('');
+        }
+      }
+
 }

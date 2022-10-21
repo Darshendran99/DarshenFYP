@@ -45,7 +45,7 @@
                           <li><a href="<?php echo base_url();?>/Home/Build_PC">Build Your PC</a></li>
                           <li><a href="<?php echo base_url();?>/Home/Cart">Check Cart</a></li>
                             <?php if (session()->get('isLoggedIn')): ?>
-                              <li><a href="<?php echo base_url();?>/Home/Cart">Account Management <img src=""></a></li>
+                              <li><a href="<?php echo base_url();?>/Home/AccountManagement">Account Management <img src=""></a></li>
                               <li><a href='/logout'>Logout</a></li>
                             <?php else: ?>
                               <li <?= ($uri->getSegment(1) == 'register' ? 'active' : null) ?>>
