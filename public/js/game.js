@@ -11,7 +11,6 @@ function startGame() {
     myScore = new component();
     myGameArea.start();
     btn.style.display = 'none';
-
 }
 
 var myGameArea = {
@@ -86,7 +85,6 @@ function component(width, height, color, x, y, type) {
         if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
             crash = false;
         }
-        document.getElementById("theScore").innerHTML = myScore.text;
         return crash;
     }
 }
@@ -115,11 +113,21 @@ function updateGameArea() {
         myObstacles[i].x += -1;
         myObstacles[i].update();
     }
-    myScore.text="SCORE: " + myGameArea.frameNo;
+    myScore.text= myGameArea.frameNo;
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
+    document.getElementById("theScore").innerHTML = myScore.text;
 
+    if (myScore.text > 500) {
+      document.getElementById("theRewards1").style.visibility = "visible";
+    }
+     if (myScore.text > 700) {
+      document.getElementById("theRewards2").style.visibility = "visible";
+    }
+     if (myScore.text > 1000) {
+      document.getElementById("theRewards3").style.visibility = "visible";
+    }
 }
 
 function everyinterval(n) {

@@ -1804,6 +1804,7 @@ margin-top: 2em;
   transition: all .3s;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .rewardBtn{
@@ -1833,4 +1834,8 @@ margin-top: 2em;
 }
 #theScore{
   text-align: center;
+}
+
+#theRewards1, #theRewards2, #theRewards3{
+  visibility: hidden;
 }

@@ -18,7 +18,7 @@
             <!-- JavaScript for Game -->
             <script type="text/javascript" src="<?php echo base_url('js/game.js'); ?>"></script>
             <br>
-            <button id="accButton" onmousedown="accelerate(-0.3)" onmouseup="accelerate(0.04)">Click on Button To Accelerate</button>
+            <button id="accButton" onmousedown="accelerate(-0.3)" onmouseup="accelerate(0.03)">Click on Button To Accelerate</button>
           </div>
         </div>
           <div class="col-lg-4">
@@ -28,13 +28,23 @@
                 <div class="item-reward">
                   <ul>
                     <!-- Score is stored here -->
-                    <li id="theScore" style="color: white; font-size: 25px;"> </li>
-                <?php foreach ($reward as $reward ): ?>
-                  <li>
-                  <img src="data:image/png;base64,<?php echo base64_encode($reward["RewardImage"]); ?>" style="width:75px;height:75px;"/></img>
-                  <button class="rewardBtn" value="<?php echo $reward["RewardScore"]; ?>"> <?php echo $reward["RewardName"]; ?> </button>
+                    <li id="theScore" style="color: white; font-size: 25px;"></li>
+                  </ul>
+                  <ul>
+
+                  <li id="theRewards1">
+                  <img src="data:image/png;base64,<?php echo base64_encode($rewardTier1["RewardImage"]); ?>" style="width:75px;height:75px;"/></img>
+                  <a class="rewardBtn" href="<?php echo base_url();?>/Home/GameReward/<?php echo $rewardTier1["RewardID"]; ?>"/><?php echo $rewardTier1["RewardName"]; ?></a>
                 </li>
-                <?php endforeach; ?>
+                <li id="theRewards2">
+                <img src="data:image/png;base64,<?php echo base64_encode($rewardTier2["RewardImage"]); ?>" style="width:75px;height:75px;"/></img>
+                <a class="rewardBtn" href="<?php echo base_url();?>/Home/GameReward/<?php echo $rewardTier2["RewardID"]; ?>"/><?php echo $rewardTier2["RewardName"]; ?></a>
+              </li>
+              <li id="theRewards3">
+              <img src="data:image/png;base64,<?php echo base64_encode($rewardTier3["RewardImage"]); ?>" style="width:75px;height:75px;"/></img>
+              <a class="rewardBtn" href="<?php echo base_url();?>/Home/GameReward/<?php echo $rewardTier3["RewardID"]; ?>"/><?php echo $rewardTier3["RewardName"]; ?></a>
+            </li>
+
               </ul>
               </div>
               </div>

@@ -683,7 +683,6 @@ public function AddCart3()
            $newOrderData = [
              'userId' => session('id'),
              'paymentId' => $orderPaymentId,
-             'shippingAddress' => $this->request->getVar('email'),
              'shippingAddress' => $PaymentAddress,
              'itemsOrdered' => $this->request->getVar('totalItem'),
              'grandTotal' => $total_price_sum,
@@ -727,10 +726,56 @@ public function AddCart3()
       public function Game()
       {
         $reward_model = new reward_model();
-        $data['reward'] = $reward_model->orderBy('RewardScore', 'ASC') ->findAll();
+        $data['rewardTier1'] = $reward_model->where('RewardTier', '1')->first();
+        $data['rewardTier2'] = $reward_model->where('RewardTier', '2')->first();
+        $data['rewardTier3'] = $reward_model->where('RewardTier', '3')->first();
 
         echo view("sections/Header.php");
         return view("Home/Game.php",$data);
+      }
+
+      public function GameReward($RewardID = null)
+      {
+
+        if (session()->get('isLoggedIn')){
+          $rewardData = new reward_model();
+          $data['rewards'] = $rewardData->where('RewardID', $RewardID)->first();
+          $rewardtoCart = $data['rewards'];
+
+          $freeItem = "FREE [ ".$rewardtoCart['RewardName']." ]";
+
+          $id = session('id');
+          $checkPaymentID = new payment_model();
+          $checkPaymentID->where('userId', $id);
+          $data['paymentDate'] = $checkPaymentID->orderBy('PaymentId', 'DESC')->first();
+          $paymentDate = $data['paymentDate'];
+
+            $orderPaymentId = $paymentDate["PaymentId"];
+           $orderPaymentId;
+
+          $freeOrder = new order_model();
+
+          $freeRewardOrder = [
+            'userId' => session('id'),
+            'paymentId' => $orderPaymentId,
+            'shippingAddress' => "Same As Order Above",
+            'itemsOrdered' => $freeItem,
+            'grandTotal' => "0000",
+            'orderStatus' => "0",
+
+          ];
+          $freeRewardOrderResult = $freeOrder->save($freeRewardOrder);
+             if($freeRewardOrderResult) {
+               echo "Added To OrderTable.";
+               echo "<br>";
+             }else {
+               echo "error";
+             }
+
+              return redirect()->to('OrderStatus');
+            }else {
+                return redirect()->to('Login');
+            }
       }
 
       public function OrderStatus()
