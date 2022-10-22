@@ -1,0 +1,138 @@
+CRITICAL - 2022-10-22 08:51:36 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Home\register.php on line 79.
+ 1 APPPATH\Views\Home\register.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\Home\\register.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\register.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Register.php', [], true)
+ 5 APPPATH\Controllers\Home.php(149): view('Home/Register.php', [])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 08:57:38 --> syntax error, unexpected token "echo", expecting "function" or "const"
+in APPPATH\Controllers\Home.php on line 200.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/Register')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/Register')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/Register')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 08:57:51 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 08:58:44 --> Undefined property: App\Controllers\Home::$input
+in APPPATH\Controllers\Home.php on line 119.
+ 1 APPPATH\Controllers\Home.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', 'APPPATH\\Controllers\\Home.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 08:59:25 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Home.php on line 119.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:00:28 --> Undefined variable $request
+in APPPATH\Controllers\Home.php on line 119.
+ 1 APPPATH\Controllers\Home.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\Home.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:01:59 --> Undefined variable $request
+in APPPATH\Controllers\Home.php on line 119.
+ 1 APPPATH\Controllers\Home.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\Home.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:02:10 --> Call to undefined method App\Controllers\Home::getPost()
+in APPPATH\Controllers\Home.php on line 119.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:07:28 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:07:41 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Home\register.php on line 79.
+ 1 APPPATH\Views\Home\register.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\Home\\register.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\register.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Register.php', [], true)
+ 5 APPPATH\Controllers\Home.php(204): view('Home/Register.php', [])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:19:42 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::ip_address()
+in APPPATH\Controllers\Home.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:21:48 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 198.
+ 1 APPPATH\Controllers\Home.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 198)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:22:54 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 198.
+ 1 APPPATH\Controllers\Home.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 198)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:24:59 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 198.
+ 1 APPPATH\Controllers\Home.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 198)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:25:16 --> Undefined variable $setsession
+in APPPATH\Controllers\Home.php on line 198.
+ 1 APPPATH\Controllers\Home.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $setsession', 'APPPATH\\Controllers\\Home.php', 198)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:27:56 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 198.
+ 1 APPPATH\Controllers\Home.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 198)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:28:23 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Home\register.php on line 83.
+ 1 APPPATH\Views\Home\register.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\Home\\register.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\register.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Register.php', [], true)
+ 5 APPPATH\Controllers\Home.php(205): view('Home/Register.php', [])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 09:29:07 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Home\register.php on line 77.
+ 1 APPPATH\Views\Home\register.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\Home\\register.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Home\\register.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Home/Register.php', [], true)
+ 5 APPPATH\Controllers\Home.php(205): view('Home/Register.php', [])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Register()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
