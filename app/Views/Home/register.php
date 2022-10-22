@@ -50,14 +50,14 @@
             <div class="col-12 col-sm-6">
               <div class="form-group">
                <label for="password">Password</label>
-               <input type="password" class="form-control" name="password" id="password" value=""> </input>
+               <input type="password" class="form-control" name="password" id="password" value=""></input>
              </div>
            </div>
 
            <div class="col-12 col-sm-6">
              <div class="form-group">
               <label for="password_confirm">Confirm Password</label>
-              <input type="password" class="form-control" name="password_confirm" id="password_confirm" value=""> </input>
+              <input type="password" class="form-control" name="password_confirm" id="password_confirm" value=""></input>
             </div>
           </div>
 
@@ -79,11 +79,11 @@
            <div class="alert alert-danger" role="alert">
              <?= session()->get('msg') ?>
            </div>
-
          <?php endif; ?>
 
 
 				 </div>
+         <br>
 
 
 					<div class="row">

@@ -1,3 +1,4 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -32,6 +33,11 @@
 	                                    <label for="password">Password</label>
 	                                     <input type="password" class="form-control" name="password" id="password" value="">
 	                                 </div>
+                                   <div class="form-group">
+                                     <br>
+                                    <div class="g-recaptcha" data-sitekey="6LegAqEiAAAAALsZgnqnxGAoFWiF5zpO9WQPvjX-"></div>
+                                  </div>
+
 
 	                                  <?php if (isset($validation)): ?>
 	                                     <div class="col-12">
@@ -40,7 +46,15 @@
 	                                          </div>
 	                                         </div>
 	                                        <?php endif; ?>
+
+                                          <?php if (session()->get('msg')): ?>
+                                            <div class="alert alert-danger" role="alert">
+                                              <?= session()->get('msg') ?>
+                                            </div>
+                                          <?php endif; ?>
+
 					                                   </div>
+                                             <br>
 
 	                                            <div class="row">
 	                                               <div class="col-12 col-sm-4">

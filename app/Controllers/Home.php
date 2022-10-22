@@ -82,14 +82,34 @@ class Home extends BaseController
             if (! $this->validate($rules, $errors)) {
               $data['validation'] = $this->validator;
             }else{
-              $model = new UserModel();
 
+              // ReCaptcha
+              $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
+              $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
+              $credential = array(
+                  'secret' => $secret,
+                  'response' => $this->request->getVar('g-recaptcha-response')
+              );
+              $verify = curl_init();
+              curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+              curl_setopt($verify, CURLOPT_POST, true);
+              curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($credential));
+              curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+              curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+              $response = curl_exec($verify);
+              $status= json_decode($response, true);
+              if($status['success']){
+              // Recaptcha
+              $model = new UserModel();
               $user = $model->where('email', $this->request->getVar('email'))
                             ->first();
-
               $this->setUserSession($user);
-
               return redirect()->to('/');
+            }else{
+              // Recaptcha
+              $session = session();
+                $session->setFlashdata('msg', 'Please Complete Captcha');
+            }
 
             }
           }
@@ -132,69 +152,40 @@ class Home extends BaseController
       if (! $this->validate($rules)) {
         $data['validation'] = $this->validator;
       }else{
-        //Storing user registration into database
-        $model = new UserModel();
 
-        $newData = [
-          'firstname' => $this->request->getVar('firstname'),
-          'lastname' => $this->request->getVar('lastname'),
-          'address' => $this->request->getVar('address'),
-          'email' => $this->request->getVar('email'),
-          'password' => $this->request->getVar('password'),
-        ];
 // ReCaptcha
-
 $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
-
-
-
-// $userIp=$this->request->ip_address();
-
-
-
 $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
-
-
-
 $credential = array(
-
     'secret' => $secret,
-
     'response' => $this->request->getVar('g-recaptcha-response')
-
 );
-
-
-
 $verify = curl_init();
-
 curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
-
 curl_setopt($verify, CURLOPT_POST, true);
-
 curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($credential));
-
 curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
-
 curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
-
 $response = curl_exec($verify);
-
-
-
 $status= json_decode($response, true);
-
-
-
 if($status['success']){
 // Recaptcha
+//Storing user registration into database
+$model = new UserModel();
 
-
+$newData = [
+  'firstname' => $this->request->getVar('firstname'),
+  'lastname' => $this->request->getVar('lastname'),
+  'address' => $this->request->getVar('address'),
+  'email' => $this->request->getVar('email'),
+  'password' => $this->request->getVar('password'),
+];
         $model->save($newData);
         $session = session();
         $session->setFlashdata('success', 'Successful Registration');
         return redirect()->to('Login');
       }else{
+        // Recaptcha
         $session = session();
           $session->setFlashdata('msg', 'Please Complete Captcha');
       }
@@ -706,6 +697,25 @@ public function AddCart3()
          if (! $this->validate($rules)) {
            $data['validation'] = $this->validator;
          }else{
+
+           // ReCaptcha
+           $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
+           $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
+           $credential = array(
+               'secret' => $secret,
+               'response' => $this->request->getVar('g-recaptcha-response')
+           );
+           $verify = curl_init();
+           curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+           curl_setopt($verify, CURLOPT_POST, true);
+           curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($credential));
+           curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+           curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+           $response = curl_exec($verify);
+           $status= json_decode($response, true);
+           if($status['success']){
+           // Recaptcha
+
            $payment_model = new payment_model();
 
            $newData = [
@@ -771,6 +781,12 @@ public function AddCart3()
          }else{
           return redirect()->to('OrderStatus');
            }
+         }else{
+           // Recaptcha
+           $session = session();
+             $session->setFlashdata('msg', 'Please Complete Captcha');
+             return redirect()->to('Payment');
+         }
          }
        }
        echo view("sections/Header.php");
@@ -873,6 +889,25 @@ public function AddCart3()
         if (! $this->validate($rules)) {
           $data['validation'] = $this->validator;
         }else{
+
+          // ReCaptcha
+          $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
+          $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
+          $credential = array(
+              'secret' => $secret,
+              'response' => $this->request->getVar('g-recaptcha-response')
+          );
+          $verify = curl_init();
+          curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+          curl_setopt($verify, CURLOPT_POST, true);
+          curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($credential));
+          curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+          curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+          $response = curl_exec($verify);
+          $status= json_decode($response, true);
+
+          if($status['success']){
+          // Recaptcha
           //Storing user registration into database
           $updateUsermodel = new UserModel();
 
@@ -883,14 +918,21 @@ public function AddCart3()
             'email' => $this->request->getVar('email'),
             'password' => $this->request->getVar('password'),
           ];
-          $updateUsermodel->set($newUserData);
-          $updateUsermodel->where('id', $id);
-          $updateUsermodelResult = $updateUsermodel->update();
-          if($updateUsermodelResult) {
-          echo "Updated";
-        } else {
-          echo "Something went wrong";
-        }
+
+                  $updateUsermodel->set($newUserData);
+                  $updateUsermodel->where('id', $id);
+                  $updateUsermodelResult = $updateUsermodel->update();
+                        if($updateUsermodelResult) {
+                          echo "Updated";
+                        } else {
+                          echo "Something went wrong";
+                        }
+              }else{
+                // Recaptcha
+                $session = session();
+                  $session->setFlashdata('msg', 'Please Complete Captcha');
+                  return redirect()->to('AccountManagement');
+              }
         }
         return redirect()->to('');
         }

@@ -1,4 +1,4 @@
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/payment.css'); ?>">
 
   <div class="container">
@@ -74,6 +74,14 @@
                     </div>
 
 
+                    <div class="col-50 col-sm-6">
+                      <div class="form-group">
+                       <div class="g-recaptcha" data-sitekey="6LegAqEiAAAAALsZgnqnxGAoFWiF5zpO9WQPvjX-"></div>
+                     </div>
+                   </div>
+
+
+
 
                   </div>
 
@@ -85,6 +93,12 @@
                    </div>
                   <?php endif; ?>
 
+                  <?php if (session()->get('msg')): ?>
+                    <div class="alert alert-danger" role="alert">
+                      <?= session()->get('msg') ?>
+                    </div>
+                  <?php endif; ?>
+
 
 
                   <?php $total_price_sum = 0; $total_items = "";
@@ -94,7 +108,9 @@
                   } ?>
 
                   <div class="row">
+
                   <div class="col-12 col-sm-4">
+                    <br>
                     <input type="hidden" id="totalPrice" name="totalPrice" value="<?php echo $total_price_sum; ?>">
                     <input type="hidden" id="totalItem" name="totalItem" value="<?php echo $total_items; ?>">
                     <?php if ($total_price_sum > 6000) { ?>
