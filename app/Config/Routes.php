@@ -65,6 +65,8 @@ $routes->get('Home/AddCart1/(:num)', 'Home::AddCart1/$1');
 $routes->get('Home/AddCart2/(:num)', 'Home::AddCart2/$1');
 $routes->get('Home/AddCart3/(:num)', 'Home::AddCart3/$1');
 $routes->get('GameReward/(:num)', 'Home::GameReward/$1');
+$routes->match(['get','post'],'AdminRegister', 'Admin::AdminRegister');
+$routes->match(['get','post'],'AdminLogin', 'Admin::AdminLogin');
 
 /*
  * --------------------------------------------------------------------

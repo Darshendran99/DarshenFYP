@@ -1,6 +1,4 @@
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/payment.css'); ?>">
-
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -72,15 +70,6 @@
                         </div>
                       </div>
                     </div>
-
-
-                    <div class="col-50 col-sm-6">
-                      <div class="form-group">
-                       <div class="g-recaptcha" data-sitekey="6LegAqEiAAAAALsZgnqnxGAoFWiF5zpO9WQPvjX-"></div>
-                     </div>
-                   </div>
-
-
 
 
                   </div>

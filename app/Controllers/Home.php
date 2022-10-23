@@ -136,8 +136,6 @@ class Home extends BaseController
       $data = [];
       helper(['form']);
 
-
-
       if ($this->request->getMethod() == 'post') {
       //Validation
       $rules = [
@@ -755,6 +753,7 @@ public function RemoveComponentItem()
 
        public function Payment()
        {
+
          $id = session('id');
          $cart_model = new cart_model();
          $data['cart'] = $cart_model->where('uid', $id)->findAll();
@@ -787,25 +786,6 @@ public function RemoveComponentItem()
          if (! $this->validate($rules)) {
            $data['validation'] = $this->validator;
          }else{
-
-           // ReCaptcha
-           $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
-           $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
-           $credential = array(
-               'secret' => $secret,
-               'response' => $this->request->getVar('g-recaptcha-response')
-           );
-           $verify = curl_init();
-           curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
-           curl_setopt($verify, CURLOPT_POST, true);
-           curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($credential));
-           curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
-           curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
-           $response = curl_exec($verify);
-           $status= json_decode($response, true);
-           if($status['success']){
-           // Recaptcha
-
            $payment_model = new payment_model();
 
            $newData = [
@@ -871,18 +851,13 @@ public function RemoveComponentItem()
          }else{
           return redirect()->to('OrderStatus');
            }
-         }else{
-           // Recaptcha
-           $session = session();
-             $session->setFlashdata('msg', 'Please Complete Captcha');
-             return redirect()->to('Payment');
          }
          }
+         echo view("sections/Header.php");
+         return view("Home/Payment.php",$data);
        }
-       echo view("sections/Header.php");
-       return view("Home/Payment.php",$data);
 
-         }
+
 
 
       public function Game()
