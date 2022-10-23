@@ -33,8 +33,8 @@
               <div class="col-12">
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
-                      <a href="<?php echo base_url();?>" class="logo"> STELLAR PC
-                          <!-- <img src="assets/images/logo.png" alt=""> -->
+                      <a href="<?php echo base_url();?>" class="logo">
+                          <img src="<?php echo base_url('assets/image/StellarPC.png'); ?>" alt="STELLAR PC">
                       </a>
                       <!-- ***** Logo End ***** -->
 

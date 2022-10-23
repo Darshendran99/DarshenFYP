@@ -33,6 +33,7 @@
                      <th>PRICE</th>
                      <th>Quantity</th>
                      <th>TotalPrice</th>
+                     <th></th>
                    </tr>
 
 
@@ -51,9 +52,36 @@
                         <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($cart["itemImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
                         <?php } ?>
                         <td><?php echo $cart["itemName"]; ?></td>
-                        <td>RM <?php echo $cart["itemPrice"]; ?></td>
-                        <td><?php echo $cart["itemQuantity"]; ?></td>
-                        <td>RM <?php echo round(($cart["itemPrice"] * $cart["itemQuantity"]));?></td>
+                        <td style="text-align: center;">RM <?php echo $cart["itemPrice"]; ?></td>
+                        <td style="text-align: center;"><?php echo $cart["itemQuantity"]; ?></td>
+                        <td style="text-align: center;">RM <?php echo round(($cart["itemPrice"] * $cart["itemQuantity"]));?></td>
+
+                        <div class="main-border-button">
+                          <form class="" action="/RemoveProductItem" method="post">
+                          <?php if ($cart["ProductId"] != ""){ ?>
+                            <div class="col-12 col-sm-4" >
+                              <input type="hidden" name="prodID" id="prodID" value="<?php echo $cart["ProductId"]; ?>"></input>
+                              <td><button type="submit" class="btn btn-primary" style="  margin:auto; display:block;">Remove</button></td>
+                            </div>
+                             <?php } ?>
+                             </form>
+                             <form class="" action="/RemovePromotionItem" method="post">
+                          <?php if ($cart["PromotionId"] != ""){ ?>
+                            <div class="col-12 col-sm-4">
+                              <input type="hidden" name="promID" id="promID" value="<?php echo $cart["PromotionId"]; ?>"></input>
+                              <td><button type="submit" class="btn btn-primary" style="  margin:auto; display:block;">Remove</button></td>
+                            </div>
+                           <?php } ?>
+                           </form>
+                           <form class="" action="/RemoveComponentItem" method="post">
+                         <?php if ($cart["ComponentId"] != ""){ ?>
+                           <div class="col-12 col-sm-4">
+                             <input type="hidden" name="compID" id="compID" value="<?php echo $cart["ComponentId"]; ?>"></input>
+                             <td><button type="submit" class="btn btn-primary" style="  margin:auto; display:block;">Remove</button></td>
+                           </div>
+                           <?php } ?>
+                           </form>
+                      </div>
 
                    </tr>
 

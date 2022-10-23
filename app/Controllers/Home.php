@@ -653,6 +653,96 @@ public function AddCart3()
 
 }
 
+
+public function RemoveProductItem()
+{
+  $id = session('id');
+  if (session()->get('isLoggedIn')){
+    $itemProdId = $this->request->getVar('prodID');
+
+      if ($itemProdId != ""){
+        $deleteProductItem = new cart_model();
+        $deleteProductItemArray = ['uid' => $id, 'ProductId' => $itemProdId];
+        $data['productItems'] = $deleteProductItem->where($deleteProductItemArray)->delete();
+        $ProductitemsDeleted = $data['productItems'];
+          if($ProductitemsDeleted) {
+            echo "Removed Product item from cart";
+            return redirect()->to('Cart');
+          }else{
+            echo "SQL Error RemoveItem()";
+          }
+        }
+      }else {
+        return redirect()->to('Login');
+    }
+}
+
+public function RemovePromotionItem()
+{
+  $id = session('id');
+  if (session()->get('isLoggedIn')){
+    $itemPromId = $this->request->getVar('promID');
+
+      if ($itemPromId != ""){
+        $deletePromotionItem = new cart_model();
+          $deletePromotionItemArray = ['uid' => $id, 'PromotionId' => $itemPromId];
+          $data['promotionItems'] = $deletePromotionItem->where($deletePromotionItemArray)->delete();
+          $PromotionitemsDeleted = $data['promotionItems'];
+            if($PromotionitemsDeleted) {
+              echo "Removed Promotion item from cart";
+              return redirect()->to('Cart');
+            }else{
+              echo "SQL Error RemoveItem()";
+            }
+          }
+      }else {
+        return redirect()->to('Login');
+    }
+}
+public function RemoveComponentItem()
+{
+  $id = session('id');
+  if (session()->get('isLoggedIn')){
+    $itemCompId = $this->request->getVar('compID');
+
+      if ($itemCompId != ""){
+        $deleteComponentItem = new cart_model();
+        $deleteComponentItemArray = ['uid' => $id, 'ComponentId' => $itemCompId];
+        $data['cartItems'] = $deleteComponentItem->where($deleteComponentItemArray)->delete();
+        $ComponentitemsDeleted = $data['cartItems'];
+          if($ComponentitemsDeleted) {
+            echo "Removed Component item from cart";
+            return redirect()->to('Cart');
+          }else{
+            echo "SQL Error RemoveItem()";
+          }
+        }
+      }else {
+        return redirect()->to('Login');
+    }
+}
+
+
+
+//   // Component
+//   if ($ComponentId != ""){
+// $deleteComponentItem = new cart_model();
+// $deleteComponentItemArray = ['uid' => $id, 'ComponentId' => $ComponentId];
+// $data['deleteSelectedComponentItems'] = $deleteComponentItem->where($deleteComponentItemArray)->delete();
+// $ComponentitemsDeleted = $data['deleteSelectedComponentItems'];
+//   if($ComponentitemsDeleted) {
+//     echo "Removed Component item from cart";
+//   }else{
+//     echo "SQL Error RemoveItem()";
+//   }
+// }
+
+        //   return redirect()->to();
+        //
+
+
+
+
     public function Cart()
     {
       $id = session('id');
@@ -764,9 +854,9 @@ public function AddCart3()
                 $data['post'] = $deleteCart->where('uid', $id)->delete();
                 $abc = $data['post'];
                   if($abc) {
-                    echo "Removed items from cart";
+                    echo "Removed Paid items from cart";
                   }else{
-                    echo "SQL Error";
+                    echo "SQL Error Payment()";
                   }
 
               } else {
