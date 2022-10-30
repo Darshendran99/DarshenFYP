@@ -23,10 +23,11 @@ class admin_model extends Model{
   }
 
   protected function passwordHash(array $data){
-    if(isset($data['data']['password']))
-      $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
+    if(isset($data['data']['stafPassword']))
+      $data['data']['stafPassword'] = password_hash($data['data']['stafPassword'], PASSWORD_DEFAULT);
 
     return $data;
   }
+  
 }
 ?>

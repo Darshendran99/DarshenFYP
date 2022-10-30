@@ -1,0 +1,10 @@
+CRITICAL - 2022-10-29 23:53:21 --> Call to undefined function set_value()
+in APPPATH\Views\Admin\AdminLogin.php on line 18.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/AdminLogin.php', [], true)
+ 4 APPPATH\Controllers\Admin.php(80): view('Admin/AdminLogin.php')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->AdminLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

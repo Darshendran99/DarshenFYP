@@ -26,6 +26,7 @@ class Validation extends BaseConfig
         FileRules::class,
         CreditCardRules::class,
         \App\Validation\UserRules::class,
+        \App\Validation\AdminRules::class,
     ];
 
     /**

@@ -21,7 +21,7 @@
 
     <!-- Libraries Stylesheet -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/Admin/CSS/owl.carousel.min.css'); ?>" >
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/Admin/CSS/tempusdominus-bootstrap-4.min.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/Admin/CSS/tempusdominus-bootstrap-4.min.css'); ?>"/>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/Admin/CSS/bootstrap.min.css'); ?>" >

@@ -65,8 +65,18 @@ $routes->get('Home/AddCart1/(:num)', 'Home::AddCart1/$1');
 $routes->get('Home/AddCart2/(:num)', 'Home::AddCart2/$1');
 $routes->get('Home/AddCart3/(:num)', 'Home::AddCart3/$1');
 $routes->get('GameReward/(:num)', 'Home::GameReward/$1');
+$routes->get('AdminPage', 'Admin::index');
 $routes->match(['get','post'],'AdminRegister', 'Admin::AdminRegister');
 $routes->match(['get','post'],'AdminLogin', 'Admin::AdminLogin');
+$routes->match(['get','post'],'Adminlogout', 'Admin::Adminlogout');
+$routes->match(['get','post'],'UsersTable', 'Admin::UsersTable');
+$routes->match(['get','post'],'ProductsTable', 'Admin::ProductsTable');
+$routes->match(['get','post'],'PromotionsTable', 'Admin::PromotionsTable');
+$routes->match(['get','post'],'ComponentsTable', 'Admin::ComponentsTable');
+$routes->match(['get','post'],'RewardsTable', 'Admin::RewardsTable');
+$routes->match(['get','post'],'OrdersTable', 'Admin::OrdersTable');
+$routes->match(['get','post'],'AdminsTable', 'Admin::AdminsTable');
+
 
 /*
  * --------------------------------------------------------------------

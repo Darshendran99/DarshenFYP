@@ -19,7 +19,7 @@
         <!-- Content End -->
 
 
-        
+
     </div>
 
     <!-- JavaScript Libraries -->
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="<?php echo base_url('assets/Admin/JS/easing.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/Admin/JS/waypoints.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/Admin/JS/owl.carousel.min.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo base_url('assets/Admin/JS/js/moment.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/Admin/JS/moment.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/Admin/JS/moment-timezone.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/Admin/JS/tempusdominus-bootstrap-4.min.js'); ?>"></script>
 

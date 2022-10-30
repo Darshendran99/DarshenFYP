@@ -287,3 +287,14 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+table{
+  counter-reset: tableCount;
+}
+table tr {
+  counter-increment: rowNumber;
+}
+
+table tr td:first-child::before  {
+    content: counter(tableCount);
+    counter-increment: tableCount;
+}

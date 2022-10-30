@@ -93,7 +93,7 @@
 	</div>
 </div>
 
-<!-- Price Graph -->
+<!-- Start of GPU Price Graph -->
 <div class="gaming-library">
 	<div class="col-lg-12">
 		<div class="heading-section">
@@ -113,7 +113,8 @@
 					</div>
 	</ul>
 		</div>
-
+<!-- End of GPU Price Graph -->
+<!-- Start of CPU Price Graph -->
 		<div class="item">
 			<ul>
 				<li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>

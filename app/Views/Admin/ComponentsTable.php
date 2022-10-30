@@ -13,24 +13,24 @@
                                       <th scope="col">#</th>
                                       <th scope="col">Id</th>
                                       <th scope="col">Name</th>
-                                      <th scope="col">address</th>
-                                      <th scope="col">email</th>
-                                      <th scope="col">created_at</th>
-                                      <th scope="col">updated_at</th>
+                                      <th scope="col">Details</th>
+                                      <th scope="col">Image</th>
+                                      <th scope="col">Component Type</th>
+                                      <th scope="col">Price</th>
                                       <th scope="col">Actions</th>
                                   </tr>
                               </thead>
                               <tbody>
-                                <?php foreach ($usersTable as $usersTable){ ?>
+                                <?php foreach ($componentsTable as $componentsTable){ ?>
                                   <tr>
                                       <td scope="row"></td>
-                                      <td><?php echo $usersTable["id"]; ?></td>
-                                      <td><?php echo $usersTable["firstname"]; ?> <?php echo $usersTable["lastname"]; ?></td>
-                                      <td><?php echo $usersTable["address"]; ?></td>
-                                      <td><?php echo $usersTable["email"]; ?></td>
-                                      <td><?php echo $usersTable["created_at"]; ?></td>
-                                      <td><?php echo $usersTable["updated_at"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style="  margin:auto; display:block;">Remove</button></td>
+                                      <td><?php echo $componentsTable["ComponentId"]; ?></td>
+                                      <td><?php echo $componentsTable["ComponentName"]; ?></td>
+                                      <td><?php echo $componentsTable["ComponentDetails"]; ?></td>
+                                      <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($componentsTable["ComponentImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
+                                      <td> <?php echo $componentsTable["ComponentType"]; ?></td>
+                                      <td>RM <?php echo $componentsTable["ComponentPrice"]; ?></td>
+                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Remove</button></td>
                                   </tr>
                                   <?php } ?>
                               </tbody>
