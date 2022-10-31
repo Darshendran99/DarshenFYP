@@ -437,7 +437,7 @@ $newData = [
     }
 
     public function AddProduct(){
-
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -509,9 +509,14 @@ $newData = [
   echo view("sections/AdminNavBar.php",$data1);
   echo view("Admin/AddProduct.php",$data);
   echo view("sections/AdminFooter.php");
-}
+  }else {
+    return redirect()->to('AdminLogin');
+  }
+  }
+
     public function AddPromotion(){
 
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -584,10 +589,13 @@ $newData = [
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddPromotion.php",$data);
       echo view("sections/AdminFooter.php");
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+      }
 
-    }
     public function AddComponent(){
-
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -635,10 +643,13 @@ $newData = [
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddComponent.php",$data);
       echo view("sections/AdminFooter.php");
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+      }
 
-    }
     public function AddReward(){
-
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -664,7 +675,7 @@ $newData = [
           $newData = [
             'RewardName' => $this->request->getVar('rewardname'),
             'RewardImage' => $this->request->getFile('rewardimage'),
-            // https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/ 
+            // https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/
             'RewardTier' => $this->request->getVar('rewardtier'),
           ];
           $Result = $model->save($newData);
@@ -682,10 +693,13 @@ $newData = [
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddReward.php",$data);
       echo view("sections/AdminFooter.php");
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+      }
 
-    }
     public function AddOrder(){
-
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -739,11 +753,13 @@ $newData = [
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddOrder.php",$data);
       echo view("sections/AdminFooter.php");
-
-    }
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+      }
 
     public function AddCPU(){
-
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -776,10 +792,13 @@ $newData = [
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddCPU.php",$data);
       echo view("sections/AdminFooter.php");
-    }
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+      }
 
     public function AddGPU(){
-
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -812,10 +831,13 @@ $newData = [
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddGPU.php",$data);
       echo view("sections/AdminFooter.php");
-    }
+    }else {
+        return redirect()->to('AdminLogin');
+      }
+      }
 
     public function AddAdmin(){
-
+      if (session()->get('AdminisLoggedIn')){
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -860,7 +882,8 @@ $newData = [
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddAdmin.php",$data);
       echo view("sections/AdminFooter.php");
-
-    }
-
+    }else {
+        return redirect()->to('AdminLogin');
+      }
+      }
 }
