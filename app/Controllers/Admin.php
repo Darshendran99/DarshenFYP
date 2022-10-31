@@ -362,7 +362,7 @@ $newData = [
 
           return redirect()->to('UsersTable');
           } else {
-          alert("Something went wrong.");
+          echo "Something went wrong.";
           }
           }
         }
@@ -389,7 +389,7 @@ $newData = [
         //Validation
         $rules = [
           'productname' => 'required|min_length[10]|max_length[50]',
-          'productimage' => 'uploaded[productimage]|is_image[productimage]|max_size[productimage,4000]|max_dims[productimage,6001,4001]',
+          'productimage' => 'uploaded[productimage]|is_image[productimage]|max_size[productimage,4000]',
           'productprice' => 'required|min_length[1]|max_length[255]|integer',
           'productcpu' => 'required|min_length[5]|max_length[50]',
           'productgpu' => 'required|min_length[5]|max_length[50]',
@@ -455,7 +455,71 @@ $newData = [
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
-$data = [];
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'promotionname' => 'required|min_length[10]|max_length[50]',
+          'promotionimage' => 'uploaded[promotionimage]|is_image[promotionimage]|max_size[promotionimage,4000]',
+          'promotionoriprice' => 'required|min_length[1]|max_length[10]|integer',
+          'promotionprice' => 'required|min_length[1]|max_length[10]|integer',
+          'promotioncpu' => 'max_length[50]',
+          'promotiongpu' => 'max_length[50]',
+          'promotionmobo' => 'max_length[50]',
+          'promotionram' => 'max_length[50]',
+          'promotionssd' => 'max_length[50]',
+          'promotionpsu' => 'max_length[50]',
+          'promotioncasing' => 'max_length[50]',
+          'promotionother' => 'max_length[50]',
+          'nonpcdetails' => 'max_length[50]',
+          'promotiondetail1' => 'max_length[50]',
+          'promotiondetail2' => 'max_length[50]',
+          'promotiondetail3' => 'max_length[50]',
+          'promotiondetail4' => 'max_length[50]',
+        ];
+
+        if (! $this->validate($rules)) {
+
+          $data['validation'] = $this->validator;
+
+        }else{
+          $model = new promotion_model();
+
+          $newData = [
+            'PromotionName' => $this->request->getVar('promotionname'),
+            'PromotionStatus' => $this->request->getVar('promotionstatus'),
+            'PromotionImage' => $this->request->getFile('promotionimage'),
+            'PromotionOriPrice' => $this->request->getVar('promotionoriprice'),
+            'PromotionPrice' => $this->request->getVar('promotionprice'),
+            'PromotionCPU' => $this->request->getVar('promotioncpu'),
+            'PromotionGPU' => $this->request->getVar('promotiongpu'),
+            'PromotionMobo' => $this->request->getVar('promotionmobo'),
+            'PromotionRAM' => $this->request->getVar('promotionram'),
+            'PromotionSSD' => $this->request->getVar('promotionssd'),
+            'PromotionPSU' => $this->request->getVar('promotionpsu'),
+            'PromotionCasing' => $this->request->getVar('promotioncasing'),
+            'PromotionOther' => $this->request->getVar('promotionother'),
+            'NonPCDetails' => $this->request->getVar('nonpcdetails'),
+            'PromotionDetail1' => $this->request->getVar('promotiondetail1'),
+            'PromotionDetail2' => $this->request->getVar('promotiondetail2'),
+            'PromotionDetail3' => $this->request->getVar('promotiondetail3'),
+            'PromotionDetail4' => $this->request->getVar('promotiondetail4'),
+
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added Promotion');
+
+          return redirect()->to('PromotionsTable');
+          } else {
+          echo "Something went wrong.";
+          return redirect()->to();
+          }
+          }
+          }
       echo view("sections/AdminHeader.php");
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddPromotion.php",$data);
@@ -467,7 +531,46 @@ $data = [];
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
-$data = [];
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'componentname' => 'required|min_length[5]|max_length[50]',
+          'componentimage' => 'uploaded[componentimage]|is_image[componentimage]|max_size[componentimage,4000]',
+          'componentdetails' => 'required|min_length[10]|max_length[255]',
+          'componentprice' => 'required|min_length[1]|max_length[50]|integer',
+        ];
+
+        if (! $this->validate($rules)) {
+
+          $data['validation'] = $this->validator;
+
+        }else{
+
+          //Storing user registration into database
+          $model = new component_model();
+
+          $newData = [
+            'ComponentName' => $this->request->getVar('componentname'),
+            'ComponentType' => $this->request->getVar('componenttype'),
+            'ComponentBrand' => $this->request->getVar('compbrand'),
+            'ComponentImage' => $this->request->getFile('componentimage'),
+            'ComponentDetails' => $this->request->getVar('componentdetails'),
+            'ComponentPrice' => $this->request->getVar('componentprice'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added Component');
+
+          return redirect()->to('ComponentsTable');
+          } else {
+          echo "Something went wrong.";
+          }
+          }
+        }
       echo view("sections/AdminHeader.php");
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddComponent.php",$data);
@@ -479,7 +582,41 @@ $data = [];
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
-$data = [];
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'rewardname' => 'required|min_length[5]|max_length[50]',
+          'rewardimage' => 'uploaded[rewardimage]|is_image[rewardimage]|max_size[rewardimage,4000]',
+        ];
+
+        if (! $this->validate($rules)) {
+
+          $data['validation'] = $this->validator;
+
+        }else{
+
+          //Storing user registration into database
+          $model = new reward_model();
+
+          $newData = [
+            'RewardName' => $this->request->getVar('rewardname'),
+            'RewardImage' => $this->request->getFile('rewardimage'),
+            'RewardTier' => $this->request->getVar('rewardtier'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added Reward');
+
+          return redirect()->to('RewardsTable');
+          } else {
+          echo "Something went wrong.";
+          }
+          }
+        }
       echo view("sections/AdminHeader.php");
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddReward.php",$data);
@@ -503,7 +640,43 @@ $data = [];
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
-$data = [];
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'staffname' => 'required|min_length[2]|max_length[25]',
+          'staffemail' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[admin.staffEmail]',
+          'staffpassword' => 'required|min_length[8]|max_length[255]',
+          'staffpassword_confirm' => 'matches[staffpassword]',
+        ];
+
+        if (! $this->validate($rules)) {
+
+          $data['validation'] = $this->validator;
+
+        }else{
+
+          //Storing user registration into database
+          $model = new admin_model();
+
+          $newData = [
+            'staffName' => $this->request->getVar('staffname'),
+            'staffEmail' => $this->request->getVar('staffemail'),
+            'stafPassword' => $this->request->getVar('staffpassword'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added Admin');
+
+          return redirect()->to('AdminsTable');
+          } else {
+          echo "Something went wrong.";
+          }
+          }
+        }
       echo view("sections/AdminHeader.php");
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddAdmin.php",$data);
