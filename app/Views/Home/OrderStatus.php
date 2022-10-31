@@ -44,9 +44,11 @@
                         <td>Order Confirmed</td>
                       <?php }else if ($orderView["orderStatus"] == 2) { ?>
                         <td>Shipping</td>
-                        <?php }else{ ?>
-                          <td> BackEnd Error... Please Contact staf to rolve issue</td>
-                        <?php } ?>
+                      <?php }else if ($orderView["orderStatus"] == 3) { ?>
+                          <td>Order Received</td>
+                          <?php }else{ ?>
+                            <td> BackEnd Error... Please Contact staf to rolve issue</td>
+                          <?php } ?>
 
 
                    </tr>

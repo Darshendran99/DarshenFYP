@@ -15,26 +15,20 @@
                               <thead>
                                   <tr>
                                       <th scope="col">#</th>
-                                      <th scope="col">Id</th>
-                                      <th scope="col">User Id</th>
-                                      <th scope="col">Payment Id</th>
-                                      <th scope="col">Shipping Address</th>
-                                      <th scope="col">Items Ordered</th>
-                                      <th scope="col">Order Status</th>
+                                      <th scope="col">CPU ID</th>
+                                      <th scope="col">CPU Price</th>
+                                      <th scope="col">Updated On</th>
                                       <th scope="col">Actions</th>
                                   </tr>
                               </thead>
                               <tbody>
-                                <?php foreach ($ordersTable as $ordersTable){ ?>
+                                <?php foreach ($cpusTable as $cpusTable){ ?>
                                   <tr>
                                       <td scope="row"></td>
-                                      <td><?php echo $ordersTable["orderId"]; ?></td>
-                                      <td><?php echo $ordersTable["userId"]; ?></td>
-                                      <td><?php echo $ordersTable["paymentId"]; ?></td>
-                                      <td> <?php echo $ordersTable["shippingAddress"]; ?></td>
-                                      <td> <?php echo $ordersTable["itemsOrdered"]; ?></td>
-                                      <td> <?php echo $ordersTable["orderStatus"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Remove</button></td>
+                                      <td><?php echo $cpusTable["cpuId"]; ?></td>
+                                      <td><?php echo $cpusTable["cpuPrice"]; ?></td>
+                                      <td><?php echo $cpusTable["cpuUpdatedDate"]; ?></td>
+                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Modify</button></td>
                                   </tr>
                                   <?php } ?>
                               </tbody>

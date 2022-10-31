@@ -32,7 +32,10 @@
                             <a href="/PromotionsTable" class="dropdown-item">Promotion's Table</a>
                             <a href="/ComponentsTable" class="dropdown-item">BuildYourPC's Table</a>
                             <a href="/RewardsTable" class="dropdown-item">Reward's Table</a>
+                            <a href="/PaymentsTable" class="dropdown-item">Payment's Table</a>
                             <a href="/OrdersTable" class="dropdown-item">Order's Table</a>
+                            <a href="/CPUsTable" class="dropdown-item">CPU's Table</a>
+                            <a href="/GPUsTable" class="dropdown-item">GPU's Table</a>
                             <a href="/AdminsTable" class="dropdown-item">Admin's Table</a>
                         </div>
                     </div>
@@ -45,6 +48,8 @@
                             <a href="/AddComponent" class="dropdown-item">Add BuildYourPC</a>
                             <a href="/AddReward" class="dropdown-item">Add Reward</a>
                             <a href="/AddOrder" class="dropdown-item">Add Order</a>
+                            <a href="/AddCPU" class="dropdown-item">Add CPU</a>
+                            <a href="/AddGPU" class="dropdown-item">Add GPU</a>
                             <a href="/AddAdmin" class="dropdown-item">Add Admin</a>
                         </div>
                     </div>

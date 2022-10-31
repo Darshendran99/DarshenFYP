@@ -298,6 +298,66 @@ $newData = [
       }
     }
 
+    public function PaymentsTable()
+    {
+      if (session()->get('AdminisLoggedIn')){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+
+        $payment_model = new payment_model();
+        $data['paymentsTable'] = $payment_model->orderBy('PaymentId', 'ASC') ->findAll();
+
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/PaymentsTable.php",$data);
+      echo view("sections/AdminFooter.php");
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+    }
+
+    public function CPUsTable()
+    {
+      if (session()->get('AdminisLoggedIn')){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+
+        $cpu_model = new cpu_model();
+        $data['cpusTable'] = $cpu_model->orderBy('cpuId', 'ASC') ->findAll();
+
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/CPUsTable.php",$data);
+      echo view("sections/AdminFooter.php");
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+    }
+
+    public function GPUsTable()
+    {
+      if (session()->get('AdminisLoggedIn')){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+
+        $cpu_model = new gpu_model();
+        $data['gpusTable'] = $cpu_model->orderBy('gpuId', 'ASC') ->findAll();
+
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/GPUsTable.php",$data);
+      echo view("sections/AdminFooter.php");
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+    }
+
     public function AdminsTable()
     {
       if (session()->get('AdminisLoggedIn')){
@@ -604,6 +664,7 @@ $newData = [
           $newData = [
             'RewardName' => $this->request->getVar('rewardname'),
             'RewardImage' => $this->request->getFile('rewardimage'),
+            // https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/ 
             'RewardTier' => $this->request->getVar('rewardtier'),
           ];
           $Result = $model->save($newData);
@@ -628,13 +689,131 @@ $newData = [
         $StaffId = session('StaffId');
         $admin_model = new admin_model();
         $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
-$data = [];
+
+        $UserModel = new UserModel();
+        $data['useridData'] = $UserModel->orderBy('id', 'ASC') ->findAll();
+        $payment_model = new payment_model();
+        $data['paymntidData'] = $payment_model->orderBy('PaymentId', 'ASC') ->findAll();
+
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          // 'orderusrid' => 'required|min_length[1]|max_length[11]',
+          'shippingadd' => 'required|min_length[10]|max_length[255]',
+          'itemordr' => 'required|min_length[10]|max_length[255]',
+          'itemtotal' => 'required|min_length[1]|max_length[20]|integer',
+        ];
+
+        if (! $this->validate($rules)) {
+
+          $data['validation'] = $this->validator;
+
+        }else{
+
+          //Storing user registration into database
+          $model = new order_model();
+
+          $newData = [
+            'userId' => $this->request->getVar('orderusrid'),
+            'paymentId' => $this->request->getVar('orderpaymntid'),
+            'shippingAddress' => $this->request->getVar('shippingadd'),
+            'itemsOrdered' => $this->request->getVar('itemordr'),
+            'grandTotal' => $this->request->getVar('itemtotal'),
+            'orderStatus' => $this->request->getVar('orderstatus'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added Order');
+
+          return redirect()->to('OrdersTable');
+          } else {
+          echo "Something went wrong.";
+          return redirect()->to();
+          }
+          }
+        }
       echo view("sections/AdminHeader.php");
       echo view("sections/AdminNavBar.php",$data1);
       echo view("Admin/AddOrder.php",$data);
       echo view("sections/AdminFooter.php");
 
     }
+
+    public function AddCPU(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'cpuprice' => 'required|min_length[3]|max_length[11]|integer',
+        ];
+        if (! $this->validate($rules)) {
+          $data['validation'] = $this->validator;
+        }else{
+          $model = new cpu_model();
+          $newData = [
+            'cpuPrice' => $this->request->getVar('cpuprice'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added CPU Price for the month');
+          return redirect()->to('CPUsTable');
+          } else {
+          echo "Something went wrong.";
+          }
+          }
+        }
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddCPU.php",$data);
+      echo view("sections/AdminFooter.php");
+    }
+
+    public function AddGPU(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'gpuprice' => 'required|min_length[4]|max_length[11]|integer',
+        ];
+        if (! $this->validate($rules)) {
+          $data['validation'] = $this->validator;
+        }else{
+          $model = new gpu_model();
+          $newData = [
+            'gpuPrice' => $this->request->getVar('gpuprice'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added GPU Price for the month');
+          return redirect()->to('GPUsTable');
+          } else {
+          echo "Something went wrong.";
+          }
+          }
+        }
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddGPU.php",$data);
+      echo view("sections/AdminFooter.php");
+    }
+
     public function AddAdmin(){
 
         $StaffId = session('StaffId');

@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 class Order_model extends Model{
   protected $table = 'orderstatus';
   protected $primaryKey = 'orderId';
-  protected $allowedFields = ['orderId','userId','paymentId','shippingAddress','itemsOrdered','grandTotal','orderStatus'];
+  protected $allowedFields = ['userId','paymentId','shippingAddress','itemsOrdered','grandTotal','orderStatus'];
 
 }
 ?>
