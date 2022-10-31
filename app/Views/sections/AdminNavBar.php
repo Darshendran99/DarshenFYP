@@ -5,7 +5,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                <a href="/AdminPage" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Stellar PC</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -27,25 +27,25 @@
 
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i>View Tables</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href='<?php echo base_url();?>/UsersTable' class="dropdown-item">User's Table</a>
-                            <a href="<?php echo base_url();?>/ProductsTable" class="dropdown-item">Product's Table</a>
-                            <a href="<?php echo base_url();?>/PromotionsTable" class="dropdown-item">Promotion's Table</a>
-                            <a href="<?php echo base_url();?>/ComponentsTable" class="dropdown-item">BuildYourPC's Table</a>
-                            <a href="<?php echo base_url();?>/RewardsTable" class="dropdown-item">Reward's Table</a>
-                            <a href="<?php echo base_url();?>/OrdersTable" class="dropdown-item">Order's Table</a>
-                            <a href="<?php echo base_url();?>/AdminsTable" class="dropdown-item">Admin's Table</a>
+                            <a href='/UsersTable' class="dropdown-item">User's Table</a>
+                            <a href="/ProductsTable" class="dropdown-item">Product's Table</a>
+                            <a href="/PromotionsTable" class="dropdown-item">Promotion's Table</a>
+                            <a href="/ComponentsTable" class="dropdown-item">BuildYourPC's Table</a>
+                            <a href="/RewardsTable" class="dropdown-item">Reward's Table</a>
+                            <a href="/OrdersTable" class="dropdown-item">Order's Table</a>
+                            <a href="/AdminsTable" class="dropdown-item">Admin's Table</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Add New data</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="#" class="dropdown-item">Add User</a>
-                            <a href="#" class="dropdown-item">Add Product</a>
-                            <a href="#" class="dropdown-item">Add Promotion</a>
-                            <a href="#" class="dropdown-item">Add BuildYourPC</a>
-                            <a href="#" class="dropdown-item">Add Reward</a>
-                            <a href="#" class="dropdown-item">Add Order</a>
-                            <a href="#" class="dropdown-item">Add Admin</a>
+                            <a href="/AddUser" class="dropdown-item">Add User</a>
+                            <a href="/AddProduct" class="dropdown-item">Add Product</a>
+                            <a href="/AddPromotion" class="dropdown-item">Add Promotion</a>
+                            <a href="/AddComponent" class="dropdown-item">Add BuildYourPC</a>
+                            <a href="/AddReward" class="dropdown-item">Add Reward</a>
+                            <a href="/AddOrder" class="dropdown-item">Add Order</a>
+                            <a href="/AddAdmin" class="dropdown-item">Add Admin</a>
                         </div>
                     </div>
                 </div>

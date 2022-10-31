@@ -64,7 +64,7 @@
             <table class="table text-start align-middle table-bordered table-hover mb-0">
                 <thead>
                     <tr class="text-white">
-                        <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                        <th scope="col"></th>
                         <th scope="col">Date</th>
                         <th scope="col">Invoice</th>
                         <th scope="col">Customer</th>
@@ -75,7 +75,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td></td>
                         <td>01 Jan 2045</td>
                         <td>INV-0123</td>
                         <td>Jhon Doe</td>
@@ -84,7 +84,7 @@
                         <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                     </tr>
                     <tr>
-                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td></td>
                         <td>01 Jan 2045</td>
                         <td>INV-0123</td>
                         <td>Jhon Doe</td>
@@ -93,7 +93,7 @@
                         <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                     </tr>
                     <tr>
-                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td></td>
                         <td>01 Jan 2045</td>
                         <td>INV-0123</td>
                         <td>Jhon Doe</td>
@@ -102,7 +102,7 @@
                         <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                     </tr>
                     <tr>
-                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td></td>
                         <td>01 Jan 2045</td>
                         <td>INV-0123</td>
                         <td>Jhon Doe</td>
@@ -111,7 +111,7 @@
                         <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                     </tr>
                     <tr>
-                        <td><input class="form-check-input" type="checkbox"></td>
+                        <td></td>
                         <td>01 Jan 2045</td>
                         <td>INV-0123</td>
                         <td>Jhon Doe</td>

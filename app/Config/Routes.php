@@ -76,6 +76,13 @@ $routes->match(['get','post'],'ComponentsTable', 'Admin::ComponentsTable');
 $routes->match(['get','post'],'RewardsTable', 'Admin::RewardsTable');
 $routes->match(['get','post'],'OrdersTable', 'Admin::OrdersTable');
 $routes->match(['get','post'],'AdminsTable', 'Admin::AdminsTable');
+$routes->match(['get','post'],'AddUser', 'Admin::AddUser');
+$routes->match(['get','post'],'AddProduct', 'Admin::AddProduct');
+$routes->match(['get','post'],'AddPromotion', 'Admin::AddPromotion');
+$routes->match(['get','post'],'AddComponent', 'Admin::AddComponent');
+$routes->match(['get','post'],'AddReward', 'Admin::AddReward');
+$routes->match(['get','post'],'AddOrder', 'Admin::AddOrder');
+$routes->match(['get','post'],'AddAdmin', 'Admin::AddAdmin');
 
 
 /*

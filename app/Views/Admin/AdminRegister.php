@@ -3,7 +3,7 @@
 <div class="container-fluid pt-4 px-4">
 
 <form class="RegisterRow" action="/AdminRegister" method="post">
-<h2 style="text-align: center;"> Stellar PC Admin Login Page</h2>
+<h2 style="text-align: center;"> Stellar PC Admin Register Page</h2>
   <div class="row">
     <div class="col-12">
       <div class="form-group">

@@ -317,4 +317,198 @@ $newData = [
         return redirect()->to('AdminLogin');
       }
     }
+
+    public function AddUser(){
+      if (session()->get('AdminisLoggedIn')){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'firstname' => 'required|min_length[2]|max_length[25]',
+          'lastname' => 'required|min_length[2]|max_length[25]',
+          'address' => 'required|min_length[10]|max_length[255]',
+          'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
+          'password' => 'required|min_length[8]|max_length[255]',
+          'password_confirm' => 'matches[password]',
+        ];
+
+        if (! $this->validate($rules)) {
+
+          $data['validation'] = $this->validator;
+
+        }else{
+
+          //Storing user registration into database
+          $model = new UserModel();
+
+          $newData = [
+            'firstname' => $this->request->getVar('firstname'),
+            'lastname' => $this->request->getVar('lastname'),
+            'address' => $this->request->getVar('address'),
+            'email' => $this->request->getVar('email'),
+            'password' => $this->request->getVar('password'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added User');
+
+          return redirect()->to('UsersTable');
+          } else {
+          alert("Something went wrong.");
+          }
+          }
+        }
+
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddUser.php",$data);
+      echo view("sections/AdminFooter.php");
+      }else {
+        return redirect()->to('AdminLogin');
+      }
+    }
+
+    public function AddProduct(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+
+        $data = [];
+        helper(['form']);
+
+        if ($this->request->getMethod() == 'post') {
+        //Validation
+        $rules = [
+          'productname' => 'required|min_length[10]|max_length[50]',
+          'productimage' => 'uploaded[productimage]|is_image[productimage]|max_size[productimage,4000]|max_dims[productimage,6001,4001]',
+          'productprice' => 'required|min_length[1]|max_length[255]|integer',
+          'productcpu' => 'required|min_length[5]|max_length[50]',
+          'productgpu' => 'required|min_length[5]|max_length[50]',
+          'productmobo' => 'required|min_length[5]|max_length[50]',
+          'productram' => 'required|min_length[5]|max_length[50]',
+          'productssd' => 'required|min_length[5]|max_length[50]',
+          'productpsu' => 'required|min_length[5]|max_length[50]',
+          'productcasing' => 'required|min_length[5]|max_length[50]',
+          'productother' => 'max_length[50]',
+          'productcsgo' => 'required|min_length[1]|max_length[50]|integer',
+          'productfortnite' => 'required|min_length[1]|max_length[50]|integer',
+          'productgtav' => 'required|min_length[1]|max_length[50]|integer',
+          'productcyberpunk' => 'required|min_length[1]|max_length[50]|integer',
+          'product3dmark' => 'required|min_length[1]|max_length[50]|integer',
+          'productgeekbench' => 'required|min_length[1]|max_length[50]|integer',
+        ];
+
+        if (! $this->validate($rules)) {
+
+          $data['validation'] = $this->validator;
+
+        }else{
+          $model = new product_model();
+
+          $newData = [
+            'productname' => $this->request->getVar('productname'),
+            'productimage' => $this->request->getFile('productimage'),
+            'productprice' => $this->request->getVar('productprice'),
+            'productcpu' => $this->request->getVar('productcpu'),
+            'productgpu' => $this->request->getVar('productgpu'),
+            'productmobo' => $this->request->getVar('productmobo'),
+            'productram' => $this->request->getVar('productram'),
+            'productssd' => $this->request->getVar('productssd'),
+            'productpsu' => $this->request->getVar('productpsu'),
+            'productcasing' => $this->request->getVar('productcasing'),
+            'productother' => $this->request->getVar('productother'),
+            'productcsgo' => $this->request->getVar('productcsgo'),
+            'productfortnite' => $this->request->getVar('productfortnite'),
+            'productgtav' => $this->request->getVar('productgtav'),
+            'productcyberpunk' => $this->request->getVar('productcyberpunk'),
+            'product3dmark' => $this->request->getVar('product3dmark'),
+            'productgeekbench' => $this->request->getVar('productgeekbench'),
+          ];
+          $Result = $model->save($newData);
+          if($Result) {
+            $session = session();
+            $session->setFlashdata('success', 'Added Product');
+
+          return redirect()->to('ProductsTable');
+          } else {
+          echo "Something went wrong.";
+          return redirect()->to();
+          }
+          }
+          }
+  echo view("sections/AdminHeader.php");
+  echo view("sections/AdminNavBar.php",$data1);
+  echo view("Admin/AddProduct.php",$data);
+  echo view("sections/AdminFooter.php");
+}
+    public function AddPromotion(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+$data = [];
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddPromotion.php",$data);
+      echo view("sections/AdminFooter.php");
+
+    }
+    public function AddComponent(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+$data = [];
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddComponent.php",$data);
+      echo view("sections/AdminFooter.php");
+
+    }
+    public function AddReward(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+$data = [];
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddReward.php",$data);
+      echo view("sections/AdminFooter.php");
+
+    }
+    public function AddOrder(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+$data = [];
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddOrder.php",$data);
+      echo view("sections/AdminFooter.php");
+
+    }
+    public function AddAdmin(){
+
+        $StaffId = session('StaffId');
+        $admin_model = new admin_model();
+        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+$data = [];
+      echo view("sections/AdminHeader.php");
+      echo view("sections/AdminNavBar.php",$data1);
+      echo view("Admin/AddAdmin.php",$data);
+      echo view("sections/AdminFooter.php");
+
+    }
+
 }
