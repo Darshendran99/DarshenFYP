@@ -19,7 +19,7 @@
                                       <th scope="col">Name</th>
                                       <th scope="col">Image</th>
                                       <th scope="col">Price</th>
-                                      <th scope="col">created_at</th>
+
                                       <th scope="col">Actions</th>
                                   </tr>
                               </thead>
@@ -30,9 +30,12 @@
                                       <td><?php echo $productsTable["ProductId"]; ?></td>
                                       <td><?php echo $productsTable["ProductName"]; ?></td>
                                       <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($productsTable["ProductImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
-                                      <td><?php echo $productsTable["ProductPrice"]; ?></td>
-                                      <td><?php echo $productsTable["CreatedOn"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Remove</button></td>
+                                      <td>RM <?php echo $productsTable["ProductPrice"]; ?></td>
+
+                                      <td>
+                                        <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </td>
+
                                   </tr>
                                   <?php } ?>
                               </tbody>

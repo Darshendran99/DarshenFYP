@@ -11,12 +11,11 @@
                               <thead>
                                   <tr>
                                       <th scope="col">#</th>
-                                      <th scope="col">PaymentId</th>
-                                      <th scope="col">userid</th>
+                                      <th scope="col">PaymentID</th>
+                                      <th scope="col">UserID</th>
                                       <th scope="col">Name</th>
-                                      <th scope="col">PaymentEmail</th>
-                                      <th scope="col">PaymentAddress</th>
-                                      <th scope="col">PaymentTotal</th>
+                                      <th scope="col">Email</th>
+                                      <th scope="col">Total</th>
                                       <th scope="col"></th>
                                   </tr>
                               </thead>
@@ -28,9 +27,10 @@
                                       <td><?php echo $paymentsTable["userid"]; ?></td>
                                       <td><?php echo $paymentsTable["Name"]; ?></td>
                                       <td><?php echo $paymentsTable["PaymentEmail"]; ?></td>
-                                      <td><?php echo $paymentsTable["PaymentAddress"]; ?></td>
                                       <td><?php echo $paymentsTable["PaymentTotal"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">View Details</button></td>
+                                      <td>
+                                        <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </td>
                                   </tr>
                                   <?php } ?>
                               </tbody>

@@ -17,8 +17,8 @@
                                       <th scope="col">#</th>
                                       <th scope="col">Id</th>
                                       <th scope="col">Name</th>
-                                      <th scope="col">address</th>
-                                      <th scope="col">email</th>
+                                      <th scope="col">Image</th>
+                                      <th scope="col">Reward Tier</th>
                                       <th scope="col">Actions</th>
                                   </tr>
                               </thead>
@@ -30,7 +30,9 @@
                                       <td><?php echo $rewardsTable["RewardName"]; ?></td>
                                       <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($rewardsTable["RewardImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
                                       <td> <?php echo $rewardsTable["RewardTier"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Remove</button></td>
+                                      <td>
+                                        <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </td>
                                   </tr>
                                   <?php } ?>
                               </tbody>

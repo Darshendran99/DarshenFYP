@@ -16,12 +16,10 @@
                               <thead>
                                   <tr>
                                       <th scope="col">#</th>
-                                      <th scope="col">Id</th>
-                                      <th scope="col">Name</th>
-                                      <th scope="col">address</th>
-                                      <th scope="col">email</th>
-                                      <th scope="col">created_at</th>
-                                      <th scope="col">updated_at</th>
+                                      <th scope="col">User's ID</th>
+                                      <th scope="col">Full Name</th>
+                                      <th scope="col">Address</th>
+                                      <th scope="col">Email</th>
                                       <th scope="col">Actions</th>
                                   </tr>
                               </thead>
@@ -33,9 +31,12 @@
                                       <td><?php echo $usersTable["firstname"]; ?> <?php echo $usersTable["lastname"]; ?></td>
                                       <td><?php echo $usersTable["address"]; ?></td>
                                       <td><?php echo $usersTable["email"]; ?></td>
-                                      <td><?php echo $usersTable["created_at"]; ?></td>
-                                      <td><?php echo $usersTable["updated_at"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style="  margin:auto; display:block;">Remove</button></td>
+                                      <td>
+                                        <form class="" action="/ModifyUser" method="post">
+                                          <input type="hidden" name="userid" id="userid" value="<?php echo $usersTable["id"]; ?>">
+                                        <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </form>
+                                      </td>
                                   </tr>
                                   <?php } ?>
                               </tbody>

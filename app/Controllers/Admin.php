@@ -472,11 +472,12 @@ $newData = [
           $data['validation'] = $this->validator;
 
         }else{
+          $image = file_get_contents($this->request->getFile('productimage'));
           $model = new product_model();
 
           $newData = [
             'productname' => $this->request->getVar('productname'),
-            'productimage' => $this->request->getFile('productimage'),
+            'productimage' => $image,
             'productprice' => $this->request->getVar('productprice'),
             'productcpu' => $this->request->getVar('productcpu'),
             'productgpu' => $this->request->getVar('productgpu'),
@@ -550,12 +551,13 @@ $newData = [
           $data['validation'] = $this->validator;
 
         }else{
+          $image = file_get_contents($this->request->getFile('promotionimage'));
           $model = new promotion_model();
 
           $newData = [
             'PromotionName' => $this->request->getVar('promotionname'),
             'PromotionStatus' => $this->request->getVar('promotionstatus'),
-            'PromotionImage' => $this->request->getFile('promotionimage'),
+            'PromotionImage' => $image,
             'PromotionOriPrice' => $this->request->getVar('promotionoriprice'),
             'PromotionPrice' => $this->request->getVar('promotionprice'),
             'PromotionCPU' => $this->request->getVar('promotioncpu'),
@@ -616,7 +618,7 @@ $newData = [
           $data['validation'] = $this->validator;
 
         }else{
-
+          $image = file_get_contents($this->request->getFile('componentimage'));
           //Storing user registration into database
           $model = new component_model();
 
@@ -624,7 +626,7 @@ $newData = [
             'ComponentName' => $this->request->getVar('componentname'),
             'ComponentType' => $this->request->getVar('componenttype'),
             'ComponentBrand' => $this->request->getVar('compbrand'),
-            'ComponentImage' => $this->request->getFile('componentimage'),
+            'ComponentImage' => $image,
             'ComponentDetails' => $this->request->getVar('componentdetails'),
             'ComponentPrice' => $this->request->getVar('componentprice'),
           ];
@@ -668,14 +670,13 @@ $newData = [
           $data['validation'] = $this->validator;
 
         }else{
-
+          $image = file_get_contents($this->request->getFile('rewardimage'));
           //Storing user registration into database
           $model = new reward_model();
 
           $newData = [
             'RewardName' => $this->request->getVar('rewardname'),
-            'RewardImage' => $this->request->getFile('rewardimage'),
-            // https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/
+            'RewardImage' => $image,
             'RewardTier' => $this->request->getVar('rewardtier'),
           ];
           $Result = $model->save($newData);
@@ -686,6 +687,7 @@ $newData = [
           return redirect()->to('RewardsTable');
           } else {
           echo "Something went wrong.";
+          return redirect()->to();
           }
           }
         }
@@ -886,4 +888,27 @@ $newData = [
         return redirect()->to('AdminLogin');
       }
       }
+
+      public function ModifyUser(){
+        if (session()->get('AdminisLoggedIn')){
+          $StaffId = session('StaffId');
+          $admin_model = new admin_model();
+          $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+          $data = [];
+          helper(['form']);
+
+          if ($this->request->getMethod() == 'post') {
+            $usersid = $this->request->getVar('userid');
+            $UserModel = new UserModel();
+            $data['viewuser'] = $UserModel->where('id', $usersid)->first();
+          }
+          echo view("sections/AdminHeader.php");
+          echo view("sections/AdminNavBar.php",$data1);
+          echo view("Admin/ModifyUser.php",$data);
+          echo view("sections/AdminFooter.php");
+        }else {
+          return redirect()->to('AdminLogin');
+        }
+        }
+
 }

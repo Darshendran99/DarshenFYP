@@ -15,10 +15,9 @@
                               <thead>
                                   <tr>
                                       <th scope="col">#</th>
-                                      <th scope="col">Id</th>
-                                      <th scope="col">User Id</th>
-                                      <th scope="col">Payment Id</th>
-                                      <th scope="col">Shipping Address</th>
+                                      <th scope="col">OredrID</th>
+                                      <th scope="col">UserID</th>
+                                      <th scope="col">PaymentID</th>
                                       <th scope="col">Items Ordered</th>
                                       <th scope="col">Order Status</th>
                                       <th scope="col">Actions</th>
@@ -31,10 +30,11 @@
                                       <td><?php echo $ordersTable["orderId"]; ?></td>
                                       <td><?php echo $ordersTable["userId"]; ?></td>
                                       <td><?php echo $ordersTable["paymentId"]; ?></td>
-                                      <td> <?php echo $ordersTable["shippingAddress"]; ?></td>
                                       <td> <?php echo $ordersTable["itemsOrdered"]; ?></td>
                                       <td> <?php echo $ordersTable["orderStatus"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Remove</button></td>
+                                      <td>
+                                        <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </td>
                                   </tr>
                                   <?php } ?>
                               </tbody>

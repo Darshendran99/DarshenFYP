@@ -28,7 +28,7 @@
                                       <td><?php echo $gpusTable["gpuId"]; ?></td>
                                       <td><?php echo $gpusTable["gpuPrice"]; ?></td>
                                       <td><?php echo $gpusTable["gpuUpdatedDate"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Modify</button></td>
+                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">More Details</button></td>
                                   </tr>
                                   <?php } ?>
                               </tbody>

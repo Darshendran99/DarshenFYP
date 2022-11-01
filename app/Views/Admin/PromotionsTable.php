@@ -17,9 +17,8 @@
                                       <th scope="col">#</th>
                                       <th scope="col">Id</th>
                                       <th scope="col">Name</th>
-                                      <th scope="col">Status</th>
                                       <th scope="col">Image</th>
-                                      <th scope="col">Original Price</th>
+                                      <th scope="col">Status</th>
                                       <th scope="col">Current Price</th>
                                       <th scope="col">Actions</th>
                                   </tr>
@@ -32,9 +31,11 @@
                                       <td><?php echo $promotionsTable["PromotionName"]; ?></td>
                                       <td><?php echo $promotionsTable["PromotionStatus"]; ?></td>
                                       <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($promotionsTable["PromotionImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
-                                      <td>RM <?php echo $promotionsTable["PromotionOriPrice"]; ?></td>
+
                                       <td>RM <?php echo $promotionsTable["PromotionPrice"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">Remove</button></td>
+                                      <td>
+                                        <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </td>
                                   </tr>
                                   <?php } ?>
                               </tbody>
