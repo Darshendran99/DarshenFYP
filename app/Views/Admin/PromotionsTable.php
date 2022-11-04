@@ -34,7 +34,10 @@
 
                                       <td>RM <?php echo $promotionsTable["PromotionPrice"]; ?></td>
                                       <td>
+                                        <form class="" action="/ModifyPromotion" method="post">
+                                          <input type="hidden" name="promId" id="promId" value="<?php echo $promotionsTable["PromotionId"]; ?>">
                                         <button type="submit" class="btn btn-primary" >More Details</button>
+                                        </form>
                                       </td>
                                   </tr>
                                   <?php } ?>

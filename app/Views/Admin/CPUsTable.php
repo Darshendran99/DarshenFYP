@@ -28,7 +28,12 @@
                                       <td><?php echo $cpusTable["cpuId"]; ?></td>
                                       <td><?php echo $cpusTable["cpuPrice"]; ?></td>
                                       <td><?php echo $cpusTable["cpuUpdatedDate"]; ?></td>
-                                      <td><button type="submit" class="btn btn-primary" style=" display:block;">More Details</button></td>
+                                      <td>
+                                      <form class="" action="/ModifyCPU" method="post">
+                                        <input type="hidden" name="thecpuId" id="thecpuId" value="<?php echo $cpusTable["cpuId"]; ?>">
+                                      <button type="submit" class="btn btn-primary" >More Details</button>
+                                    </form>
+                                    </td>
                                   </tr>
                                   <?php } ?>
                               </tbody>

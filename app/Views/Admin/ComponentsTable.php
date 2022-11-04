@@ -33,7 +33,10 @@
                                       <td> <?php echo $componentsTable["ComponentType"]; ?></td>
                                       <td>RM <?php echo $componentsTable["ComponentPrice"]; ?></td>
                                       <td>
+                                        <form class="" action="/ModifyComponents" method="post">
+                                          <input type="hidden" name="compId" id="compId" value="<?php echo $componentsTable["ComponentId"]; ?>">
                                         <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </form>
                                       </td>
                                   </tr>
                                   <?php } ?>

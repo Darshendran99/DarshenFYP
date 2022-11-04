@@ -5,7 +5,8 @@ use CodeIgniter\Model;
 class Promotion_model extends Model{
   protected $table = 'promotion';
   protected $primaryKey = 'PromotionId';
-  protected $allowedFields = ['PromotionName', 'PromotionStatus', 'PromotionImage', 'PromotionOriPrice', 'PromotionPrice', 'PromoCreatedOn', 'PromotionCPU', 'PromotionGPU', 'PromotionMobo', 'PromotionRAM', 'PromotionSSD', 'PromotionPSU', 'PromotionCasing', 'PromotionOther', 'NonPCDetails', 'PromotionDetail1', 'PromotionDetail2', 'PromotionDetail3','PromotionDetail4'];
+  protected $allowedFields = ['PromotionName', 'PromotionStatus', 'PromotionImage', 'PromotionOriPrice', 'PromotionPrice', 'PromoCreatedOn', 'PromotionCPU', 'PromotionGPU', 'PromotionMobo', 'PromotionRAM', 'PromotionSSD', 'PromotionPSU', 'PromotionCasing', 'PromotionOther', 'NonPCDetails', 'PromotionDetail1', 'PromotionDetail2', 'PromotionDetail3',
+                              'PromotionDetail4'];
   protected $beforeInsert = ['beforeInsert'];
 
     protected function beforeInsert(array $data){

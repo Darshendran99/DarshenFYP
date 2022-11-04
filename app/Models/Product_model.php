@@ -4,8 +4,7 @@ use CodeIgniter\Model;
 
 class Product_model extends Model{
   protected $table = 'product';
-  protected $primaryKey = 'ProductId';
-protected $allowedFields = ['productname', 'productimage', 'productprice', 'productcpu', 'productgpu', 'productmobo', 'productram', 'productssd', 'productpsu', 'productcasing', 'productother', 'productcsgo', 'productfortnite', 'productgtav', 'productcyberpunk', 'product3dmark', 'productgeekbench', 'CreatedOn'];
+  protected $allowedFields = ['ProductName', 'ProductImage', 'ProductPrice', 'ProductCPU', 'ProductGPU', 'ProductMobo', 'ProductRAM', 'ProductSSD', 'ProductPSU', 'ProductCasing', 'ProductOther', 'ProductCSGO', 'ProductFortnite', 'ProductGTAV', 'ProductCyberpunk', 'Product3DMark', 'ProductGeekbench', 'CreatedOn'];
   protected $beforeInsert = ['beforeInsert'];
 
   protected function beforeInsert(array $data){

@@ -31,9 +31,11 @@
                                       <td><?php echo $productsTable["ProductName"]; ?></td>
                                       <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($productsTable["ProductImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
                                       <td>RM <?php echo $productsTable["ProductPrice"]; ?></td>
-
                                       <td>
+                                        <form class="" action="/ModifyProducts" method="post">
+                                          <input type="hidden" name="prodId" id="prodId" value="<?php echo $productsTable["ProductId"]; ?>">
                                         <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </form>
                                       </td>
 
                                   </tr>

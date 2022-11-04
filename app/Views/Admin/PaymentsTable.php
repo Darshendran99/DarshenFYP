@@ -29,7 +29,10 @@
                                       <td><?php echo $paymentsTable["PaymentEmail"]; ?></td>
                                       <td><?php echo $paymentsTable["PaymentTotal"]; ?></td>
                                       <td>
-                                        <button type="submit" class="btn btn-primary" >More Details</button>
+                                        <form class="" action="/ViewPayment" method="post">
+                                          <input type="hidden" name="payId" id="payId" value="<?php echo $paymentsTable["PaymentId"]; ?>">
+                                        <button type="submit" class="btn btn-primary">More Details</button>
+                                      </form>
                                       </td>
                                   </tr>
                                   <?php } ?>

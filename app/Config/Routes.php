@@ -90,6 +90,15 @@ $routes->match(['get','post'],'AddAdmin', 'Admin::AddAdmin');
 $routes->match(['get','post'],'AddCPU', 'Admin::AddCPU');
 $routes->match(['get','post'],'AddGPU', 'Admin::AddGPU');
 $routes->match(['get','post'],'ModifyUser', 'Admin::ModifyUser');
+$routes->match(['get','post'],'ModifyProducts', 'Admin::ModifyProducts');
+$routes->match(['get','post'],'ModifyPromotion', 'Admin::ModifyPromotion');
+$routes->match(['get','post'],'ModifyComponents', 'Admin::ModifyComponents');
+$routes->match(['get','post'],'ModifyReward', 'Admin::ModifyReward');
+$routes->match(['get','post'],'ViewPayment', 'Admin::ViewPayment');
+$routes->match(['get','post'],'ModifyOrder', 'Admin::ModifyOrder');
+$routes->match(['get','post'],'ModifyCPU', 'Admin::ModifyCPU');
+$routes->match(['get','post'],'ModifyGPU', 'Admin::ModifyGPU');
+$routes->match(['get','post'],'ModifyAdmin', 'Admin::ModifyAdmin');
 
 /*
  * --------------------------------------------------------------------

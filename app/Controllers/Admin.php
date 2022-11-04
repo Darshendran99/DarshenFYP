@@ -911,4 +911,218 @@ $newData = [
         }
         }
 
+        public function ModifyProducts(){
+          if (session()->get('AdminisLoggedIn')){
+            $StaffId = session('StaffId');
+            $admin_model = new admin_model();
+            $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+            $data = [];
+            helper(['form']);
+
+            if ($this->request->getMethod() == 'post') {
+              $productId = $this->request->getVar('prodId');
+              $productModel = new product_model();
+              $data['viewproduct'] = $productModel->where('ProductId', $productId)->first();
+
+            }
+            echo view("sections/AdminHeader.php");
+            echo view("sections/AdminNavBar.php",$data1);
+            echo view("Admin/ModifyProducts.php",$data);
+            echo view("sections/AdminFooter.php");
+          }else {
+            return redirect()->to('AdminLogin');
+          }
+          }
+
+          public function ModifyPromotion(){
+            if (session()->get('AdminisLoggedIn')){
+              $StaffId = session('StaffId');
+              $admin_model = new admin_model();
+              $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+              $data = [];
+              helper(['form']);
+
+              if ($this->request->getMethod() == 'post') {
+                $promoId = $this->request->getVar('promId');
+                $promotionModel = new promotion_model();
+                $data['viewpromotion'] = $promotionModel->where('PromotionId', $promoId)->first();
+
+              }
+              echo view("sections/AdminHeader.php");
+              echo view("sections/AdminNavBar.php",$data1);
+              echo view("Admin/ModifyPromotion.php",$data);
+              echo view("sections/AdminFooter.php");
+            }else {
+              return redirect()->to('AdminLogin');
+            }
+            }
+
+              public function ModifyComponents(){
+                if (session()->get('AdminisLoggedIn')){
+                  $StaffId = session('StaffId');
+                  $admin_model = new admin_model();
+                  $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+                  $data = [];
+                  helper(['form']);
+
+                  if ($this->request->getMethod() == 'post') {
+                    $compoId = $this->request->getVar('compId');
+                    $componentModel = new component_model();
+                    $data['viewcomponent'] = $componentModel->where('ComponentId', $compoId)->first();
+
+                  }
+                  echo view("sections/AdminHeader.php");
+                  echo view("sections/AdminNavBar.php",$data1);
+                  echo view("Admin/ModifyComponents.php",$data);
+                  echo view("sections/AdminFooter.php");
+                }else {
+                  return redirect()->to('AdminLogin');
+                }
+                }
+
+                public function ModifyReward(){
+                  if (session()->get('AdminisLoggedIn')){
+                    $StaffId = session('StaffId');
+                    $admin_model = new admin_model();
+                    $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+                    $data = [];
+                    helper(['form']);
+
+                    if ($this->request->getMethod() == 'post') {
+                      $rewardId = $this->request->getVar('rewId');
+                      $rewardModel = new reward_model();
+                      $data['viewreward'] = $rewardModel->where('RewardID', $rewardId)->first();
+
+                    }
+                    echo view("sections/AdminHeader.php");
+                    echo view("sections/AdminNavBar.php",$data1);
+                    echo view("Admin/ModifyReward.php",$data);
+                    echo view("sections/AdminFooter.php");
+                  }else {
+                    return redirect()->to('AdminLogin');
+                  }
+                  }
+
+                  public function ViewPayment(){
+                    if (session()->get('AdminisLoggedIn')){
+                      $StaffId = session('StaffId');
+                      $admin_model = new admin_model();
+                      $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+                      $data = [];
+                      helper(['form']);
+
+                      if ($this->request->getMethod() == 'post') {
+                        $paymntId = $this->request->getVar('payId');
+                        $paymentModel = new payment_model();
+                        $data['viewpayment'] = $paymentModel->where('PaymentId', $paymntId)->first();
+
+                      }
+                      echo view("sections/AdminHeader.php");
+                      echo view("sections/AdminNavBar.php",$data1);
+                      echo view("Admin/ViewPayment.php",$data);
+                      echo view("sections/AdminFooter.php");
+                    }else {
+                      return redirect()->to('AdminLogin');
+                    }
+                    }
+
+                    public function ModifyOrder(){
+                      if (session()->get('AdminisLoggedIn')){
+                        $StaffId = session('StaffId');
+                        $admin_model = new admin_model();
+                        $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+                        $data = [];
+                        helper(['form']);
+
+                        if ($this->request->getMethod() == 'post') {
+                          $UserModel = new UserModel();
+                          $data['useridData'] = $UserModel->orderBy('id', 'ASC') ->findAll();
+                          $payment_model = new payment_model();
+                          $data['paymntidData'] = $payment_model->orderBy('PaymentId', 'ASC') ->findAll();
+
+                          $orderId = $this->request->getVar('ordrId');
+                          $orderModel = new order_model();
+                          $data['vieworder'] = $orderModel->where('orderId', $orderId)->first();
+
+                        }
+                        echo view("sections/AdminHeader.php");
+                        echo view("sections/AdminNavBar.php",$data1);
+                        echo view("Admin/ModifyOrder.php",$data);
+                        echo view("sections/AdminFooter.php");
+                      }else {
+                        return redirect()->to('AdminLogin');
+                      }
+                      }
+
+                      public function ModifyCPU(){
+                        if (session()->get('AdminisLoggedIn')){
+                          $StaffId = session('StaffId');
+                          $admin_model = new admin_model();
+                          $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+                          $data = [];
+                          helper(['form']);
+
+                          if ($this->request->getMethod() == 'post') {
+
+                            $cpuid = $this->request->getVar('thecpuId');
+                            $cpuModel = new cpu_model();
+                            $data['viewcpu'] = $cpuModel->where('cpuId', $cpuid)->first();
+
+                          }
+                          echo view("sections/AdminHeader.php");
+                          echo view("sections/AdminNavBar.php",$data1);
+                          echo view("Admin/ModifyCPU.php",$data);
+                          echo view("sections/AdminFooter.php");
+                        }else {
+                          return redirect()->to('AdminLogin');
+                        }
+                        }
+
+                        public function ModifyGPU(){
+                          if (session()->get('AdminisLoggedIn')){
+                            $StaffId = session('StaffId');
+                            $admin_model = new admin_model();
+                            $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+                            $data = [];
+                            helper(['form']);
+
+                            if ($this->request->getMethod() == 'post') {
+
+                              $gpuid = $this->request->getVar('thegpuId');
+                              $gpuModel = new gpu_model();
+                              $data['viewgpu'] = $gpuModel->where('gpuId', $gpuid)->first();
+
+                            }
+                            echo view("sections/AdminHeader.php");
+                            echo view("sections/AdminNavBar.php",$data1);
+                            echo view("Admin/ModifyGPU.php",$data);
+                            echo view("sections/AdminFooter.php");
+                          }else {
+                            return redirect()->to('AdminLogin');
+                          }
+                          }
+
+                          public function ModifyAdmin(){
+                            if (session()->get('AdminisLoggedIn')){
+                              $StaffId = session('StaffId');
+                              $admin_model = new admin_model();
+                              $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
+                              $data = [];
+                              helper(['form']);
+
+                              if ($this->request->getMethod() == 'post') {
+                                $theadminid = $this->request->getVar('adminid');
+                                $adminModel = new admin_model();
+                                $data['viewadmin'] = $adminModel->where('StaffId', $theadminid)->first();
+                              }
+                              echo view("sections/AdminHeader.php");
+                              echo view("sections/AdminNavBar.php",$data1);
+                              echo view("Admin/ModifyAdmin.php",$data);
+                              echo view("sections/AdminFooter.php");
+                            }else {
+                              return redirect()->to('AdminLogin');
+                            }
+                            }
+
+
 }

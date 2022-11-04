@@ -33,7 +33,10 @@
                                       <td> <?php echo $ordersTable["itemsOrdered"]; ?></td>
                                       <td> <?php echo $ordersTable["orderStatus"]; ?></td>
                                       <td>
+                                        <form class="" action="/ModifyOrder" method="post">
+                                          <input type="hidden" name="ordrId" id="ordrId" value="<?php echo $ordersTable["orderId"]; ?>">
                                         <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </form>
                                       </td>
                                   </tr>
                                   <?php } ?>

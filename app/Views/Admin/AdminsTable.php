@@ -29,7 +29,10 @@
                                       <td><?php echo $adminsTable["staffName"]; ?></td>
                                       <td><?php echo $adminsTable["staffEmail"]; ?></td>
                                       <td>
+                                        <form class="" action="/ModifyAdmin" method="post">
+                                          <input type="hidden" name="adminid" id="adminid" value="<?php echo $adminsTable["StaffId"]; ?>">
                                         <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </form>
                                       </td>
                                   </tr>
                                   <?php } ?>

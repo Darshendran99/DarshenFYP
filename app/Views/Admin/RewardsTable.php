@@ -31,7 +31,10 @@
                                       <td><img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($rewardsTable["RewardImage"]); ?>" alt="" style="height: 100px; width: 100px;"></td>
                                       <td> <?php echo $rewardsTable["RewardTier"]; ?></td>
                                       <td>
+                                        <form class="" action="/ModifyReward" method="post">
+                                          <input type="hidden" name="rewId" id="rewId" value="<?php echo $rewardsTable["RewardID"]; ?>">
                                         <button type="submit" class="btn btn-primary" >More Details</button>
+                                      </form>
                                       </td>
                                   </tr>
                                   <?php } ?>

@@ -4,7 +4,7 @@
 <div class="col-sm-12 col-xl-6">
     <div class="bg-secondary rounded h-100 p-4">
         <h6 class="mb-4" style="text-align: center;">View User</h6>
-        <form class="" action="/AddUser" method="post">
+      <!-- <form class="" action="/AddUser" method="post"> -->
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="firstname" id="firstname"
                 placeholder="" value="<?php echo $viewuser["firstname"];?>">
