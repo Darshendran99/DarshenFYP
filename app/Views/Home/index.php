@@ -58,24 +58,26 @@
 				<!-- BuildYourPC -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,"/></img>
-						<h4>  </h4>
+						<img src="data:image/png;base64,<?php echo base64_encode($component["ComponentImage"]); ?>" style="width:220px;height:200px;"/></img>
+						<h4>  <?php echo $component["ComponentName"]; ?>	  </h4>
+						<h4>  	  </h4>
 						<h4>BuildYourPC<span>Prebuilt Custom PC</span></h4>
 						<ul>
 							<br>
-							<li><i class="fa fa-star"></i> RM </li>
+							<li><i class="fa fa-star"></i> RM <?php echo $component["ComponentPrice"];?></li>
 						</ul>
 					</div>
 				</div>
 				<!-- BuildYourPC -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="item">
-						<img src="data:image/png;base64,"/></img>
-						<h4>  </h4>
-						<h4>More<span>Soon</span></h4>
+						<img src='/assets/image/customKeyboard.jpg'style="width:220px;height:200px;"/></img>
+						<h4>  UWUWUWUWUUWUWUWU </h4>
+						<h4>  	 </h4>
+						<h4>More Soon<span>Custom Keyboard?</span></h4>
 						<ul>
 							<br>
-							<li><i class="fa fa-star"></i> RM </li>
+							<li><i class="fa fa-star"></i> Surprise </li>
 						</ul>
 					</div>
 				</div>

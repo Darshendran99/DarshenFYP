@@ -145,7 +145,7 @@ transition: 0.2s;
   padding-left: 16px;
 }
 
-.cart{
+table{
   color: #D3D3D3;
   background: rgba(0,0,0,0.1);
   counter-reset: tableCount;
@@ -160,6 +160,7 @@ th{
     font-size: 20px;
 }
 th,td{
+
   padding: 20px;
   border: 1px solid #D3D3D3;
 }

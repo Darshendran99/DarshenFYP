@@ -35,7 +35,7 @@
 											<option value=""> -- Select an option -- </option>
 											<?php foreach ($component as $cpu => $amdCpu) { ?>
 												<?php if ($amdCpu["ComponentType"] == "CPU") { ?>
-													<?php if ($amdCpu["ComponentBrand"] == "Amd") { ?>
+													<?php if ($amdCpu["ComponentBrand"] == "AMD") { ?>
 													<option value="<?php echo $amdCpu["ComponentId"]; ?>"><?php echo $amdCpu["ComponentName"]; ?></option>
 												<?php } } } ?>
 										</select>
@@ -63,7 +63,7 @@
 										<option  name="amdCpu" value=""> -- Select an option -- </option>
 										<?php foreach ($component as $mobo => $amdMobo) { ?>
 											<?php if ($amdMobo["ComponentType"] == "Mobo") { ?>
-												<?php if ($amdMobo["ComponentBrand"] == "Amd") { ?>
+												<?php if ($amdMobo["ComponentBrand"] == "AMD") { ?>
 												<option value="<?php echo $amdMobo["ComponentId"]; ?>"><?php echo $amdMobo["ComponentName"]; ?></option>
 											<?php } } } ?>
 									</select>
@@ -91,7 +91,7 @@
 									<option value=""> -- Select an option -- </option>
 									<?php foreach ($component as $gpu => $amdGpu) { ?>
 										<?php if ($amdGpu["ComponentType"] == "GPU") { ?>
-											<?php if ($amdGpu["ComponentBrand"] == "Amd") { ?>
+											<?php if ($amdGpu["ComponentBrand"] == "AMD") { ?>
 											<option value="<?php echo $amdGpu["ComponentId"]; ?>"><?php echo $amdGpu["ComponentName"]; ?></option>
 										<?php } } } ?>
 								</select>

@@ -39,6 +39,9 @@
                           <input type="text" id="zip" name="zip" placeholder="10001" value="<?= set_value('zip') ?>">
                         </div>
                       </div>
+                      <input type="checkbox" id="cod" name="cod" value="cod">
+                      <label for="cod" style="float: left;"><i class="fa fa-money"></i> Cash On Delivery?</label>
+                    </input>
                     </div>
 
                     <div class="col-50">

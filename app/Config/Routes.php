@@ -99,6 +99,8 @@ $routes->match(['get','post'],'ModifyOrder', 'Admin::ModifyOrder');
 $routes->match(['get','post'],'ModifyCPU', 'Admin::ModifyCPU');
 $routes->match(['get','post'],'ModifyGPU', 'Admin::ModifyGPU');
 $routes->match(['get','post'],'ModifyAdmin', 'Admin::ModifyAdmin');
+$routes->match(['get','post'],'UpdateModUser', 'Admin::UpdateModUser');
+$routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
 
 /*
  * --------------------------------------------------------------------

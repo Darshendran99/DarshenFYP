@@ -19,8 +19,10 @@ class Home extends BaseController
     {
       $product_model = new product_model();
       $promotion_model = new promotion_model();
+      $component_model = new component_model();
       $data['product'] = $product_model->orderBy('ProductPrice', 'ASC')->first();
       $data['promotion'] = $promotion_model->orderBy('PromotionPrice', 'ASC')->first();
+      $data['component'] = $component_model->orderBy('ComponentPrice', 'ASC')->first();
 
       $db = \Config\Database::connect();
               $builder = $db->table('gpuchart');

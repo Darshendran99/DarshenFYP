@@ -35,6 +35,9 @@ class Admin extends BaseController
           $paymentRev = new payment_model();
           $data['payment'] = $paymentRev->findAll();
 
+          $order_model = new order_model();
+          $data['ordersTable'] = $order_model->orderBy('orderId', 'ASC')->first();
+
 
         echo view("sections/AdminHeader.php");
         echo view("sections/AdminNavBar.php",$data1);
@@ -894,14 +897,10 @@ $newData = [
           $StaffId = session('StaffId');
           $admin_model = new admin_model();
           $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
-          $data = [];
-          helper(['form']);
+          $usersid = $this->request->getVar('userid');
+          $UserModel = new UserModel();
+          $data['viewuser'] = $UserModel->where('id', $usersid)->first();
 
-          if ($this->request->getMethod() == 'post') {
-            $usersid = $this->request->getVar('userid');
-            $UserModel = new UserModel();
-            $data['viewuser'] = $UserModel->where('id', $usersid)->first();
-          }
           echo view("sections/AdminHeader.php");
           echo view("sections/AdminNavBar.php",$data1);
           echo view("Admin/ModifyUser.php",$data);
@@ -910,6 +909,64 @@ $newData = [
           return redirect()->to('AdminLogin');
         }
         }
+
+        public function UpdateModUser(){
+          if (session()->get('AdminisLoggedIn')){
+
+            if ($this->request->getMethod() == 'post') {
+              //Storing user registration into database
+              $updateUsermodel = new UserModel();
+              $theid = $this->request->getVar('userid');
+              $newUserData = [
+                'firstname' => $this->request->getVar('firstname'),
+                'lastname' => $this->request->getVar('lastname'),
+                'address' => $this->request->getVar('address'),
+                'email' => $this->request->getVar('email'),
+                'password' => $this->request->getVar('password'),
+              ];
+
+                      $updateUsermodel->set($newUserData);
+                      $updateUsermodel->where('id', $theid);
+                      $updateUsermodelResult = $updateUsermodel->update();
+                            if($updateUsermodelResult) {
+                              $session = session();
+                              $session->setFlashdata('success', 'Successfully Updated');
+                              return redirect()->to('UsersTable');
+                            } else {
+                              echo "Something went wrong";
+                              return redirect()->to();
+                            }
+            }return redirect()->to('');
+
+          }else {
+            return redirect()->to('AdminLogin');
+          }
+        }
+
+        public function DeleteModUser(){
+          if (session()->get('AdminisLoggedIn')){
+
+            if ($this->request->getMethod() == 'post') {
+              //Storing user registration into database
+              $deleteUsermodel = new UserModel();
+              $theid = $this->request->getVar('userid');
+              $data['post'] = $deleteUsermodel->where('id', $theid)->delete();
+              $deleteUsermodelResult = $data['post'];
+                            if($deleteUsermodelResult) {
+                              $session = session();
+                              $session->setFlashdata('deleted', 'Successfully Deleted');
+                              return redirect()->to('UsersTable');
+                            } else {
+                              echo "Something went wrong";
+                              return redirect()->to();
+                            }
+            }return redirect()->to('');
+
+          }else {
+            return redirect()->to('AdminLogin');
+          }
+        }
+
 
         public function ModifyProducts(){
           if (session()->get('AdminisLoggedIn')){
