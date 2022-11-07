@@ -1,14 +1,18 @@
-
-
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="page-content">
 				<div class="helloText">
 			<?php if (session()->get('isLoggedIn')): ?>
-			<h1>Hello, <?= session()->get('firstname') ?></h1>
+			<h1 style="text-align: center;">Hello, <?= session()->get('firstname') ?></h1>
 			<?php endif; ?>
 		</div>
+
+		<?php if (session()->get('success')): ?>
+			 <div class="alert alert-success" role="alert">
+					<?= session()->get('success') ?>
+				 </div>
+		<?php endif; ?>
 
 <!-- Banner -->
 			<div class="main-banner">
@@ -61,7 +65,7 @@
 						<img src="data:image/png;base64,<?php echo base64_encode($component["ComponentImage"]); ?>" style="width:220px;height:200px;"/></img>
 						<h4>  <?php echo $component["ComponentName"]; ?>	  </h4>
 						<h4>  	  </h4>
-						<h4>BuildYourPC<span>Prebuilt Custom PC</span></h4>
+						<h4>BuildYourPC<span>Customise YOUR PC</span></h4>
 						<ul>
 							<br>
 							<li><i class="fa fa-star"></i> RM <?php echo $component["ComponentPrice"];?></li>
@@ -132,10 +136,6 @@
 		</div>
 		</div>
 		</div>
-
-
-
-
 
 	</div>
 	</div>

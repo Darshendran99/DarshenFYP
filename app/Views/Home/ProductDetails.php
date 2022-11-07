@@ -31,6 +31,9 @@
 			                      <img class="productDetailsImage" src="data:image/png;base64,<?php echo base64_encode($product["ProductImage"]); ?>" alt="" style="border-radius: 23px; margin-bottom: 30px; ">
 			                    </div>
 													<div class="col-lg-12">
+														<div class="productDetails" style="float:right;">
+															<iframe width="500" height="300" src="<?php echo $product["productLink"]; ?>?autoplay=1&mute=1">"></iframe>
+														</div>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/cpuIcon.png'); ?>">
 														<h5>Processor: &emsp;<?php echo $product["ProductCPU"]; ?> </h5>

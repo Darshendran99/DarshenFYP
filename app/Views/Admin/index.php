@@ -1,12 +1,12 @@
 <!-- Sale & Revenue Start -->
 <div class="container-fluid pt-4 px-4">
-    <div class="row g-4">
+    <div class="row g-4"style="justify-content: center;">
         <div class="col-sm-6 col-xl-3">
             <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                 <i class="fa fa-chart-line fa-3x text-primary"></i>
                 <div class="ms-3">
                     <p class="mb-2">Today's Sale</p>
-                    <h6 class="mb-0">RM 1234</h6>
+                    <h6 class="mb-0">RM 7533</h6>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
 <!-- Sale & Revenue End -->
 <!-- Calander -->
 <div class="container-fluid pt-4 px-4">
-    <div class="row g-4">
+    <div class="row g-7" style="justify-content: center;">
         <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="h-100 bg-secondary rounded p-4">
                 <div class="d-flex align-items-center justify-content-between mb-4">

@@ -1,0 +1,33 @@
+CRITICAL - 2022-11-07 10:26:52 --> Undefined array key "staffEmail"
+in APPPATH\Validation\AdminRules.php on line 10.
+ 1 APPPATH\Validation\AdminRules.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "staffEmail"', 'APPPATH\\Validation\\AdminRules.php', 10)
+ 2 SYSTEMPATH\Validation\Validation.php(315): App\Validation\AdminRules->validateAdmin('qqqqqqqq', 'staffEmail,stafPassword', [...], null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('stafPassword', 'stafPassword', 'qqqqqqqq', [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Admin.php(132): CodeIgniter\Controller->validate([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->AdminLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:27:21 --> Undefined array key "staffEmail"
+in APPPATH\Validation\AdminRules.php on line 10.
+ 1 APPPATH\Validation\AdminRules.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "staffEmail"', 'APPPATH\\Validation\\AdminRules.php', 10)
+ 2 SYSTEMPATH\Validation\Validation.php(315): App\Validation\AdminRules->validateAdmin('qqqqqqqq', 'staffEmail,stafPassword', [...], null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('stafPassword', 'stafPassword', 'qqqqqqqq', [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Admin.php(132): CodeIgniter\Controller->validate([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->AdminLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 10:27:32 --> Undefined array key "staffEmail"
+in APPPATH\Validation\AdminRules.php on line 10.
+ 1 APPPATH\Validation\AdminRules.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "staffEmail"', 'APPPATH\\Validation\\AdminRules.php', 10)
+ 2 SYSTEMPATH\Validation\Validation.php(315): App\Validation\AdminRules->validateAdmin('qqqqqqqq', 'staffEmail,stafPassword', [...], null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('stafPassword', 'stafPassword', 'qqqqqqqq', [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Admin.php(132): CodeIgniter\Controller->validate([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->AdminLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

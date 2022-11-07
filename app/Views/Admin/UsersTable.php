@@ -15,7 +15,7 @@
 
               <div class="col-12">
                   <div class="bg-secondary rounded h-100 p-4">
-                      <h6 class="mb-4">Responsive Table</h6>
+                      <h6 class="mb-4">Users Table</h6>
                       <div class="table-responsive">
                           <table class="table">
                               <thead>

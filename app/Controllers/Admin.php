@@ -19,7 +19,6 @@ class Admin extends BaseController
     public function index()
     {
         if (session()->get('AdminisLoggedIn')){
-
           $StaffId = session('StaffId');
           $admin_model = new admin_model();
           $data1['adminData'] = $admin_model->where('StaffId', $StaffId)->first();
@@ -38,17 +37,16 @@ class Admin extends BaseController
           $order_model = new order_model();
           $data['ordersTable'] = $order_model->orderBy('orderId', 'ASC')->first();
 
-
         echo view("sections/AdminHeader.php");
         echo view("sections/AdminNavBar.php",$data1);
         echo view("Admin/index.php", $data);
         echo view("sections/AdminFooter.php");
 
-
       }else {
         return redirect()->to('AdminLogin');
     }
-    }
+  }
+  
     public function AdminRegister(){
       $data = [];
       helper(['form']);
@@ -106,8 +104,6 @@ $newData = [
         echo view("sections/AdminHeader.php");
         echo view("Admin/AdminRegister.php",$data);
         echo view("sections/AdminFooter.php");
-
-
     }
 
     public function AdminLogin()
@@ -121,18 +117,14 @@ $newData = [
               'staffEmail' => 'required|min_length[6]|max_length[50]|valid_email',
               'stafPassword' => 'required|min_length[8]|max_length[255]|validateAdmin[staffEmail,stafPassword]',
             ];
-
             $errors = [
               'stafPassword' => [
                 'validateAdmin' => 'Email or Password don\'t match'
               ]
             ];
-
-
             if (! $this->validate($rules, $errors)) {
               $data['validation'] = $this->validator;
             }else{
-
               // ReCaptcha
               $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
               $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
@@ -160,10 +152,8 @@ $newData = [
               $session = session();
                 $session->setFlashdata('msg', 'Please Complete Captcha');
             }
-
             }
           }
-
           echo view("sections/AdminHeader.php");
           echo view("Admin/AdminLogin.php", $data);
           echo view("sections/AdminFooter.php");

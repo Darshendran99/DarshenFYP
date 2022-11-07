@@ -37,7 +37,6 @@ class Home extends BaseController
                       'sell' => floatval($row->s)
                   );
               }
-
               $data['gpuchart'] = ($gpuchart);
 
               $db = \Config\Database::connect();
@@ -53,15 +52,11 @@ class Home extends BaseController
                               'sell' => floatval($row->s)
                           );
                       }
-
                       $data['cpuchart'] = ($cpuchart);
-
 
       echo view("sections/Header.php");
       return view("Home/index.php", $data);
-
     }
-
 
     public function Login()
     {
@@ -74,17 +69,14 @@ class Home extends BaseController
               'email' => 'required|min_length[6]|max_length[50]|valid_email',
               'password' => 'required|min_length[8]|max_length[255]|validateUser[email,password]',
             ];
-
             $errors = [
               'password' => [
                 'validateUser' => 'Email or Password don\'t match'
               ]
             ];
-
             if (! $this->validate($rules, $errors)) {
               $data['validation'] = $this->validator;
             }else{
-
               // ReCaptcha
               $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
               $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
@@ -112,10 +104,8 @@ class Home extends BaseController
               $session = session();
                 $session->setFlashdata('msg', 'Please Complete Captcha');
             }
-
             }
           }
-
         echo view("sections/Header.php");
         echo view("Home/Login.php", $data);
         echo view("sections/Footer.php");
@@ -137,7 +127,6 @@ class Home extends BaseController
     {
       $data = [];
       helper(['form']);
-
       if ($this->request->getMethod() == 'post') {
       //Validation
       $rules = [
@@ -148,11 +137,9 @@ class Home extends BaseController
         'password' => 'required|min_length[8]|max_length[255]',
         'password_confirm' => 'matches[password]',
       ];
-
       if (! $this->validate($rules)) {
         $data['validation'] = $this->validator;
       }else{
-
 // ReCaptcha
 $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
 $secret='6LegAqEiAAAAAMI4rynvgUDGBd_KwINxMKeQzkE_';
@@ -172,7 +159,6 @@ if($status['success']){
 // Recaptcha
 //Storing user registration into database
 $model = new UserModel();
-
 $newData = [
   'firstname' => $this->request->getVar('firstname'),
   'lastname' => $this->request->getVar('lastname'),
@@ -189,14 +175,12 @@ $newData = [
         $session = session();
           $session->setFlashdata('msg', 'Please Complete Captcha');
       }
-
       }
     }
         echo view("sections/Header.php");
         echo view("Home/Register.php",$data);
         echo view("sections/Footer.php");
-
-    }
+}
 
     public function logout(){
       session()->destroy();
@@ -244,7 +228,7 @@ $newData = [
     }
 
 public function AddCart1($ProductId){
-
+// Product
   if (session()->get('isLoggedIn')){
       $id = session('id');
       $product_model = new product_model();
@@ -310,7 +294,7 @@ public function AddCart1($ProductId){
 }
 
 public function AddCart2($PromotionId){
-
+// Promotion
   if (session()->get('isLoggedIn')){
       $id = session('id');
       $promotion_model = new promotion_model();
@@ -375,8 +359,8 @@ public function AddCart2($PromotionId){
 }
 
 
-public function AddCart3()
-{
+public function AddCart3(){
+  // BuildYourPC
   $data = [];
   helper(['form']);
 
@@ -722,27 +706,6 @@ public function RemoveComponentItem()
     }
 }
 
-
-
-//   // Component
-//   if ($ComponentId != ""){
-// $deleteComponentItem = new cart_model();
-// $deleteComponentItemArray = ['uid' => $id, 'ComponentId' => $ComponentId];
-// $data['deleteSelectedComponentItems'] = $deleteComponentItem->where($deleteComponentItemArray)->delete();
-// $ComponentitemsDeleted = $data['deleteSelectedComponentItems'];
-//   if($ComponentitemsDeleted) {
-//     echo "Removed Component item from cart";
-//   }else{
-//     echo "SQL Error RemoveItem()";
-//   }
-// }
-
-        //   return redirect()->to();
-        //
-
-
-
-
     public function Cart()
     {
       $id = session('id');
@@ -769,7 +732,7 @@ public function RemoveComponentItem()
            'email' => 'required|min_length[6]|max_length[50]|valid_email',
            'address' => 'required|min_length[10]|max_length[255]|alpha_numeric_punct',
            'city' => 'required|min_length[4]|max_length[50]|alpha_space',
-           'state' => 'required|min_length[4]|max_length[50]|alpha',
+           'state' => 'required|min_length[4]|max_length[50]|alpha_space',
            'zip' => 'required|min_length[4]|max_length[50]|integer',
            'cardname' => 'required|min_length[4]|max_length[26]|alpha',
            'cardnumber' => 'required|min_length[14]|max_length[16]|integer',
@@ -779,8 +742,10 @@ public function RemoveComponentItem()
 
          ];
 
-         $PaymentAddress = $this->request->getVar('address').",".$this->request->getVar('city').",".$this->request->getVar('state').",".$this->request->getVar('zip');
-         $CardDetails = $this->request->getVar('cardname').",".$this->request->getVar('cardnumber').",".$this->request->getVar('expmonth').",".$this->request->getVar('expyear').",".$this->request->getVar('cvv');
+         $PaymentAddress = $this->request->getVar('address').",".$this->request->getVar('city').",".$this->request->getVar('state').","
+                            .$this->request->getVar('zip');
+         $CardDetails = $this->request->getVar('cardname').",".$this->request->getVar('cardnumber').",".$this->request->getVar('expmonth').","
+                            .$this->request->getVar('expyear').",".$this->request->getVar('cvv');
          $total_price_sum = $this->request->getVar('totalPrice');
          date_default_timezone_set("Asia/Kuala_Lumpur");
          $paymentTime= date("Y-m-d H:i:s");
@@ -991,6 +956,9 @@ public function RemoveComponentItem()
                   $updateUsermodelResult = $updateUsermodel->update();
                         if($updateUsermodelResult) {
                           echo "Updated";
+                          $session = session();
+                          $session->setFlashdata('success', 'Successfully Updated Account');
+                          return redirect()->to('');
                         } else {
                           echo "Something went wrong";
                         }

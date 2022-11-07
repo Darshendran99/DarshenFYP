@@ -1,6 +1,4 @@
 const btn = document.getElementById('startButton');
-
-
 var myGamePiece;
 var myObstacles = [];
 var myScore;
@@ -70,7 +68,6 @@ function component(width, height, color, x, y, type) {
             this.gravitySpeed = 0;
         }
     }
-
 
     this.crashWith = function(otherobj) {
         var myleft = this.x;

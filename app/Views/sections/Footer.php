@@ -6,24 +6,23 @@
 
 
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-            <p>Find Us On Our Social Media</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Find Us On Our Social Media</p>
 
-          <ul class="socials">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-<div class="whatsappbutton">
-            <p><a href="https://api.whatsapp.com/send?phone=60164592482&amp;text=Hi%20StellarPC,%20I%20would%20like%20to%20inquire%20about%20something%20:">Contact us on WhatsApp</a><p>
-</div>
-            <p style="padding-top: 0;" >Copyright &copy;2022 <a href="#">StellarPC</a></p>
-
-        </div>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+      <div class="whatsappbutton">
+        <p><a href="https://api.whatsapp.com/send?phone=60164592482&amp;text=Hi%20StellarPC,%20I%20would%20like%20to%20inquire%20about%20something%20:">Contact us on WhatsApp</a><p>
+    </div>
+        <p style="padding-top: 0;" >Copyright &copy;2022 <a href="#">StellarPC</a></p>
       </div>
     </div>
+  </div>
 
 
 
