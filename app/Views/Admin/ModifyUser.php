@@ -59,13 +59,13 @@
 
        <input type="hidden" class="form-control" name="userid" id="userid" value="<?php echo $viewuser["id"];?>">  </input>
 
-        <button type="submit" class="btn btn-primary" >Update User</button>
+        <button type="submit" class="btn btn-outline-primary m-2" >Update User</button>
         <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
         </form>
         <br>
         <form class="" action="/DeleteModUser" method="post">
           <input type="hidden" class="form-control" name="userid" id="userid" value="<?php echo $viewuser["id"];?>">  </input>
-          <button type="submit" class="btn btn-primary" >Delete User</button>
+          <button type="submit" class="btn btn-outline-warning m-2" >Delete User</button>
         </form>
       </div>
   </div>

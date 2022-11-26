@@ -1033,6 +1033,30 @@ $newData = [
             }
           }
 
+          public function DeleteModProduct(){
+            if (session()->get('AdminisLoggedIn')){
+
+              if ($this->request->getMethod() == 'post') {
+                //Storing user registration into database
+                $deleteproductmodel = new product_model();
+                $theid = $this->request->getVar('productid');
+                $data['post'] = $deleteproductmodel->where('ProductId', $theid)->delete();
+                $deleteproductmodelResult = $data['post'];
+                              if($deleteproductmodelResult) {
+                                $session = session();
+                                $session->setFlashdata('deleted', 'Successfully Deleted');
+                                return redirect()->to('ProductsTable');
+                              } else {
+                                echo "Something went wrong";
+                                return redirect()->to();
+                              }
+              }return redirect()->to();
+
+            }else {
+              return redirect()->to('AdminLogin');
+            }
+          }
+
 
           public function ModifyPromotion(){
             if (session()->get('AdminisLoggedIn')){
@@ -1107,6 +1131,29 @@ $newData = [
                 return redirect()->to('AdminLogin');
               }
             }
+            public function DeleteModPromotion(){
+              if (session()->get('AdminisLoggedIn')){
+
+                if ($this->request->getMethod() == 'post') {
+
+                  $deletepromotionmodel = new promotion_model();
+                  $theid = $this->request->getVar('promotionid');
+                  $data['post'] = $deletepromotionmodel->where('PromotionId', $theid)->delete();
+                  $deletepromotionmodelResult = $data['post'];
+                                if($deletepromotionmodelResult) {
+                                  $session = session();
+                                  $session->setFlashdata('deleted', 'Successfully Deleted');
+                                  return redirect()->to('PromotionsTable');
+                                } else {
+                                  echo "Something went wrong";
+                                  return redirect()->to();
+                                }
+                }return redirect()->to();
+
+              }else {
+                return redirect()->to('AdminLogin');
+              }
+            }
 
               public function ModifyComponents(){
                 if (session()->get('AdminisLoggedIn')){
@@ -1170,6 +1217,30 @@ $newData = [
                   }
                 }
 
+                public function DeleteModComponent(){
+                  if (session()->get('AdminisLoggedIn')){
+
+                    if ($this->request->getMethod() == 'post') {
+
+                      $deletecomponentmodel = new component_model();
+                      $theid = $this->request->getVar('componentid');
+                      $data['post'] = $deletecomponentmodel->where('Componentid', $theid)->delete();
+                      $deletecomponentmodelResult = $data['post'];
+                                    if($deletecomponentmodelResult) {
+                                      $session = session();
+                                      $session->setFlashdata('deleted', 'Successfully Deleted');
+                                      return redirect()->to('ComponentsTable');
+                                    } else {
+                                      echo "Something went wrong";
+                                      return redirect()->to();
+                                    }
+                    }return redirect()->to();
+
+                  }else {
+                    return redirect()->to('AdminLogin');
+                  }
+                }
+
                 public function ModifyReward(){
                   if (session()->get('AdminisLoggedIn')){
                     $StaffId = session('StaffId');
@@ -1224,6 +1295,30 @@ $newData = [
 
 
                       }return redirect()->to('');
+
+                    }else {
+                      return redirect()->to('AdminLogin');
+                    }
+                  }
+
+                  public function DeleteModReward(){
+                    if (session()->get('AdminisLoggedIn')){
+
+                      if ($this->request->getMethod() == 'post') {
+
+                        $deleterewardmodel = new reward_model();
+                        $theid = $this->request->getVar('rewardId');
+                        $data['post'] = $deleterewardmodel->where('RewardID', $theid)->delete();
+                        $deleterewardmodelResult = $data['post'];
+                                      if($deleterewardmodelResult) {
+                                        $session = session();
+                                        $session->setFlashdata('deleted', 'Successfully Deleted');
+                                        return redirect()->to('RewardsTable');
+                                      } else {
+                                        echo "Something went wrong";
+                                        return redirect()->to();
+                                      }
+                      }return redirect()->to();
 
                     }else {
                       return redirect()->to('AdminLogin');
@@ -1319,6 +1414,30 @@ $newData = [
                         }
                       }
 
+                      public function DeleteModOrder(){
+                        if (session()->get('AdminisLoggedIn')){
+
+                          if ($this->request->getMethod() == 'post') {
+
+                            $deleteordermodel = new order_model();
+                            $theid = $this->request->getVar('orderId');
+                            $data['post'] = $deleteordermodel->where('orderId', $theid)->delete();
+                            $deleteordermodelResult = $data['post'];
+                                          if($deleteordermodelResult) {
+                                            $session = session();
+                                            $session->setFlashdata('deleted', 'Successfully Deleted');
+                                            return redirect()->to('OrdersTable');
+                                          } else {
+                                            echo "Something went wrong";
+                                            return redirect()->to();
+                                          }
+                          }return redirect()->to();
+
+                        }else {
+                          return redirect()->to('AdminLogin');
+                        }
+                      }
+
                       public function ModifyCPU(){
                         if (session()->get('AdminisLoggedIn')){
                           $StaffId = session('StaffId');
@@ -1368,6 +1487,30 @@ $newData = [
                                             }
 
 
+                            }return redirect()->to();
+
+                          }else {
+                            return redirect()->to('AdminLogin');
+                          }
+                        }
+
+                        public function DeleteModCPU(){
+                          if (session()->get('AdminisLoggedIn')){
+
+                            if ($this->request->getMethod() == 'post') {
+
+                              $deletecpumodel = new cpu_model();
+                              $theid = $this->request->getVar('cpuId');
+                              $data['post'] = $deletecpumodel->where('cpuId', $theid)->delete();
+                              $deletecpumodelResult = $data['post'];
+                                            if($deletecpumodelResult) {
+                                              $session = session();
+                                              $session->setFlashdata('deleted', 'Successfully Deleted');
+                                              return redirect()->to('CPUsTable');
+                                            } else {
+                                              echo "Something went wrong";
+                                              return redirect()->to();
+                                            }
                             }return redirect()->to();
 
                           }else {
@@ -1431,6 +1574,30 @@ $newData = [
                             }
                           }
 
+                          public function DeleteModGPU(){
+                            if (session()->get('AdminisLoggedIn')){
+
+                              if ($this->request->getMethod() == 'post') {
+
+                                $deletegpumodel = new gpu_model();
+                                $theid = $this->request->getVar('gpuId');
+                                $data['post'] = $deletegpumodel->where('gpuId', $theid)->delete();
+                                $deletegpumodelResult = $data['post'];
+                                              if($deletegpumodelResult) {
+                                                $session = session();
+                                                $session->setFlashdata('deleted', 'Successfully Deleted');
+                                                return redirect()->to('GPUsTable');
+                                              } else {
+                                                echo "Something went wrong";
+                                                return redirect()->to();
+                                              }
+                              }return redirect()->to();
+
+                            }else {
+                              return redirect()->to('AdminLogin');
+                            }
+                          }
+
 
                           public function ModifyAdmin(){
                             if (session()->get('AdminisLoggedIn')){
@@ -1478,6 +1645,30 @@ $newData = [
                                                   return redirect()->to();
                                                 }
                                 }return redirect()->to('');
+
+                              }else {
+                                return redirect()->to('AdminLogin');
+                              }
+                            }
+
+                            public function DeleteModAdmin(){
+                              if (session()->get('AdminisLoggedIn')){
+
+                                if ($this->request->getMethod() == 'post') {
+
+                                  $deleteadminmodel = new admin_model();
+                                  $theid = $this->request->getVar('StaffId');
+                                  $data['post'] = $deleteadminmodel->where('StaffId', $theid)->delete();
+                                  $deleteadminmodelResult = $data['post'];
+                                                if($deleteadminmodelResult) {
+                                                  $session = session();
+                                                  $session->setFlashdata('deleted', 'Successfully Deleted');
+                                                  return redirect()->to('AdminsTable');
+                                                } else {
+                                                  echo "Something went wrong";
+                                                  return redirect()->to();
+                                                }
+                                }return redirect()->to();
 
                               }else {
                                 return redirect()->to('AdminLogin');

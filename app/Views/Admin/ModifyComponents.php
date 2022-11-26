@@ -74,9 +74,13 @@
        <?php endif; ?>
 
          <input type="hidden" class="form-control" name="componentid" id="componentid" value="<?php echo $viewcomponent["ComponentId"];?>">  </input>
-        <button type="submit" class="btn btn-primary" >Add Component</button>
+        <button type="submit" class="btn btn-outline-primary m-2" >Add Component</button>
         <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
-        </form>
+      </form>
+      <form class="" action="/DeleteModComponent" method="post" style="float: right;">
+         <input type="hidden" class="form-control" name="componentid" id="componentid" value="<?php echo $viewcomponent["ComponentId"];?>">  </input>
+        <button type="submit" class="btn btn-outline-warning m-2" >Delete Component</button>
+      </form>
       </div>
   </div>
 </div>

@@ -102,21 +102,21 @@ $routes->match(['get','post'],'ModifyAdmin', 'Admin::ModifyAdmin');
 $routes->match(['get','post'],'UpdateModUser', 'Admin::UpdateModUser');
 $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
 $routes->match(['get','post'],'UpdateModProduct', 'Admin::UpdateModProduct');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModProduct', 'Admin::DeleteModProduct');
 $routes->match(['get','post'],'UpdateModPromotion', 'Admin::UpdateModPromotion');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModPromotion', 'Admin::DeleteModPromotion');
 $routes->match(['get','post'],'UpdateModComponent', 'Admin::UpdateModComponent');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModComponent', 'Admin::DeleteModComponent');
 $routes->match(['get','post'],'UpdateModReward', 'Admin::UpdateModReward');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModReward', 'Admin::DeleteModReward');
 $routes->match(['get','post'],'UpdateModOrder', 'Admin::UpdateModOrder');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModOrder', 'Admin::DeleteModOrder');
 $routes->match(['get','post'],'UpdateModCPU', 'Admin::UpdateModCPU');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModCPU', 'Admin::DeleteModCPU');
 $routes->match(['get','post'],'UpdateModGPU', 'Admin::UpdateModGPU');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModGPU', 'Admin::DeleteModGPU');
 $routes->match(['get','post'],'UpdateModAdmin', 'Admin::UpdateModAdmin');
-// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'DeleteModAdmin', 'Admin::DeleteModAdmin');
 
 /*
  * --------------------------------------------------------------------

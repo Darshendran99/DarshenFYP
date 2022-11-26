@@ -45,9 +45,13 @@
        <?php endif; ?>
 
          <input type="hidden" class="form-control" name="rewardId" id="rewardId" value="<?php echo $viewreward["RewardID"];?>">  </input>
-        <button type="submit" class="btn btn-primary" >Update Reward</button>
+        <button type="submit" class="btn btn-outline-primary m-2" >Update Reward</button>
         <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
-        </form>
+      </form>
+      <form class="" action="/DeleteModReward" method="post" style="float: right;">
+         <input type="hidden" class="form-control" name="rewardId" id="rewardId" value="<?php echo $viewreward["RewardID"];?>">  </input>
+        <button type="submit" class="btn btn-outline-warning m-2" >Delete Reward</button>
+      </form>
       </div>
   </div>
 </div>

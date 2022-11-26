@@ -32,9 +32,13 @@
        <?php endif; ?>
 
          <input type="hidden" class="form-control" name="gpuId" id="gpuId" value="<?php echo $viewgpu["gpuId"];?>">  </input>
-        <button type="submit" class="btn btn-primary" >Add GPU Price</button>
+        <button type="submit" class="btn btn-outline-primary m-2" >Add GPU Price</button>
         <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
-        </form>
+      </form>
+      <form class="" action="/DeleteModGPU" method="post" style="float: right;">
+         <input type="hidden" class="form-control" name="gpuId" id="gpuId" value="<?php echo $viewgpu["gpuId"];?>">  </input>
+        <button type="submit" class="btn btn-outline-warning m-2" >Delete GPU Price</button>
+      </form>
       </div>
   </div>
 </div>

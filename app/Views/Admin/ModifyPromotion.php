@@ -121,9 +121,13 @@
        <?php endif; ?>
 
        <input type="hidden" class="form-control" name="promotionid" id="promotionid" value="<?php echo $viewpromotion["PromotionId"];?>">  </input>
-        <button type="submit" class="btn btn-primary" >Update Promotion</button>
+        <button type="submit" class="btn btn-outline-primary m-2" >Update Promotion</button>
         <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
-        </form>
+      </form>
+      <form class="" action="/DeleteModPromotion" method="post" style="float: right;">
+       <input type="hidden" class="form-control" name="promotionid" id="promotionid" value="<?php echo $viewpromotion["PromotionId"];?>">  </input>
+        <button type="submit" class="btn btn-outline-warning m-2" >Delete Promotion</button>
+      </form>
       </div>
   </div>
 </div>

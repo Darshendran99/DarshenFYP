@@ -7,6 +7,11 @@
       <?= session()->get('success') ?>
      </div>
 <?php endif; ?>
+<?php if (session()->get('deleted')): ?>
+<div class="alert alert-danger" role="alert">
+<?= session()->get('deleted') ?>
+</div>
+<?php endif; ?>
               <div class="col-12">
                   <div class="bg-secondary rounded h-100 p-4">
                       <h6 class="mb-4">Rewards Table</h6>
