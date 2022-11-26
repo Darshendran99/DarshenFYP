@@ -4,10 +4,10 @@
 <div class="col-sm-12 col-xl-6">
     <div class="bg-secondary rounded h-100 p-4">
         <h6 class="mb-4" style="text-align: center;">Edit GPU price for graph</h6>
-        <!-- <form class="" action="/AddCPU" method="post"> -->
+        <form class="" action="/UpdateModGPU" method="post">
 
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="cpuprice" id="cpuprice"
+            <input type="text" class="form-control" name="gpuprice" id="gpuprice"
                 placeholder="" value="<?php echo $viewgpu["gpuPrice"];?>">
             <label for="cpuprice">CPU Price</label>
         </div>
@@ -17,9 +17,23 @@
                 placeholder="" value="<?php echo $viewgpu["gpuUpdatedDate"];?>" readonly>
             <label for="createdon">Created on</label>
         </div>
+        <?php if (isset($validation)): ?>
+         <div class="col-12">
+           <div class="alert alert-danger" role="alert">
+             <?= $validation->listErrors() ?>
+           </div>
+         </div>
+       <?php endif; ?>
 
+       <?php if (session()->get('msg')): ?>
+         <div class="alert alert-danger" role="alert">
+           <?= session()->get('msg') ?>
+         </div>
+       <?php endif; ?>
 
+         <input type="hidden" class="form-control" name="gpuId" id="gpuId" value="<?php echo $viewgpu["gpuId"];?>">  </input>
         <button type="submit" class="btn btn-primary" >Add GPU Price</button>
+        <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
         </form>
       </div>
   </div>

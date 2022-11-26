@@ -91,8 +91,6 @@
                     </div>
                   <?php endif; ?>
 
-
-
                   <?php $total_price_sum = 0; $total_items = "";
                   foreach ($cart as $cartValues){
                     $total_price_sum = $total_price_sum + $cartValues["itemPrice"];

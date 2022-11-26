@@ -33,6 +33,7 @@
 													<div class="col-lg-12">
 														<div class="productDetails" style="float:right;">
 															<iframe width="500" height="300" src="<?php echo $product["productLink"]; ?>?autoplay=1&mute=1">"></iframe>
+															<!-- By embedding YouTube videos on your site, you are agreeing to YouTube API Terms of Service -->
 														</div>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/cpuIcon.png'); ?>">

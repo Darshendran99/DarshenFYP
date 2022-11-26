@@ -52,7 +52,7 @@
     <?php endif; ?>
 
   <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Login</button>
-  <p class="text-center mb-0">Dont have an Account? <a href="<?php echo base_url();?>/AdminRegister">Sign In</a></p>
+  <p class="text-center mb-0">Dont have an Account? <a href="<?php echo base_url();?>/AdminRegister">Sign Up</a></p>
   </div>
   </div>
   </div>

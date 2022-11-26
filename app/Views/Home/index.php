@@ -145,7 +145,6 @@
 	<script>
 		google.charts.load('current', {'packages':['corechart']});
 		google.charts.setOnLoadCallback(drawLineChart);
-
 					// Line Chart
 		function drawLineChart() {
 			var data = google.visualization.arrayToDataTable([

@@ -4,7 +4,9 @@
 <div class="col-sm-12 col-xl-6">
     <div class="bg-secondary rounded h-100 p-4">
         <h6 class="mb-4" style="text-align: center;">View Admin</h6>
-        <!-- <form class="" action="/AddAdmin" method="post"> -->
+
+      <form class="" action="/UpdateModAdmin" method="post">
+
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="staffname" id="staffname"
                 placeholder="" value="<?php echo $viewadmin["staffName"];?>">
@@ -17,7 +19,7 @@
         </div>
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="staffpassword" id="staffpassword"
-                placeholder="" value="<?php echo $viewadmin["stafPassword"];?>">
+                placeholder="" value="<?php ##echo $viewadmin["stafPassword"];?>">
             <label for="staffpassword">Staff Password</label>
         </div>
         <div class="form-floating mb-3">
@@ -30,9 +32,23 @@
                 placeholder="" value="<?php echo $viewadmin["updated_at"];?>" readonly>
             <label for="createdon">Lastly Updated on</label>
         </div>
+        <?php if (isset($validation)): ?>
+         <div class="col-12">
+           <div class="alert alert-danger" role="alert">
+             <?= $validation->listErrors() ?>
+           </div>
+         </div>
+       <?php endif; ?>
 
+       <?php if (session()->get('msg')): ?>
+         <div class="alert alert-danger" role="alert">
+           <?= session()->get('msg') ?>
+         </div>
+       <?php endif; ?>
 
-        <button type="submit" class="btn btn-primary" >Add Admin</button>
+       <input type="hidden" class="form-control" name="StaffId" id="StaffId" value="<?php echo $viewadmin["StaffId"];?>">  </input>
+        <button type="submit" class="btn btn-primary" >Update Admin</button>
+        <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
         </form>
       </div>
   </div>

@@ -46,7 +46,7 @@ class Admin extends BaseController
         return redirect()->to('AdminLogin');
     }
   }
-  
+
     public function AdminRegister(){
       $data = [];
       helper(['form']);
@@ -444,6 +444,7 @@ $newData = [
           'productname' => 'required|min_length[10]|max_length[50]',
           'productimage' => 'uploaded[productimage]|is_image[productimage]|max_size[productimage,4000]',
           'productprice' => 'required|min_length[1]|max_length[255]|integer',
+          'productLink' => 'required|min_length[35]|max_length[60]',
           'productcpu' => 'required|min_length[5]|max_length[50]',
           'productgpu' => 'required|min_length[5]|max_length[50]',
           'productmobo' => 'required|min_length[5]|max_length[50]',
@@ -469,23 +470,24 @@ $newData = [
           $model = new product_model();
 
           $newData = [
-            'productname' => $this->request->getVar('productname'),
-            'productimage' => $image,
-            'productprice' => $this->request->getVar('productprice'),
-            'productcpu' => $this->request->getVar('productcpu'),
-            'productgpu' => $this->request->getVar('productgpu'),
-            'productmobo' => $this->request->getVar('productmobo'),
-            'productram' => $this->request->getVar('productram'),
-            'productssd' => $this->request->getVar('productssd'),
-            'productpsu' => $this->request->getVar('productpsu'),
-            'productcasing' => $this->request->getVar('productcasing'),
-            'productother' => $this->request->getVar('productother'),
-            'productcsgo' => $this->request->getVar('productcsgo'),
-            'productfortnite' => $this->request->getVar('productfortnite'),
-            'productgtav' => $this->request->getVar('productgtav'),
-            'productcyberpunk' => $this->request->getVar('productcyberpunk'),
-            'product3dmark' => $this->request->getVar('product3dmark'),
-            'productgeekbench' => $this->request->getVar('productgeekbench'),
+            'ProductName' => $this->request->getVar('productname'),
+            'ProductImage' => $image,
+            'ProductPrice' => $this->request->getVar('productprice'),
+            'productLink' => $this->request->getVar('productLink'),
+            'ProductCPU' => $this->request->getVar('productcpu'),
+            'ProductGPU' => $this->request->getVar('productgpu'),
+            'ProductMobo' => $this->request->getVar('productmobo'),
+            'ProductRAM' => $this->request->getVar('productram'),
+            'ProductSSD' => $this->request->getVar('productssd'),
+            'ProductPSU' => $this->request->getVar('productpsu'),
+            'ProductCasing' => $this->request->getVar('productcasing'),
+            'ProductOther' => $this->request->getVar('productother'),
+            'ProductCSGO' => $this->request->getVar('productcsgo'),
+            'ProductFortnite' => $this->request->getVar('productfortnite'),
+            'ProductGTAV' => $this->request->getVar('productgtav'),
+            'ProductCyberpunk' => $this->request->getVar('productcyberpunk'),
+            'Product3DMark' => $this->request->getVar('product3dmark'),
+            'ProductGeekbench' => $this->request->getVar('productgeekbench'),
           ];
           $Result = $model->save($newData);
           if($Result) {
@@ -981,6 +983,57 @@ $newData = [
           }
           }
 
+          public function UpdateModProduct(){
+            if (session()->get('AdminisLoggedIn')){
+
+              if ($this->request->getMethod() == 'post') {
+                //Storing user registration into database
+                $updateProductmodel = new product_model();
+                $theid = $this->request->getVar('productid');
+                // $image = file_get_contents($this->request->getFile('productimage'));
+
+                $newData = [
+                  'ProductName' => $this->request->getVar('productname'),
+                  // 'ProductImage' => $image,
+                  'ProductPrice' => $this->request->getVar('productprice'),
+                  'ProductCPU' => $this->request->getVar('productcpu'),
+                  'ProductGPU' => $this->request->getVar('productgpu'),
+                  'ProductMobo' => $this->request->getVar('productmobo'),
+                  'ProductRAM' => $this->request->getVar('productram'),
+                  'ProductSSD' => $this->request->getVar('productssd'),
+                  'ProductPSU' => $this->request->getVar('productpsu'),
+                  'ProductCasing' => $this->request->getVar('productcasing'),
+                  'ProductOther' => $this->request->getVar('productother'),
+                  'ProductCSGO' => $this->request->getVar('productcsgo'),
+                  'ProductFortnite' => $this->request->getVar('productfortnite'),
+                  'ProductGTAV' => $this->request->getVar('productgtav'),
+                  'ProductCyberpunk' => $this->request->getVar('productcyberpunk'),
+                  'Product3DMark' => $this->request->getVar('product3dmark'),
+                  'ProductGeekbench' => $this->request->getVar('productgeekbench'),
+
+                ];
+
+                        $updateProductmodel->set($newData);
+                        $updateProductmodel->where('ProductId', $theid);
+                        $updateProductmodelResult = $updateProductmodel->update();
+                              if($updateProductmodelResult) {
+                                $session = session();
+                                $session->setFlashdata('success', 'Successfully Updated');
+                                return redirect()->to('ProductsTable');
+                              } else {
+                                echo "Something went wrong";
+                                return redirect()->to();
+                              }
+
+
+              }return redirect()->to('');
+
+            }else {
+              return redirect()->to('AdminLogin');
+            }
+          }
+
+
           public function ModifyPromotion(){
             if (session()->get('AdminisLoggedIn')){
               $StaffId = session('StaffId');
@@ -1002,6 +1055,57 @@ $newData = [
             }else {
               return redirect()->to('AdminLogin');
             }
+            }
+
+            public function UpdateModPromotion(){
+              if (session()->get('AdminisLoggedIn')){
+
+                if ($this->request->getMethod() == 'post') {
+                  //Storing user registration into database
+                  $model = new promotion_model();
+                  $theid = $this->request->getVar('promotionid');
+                  // $image = file_get_contents($this->request->getFile('productimage'));
+
+                  $newData = [
+                    'PromotionName' => $this->request->getVar('promotionname'),
+                    'PromotionStatus' => $this->request->getVar('promotionstatus'),
+                    // 'PromotionImage' => $image,
+                    'PromotionOriPrice' => $this->request->getVar('promotionoriprice'),
+                    'PromotionPrice' => $this->request->getVar('promotionprice'),
+                    'PromotionCPU' => $this->request->getVar('promotioncpu'),
+                    'PromotionGPU' => $this->request->getVar('promotiongpu'),
+                    'PromotionMobo' => $this->request->getVar('promotionmobo'),
+                    'PromotionRAM' => $this->request->getVar('promotionram'),
+                    'PromotionSSD' => $this->request->getVar('promotionssd'),
+                    'PromotionPSU' => $this->request->getVar('promotionpsu'),
+                    'PromotionCasing' => $this->request->getVar('promotioncasing'),
+                    'PromotionOther' => $this->request->getVar('promotionother'),
+                    'NonPCDetails' => $this->request->getVar('nonpcdetails'),
+                    'PromotionDetail1' => $this->request->getVar('promotiondetail1'),
+                    'PromotionDetail2' => $this->request->getVar('promotiondetail2'),
+                    'PromotionDetail3' => $this->request->getVar('promotiondetail3'),
+                    'PromotionDetail4' => $this->request->getVar('promotiondetail4'),
+
+                  ];
+
+                          $model->set($newData);
+                          $model->where('promotionid', $theid);
+                          $updatePromotionmodelResult = $model->update();
+                                if($updatePromotionmodelResult) {
+                                  $session = session();
+                                  $session->setFlashdata('success', 'Successfully Updated');
+                                  return redirect()->to('PromotionsTable');
+                                } else {
+                                  echo "Something went wrong";
+                                  return redirect()->to();
+                                }
+
+
+                }return redirect()->to('');
+
+              }else {
+                return redirect()->to('AdminLogin');
+              }
             }
 
               public function ModifyComponents(){
@@ -1027,6 +1131,45 @@ $newData = [
                 }
                 }
 
+                public function UpdateModComponent(){
+                  if (session()->get('AdminisLoggedIn')){
+
+                    if ($this->request->getMethod() == 'post') {
+                      //Storing user registration into database
+                      $model = new component_model();
+                      $theid = $this->request->getVar('componentid');
+                      // $image = file_get_contents($this->request->getFile('productimage'));
+
+                      $newData = [
+                        'ComponentName' => $this->request->getVar('componentname'),
+                        'ComponentType' => $this->request->getVar('componenttype'),
+                        'ComponentBrand' => $this->request->getVar('compbrand'),
+                        // 'ComponentImage' => $image,
+                        'ComponentDetails' => $this->request->getVar('componentdetails'),
+                        'ComponentPrice' => $this->request->getVar('componentprice'),
+
+                      ];
+
+                              $model->set($newData);
+                              $model->where('componentid', $theid);
+                              $updatePromotionmodelResult = $model->update();
+                                    if($updatePromotionmodelResult) {
+                                      $session = session();
+                                      $session->setFlashdata('success', 'Successfully Updated');
+                                      return redirect()->to('ComponentsTable');
+                                    } else {
+                                      echo "Something went wrong";
+                                      return redirect()->to();
+                                    }
+
+
+                    }return redirect()->to('');
+
+                  }else {
+                    return redirect()->to('AdminLogin');
+                  }
+                }
+
                 public function ModifyReward(){
                   if (session()->get('AdminisLoggedIn')){
                     $StaffId = session('StaffId');
@@ -1048,6 +1191,43 @@ $newData = [
                   }else {
                     return redirect()->to('AdminLogin');
                   }
+                  }
+
+
+                  public function UpdateModReward(){
+                    if (session()->get('AdminisLoggedIn')){
+
+                      if ($this->request->getMethod() == 'post') {
+                        //Storing user registration into database
+                        $model = new reward_model();
+                        $theid = $this->request->getVar('rewardId');
+                        // $image = file_get_contents($this->request->getFile('productimage'));
+
+                        $newData = [
+                          'RewardName' => $this->request->getVar('rewardname'),
+                          // 'RewardImage' => $image,
+                          'RewardTier' => $this->request->getVar('rewardtier'),
+
+                        ];
+
+                                $model->set($newData);
+                                $model->where('RewardID', $theid);
+                                $updatePromotionmodelResult = $model->update();
+                                      if($updatePromotionmodelResult) {
+                                        $session = session();
+                                        $session->setFlashdata('success', 'Successfully Updated');
+                                        return redirect()->to('RewardsTable');
+                                      } else {
+                                        echo "Something went wrong";
+                                        return redirect()->to();
+                                      }
+
+
+                      }return redirect()->to('');
+
+                    }else {
+                      return redirect()->to('AdminLogin');
+                    }
                   }
 
                   public function ViewPayment(){
@@ -1101,6 +1281,44 @@ $newData = [
                       }
                       }
 
+                      public function UpdateModOrder(){
+                        if (session()->get('AdminisLoggedIn')){
+
+                          if ($this->request->getMethod() == 'post') {
+                            //Storing user registration into database
+                            $model = new order_model();
+                            $theid = $this->request->getVar('orderId');
+
+                            $newData = [
+                              'userId' => $this->request->getVar('orderusrid'),
+                              'paymentId' => $this->request->getVar('orderpaymntid'),
+                              'shippingAddress' => $this->request->getVar('shippingadd'),
+                              'itemsOrdered' => $this->request->getVar('itemordr'),
+                              'grandTotal' => $this->request->getVar('itemtotal'),
+                              'orderStatus' => $this->request->getVar('orderstatus'),
+
+                            ];
+
+                                    $model->set($newData);
+                                    $model->where('orderId', $theid);
+                                    $updatePromotionmodelResult = $model->update();
+                                          if($updatePromotionmodelResult) {
+                                            $session = session();
+                                            $session->setFlashdata('success', 'Successfully Updated');
+                                            return redirect()->to('OrdersTable');
+                                          } else {
+                                            echo "Something went wrong";
+                                            return redirect()->to();
+                                          }
+
+
+                          }return redirect()->to('');
+
+                        }else {
+                          return redirect()->to('AdminLogin');
+                        }
+                      }
+
                       public function ModifyCPU(){
                         if (session()->get('AdminisLoggedIn')){
                           $StaffId = session('StaffId');
@@ -1123,6 +1341,38 @@ $newData = [
                         }else {
                           return redirect()->to('AdminLogin');
                         }
+                        }
+
+                        public function UpdateModCPU(){
+                          if (session()->get('AdminisLoggedIn')){
+
+                            if ($this->request->getMethod() == 'post') {
+                              //Storing user registration into database
+                              $model = new cpu_model();
+                              $theid = $this->request->getVar('cpuId');
+
+                              $newData = [
+                                'cpuPrice' => $this->request->getVar('cpuprice'),
+                              ];
+
+                                      $model->set($newData);
+                                      $model->where('cpuId', $theid);
+                                      $updatePromotionmodelResult = $model->update();
+                                            if($updatePromotionmodelResult) {
+                                              $session = session();
+                                              $session->setFlashdata('success', 'Successfully Updated');
+                                              return redirect()->to('CPUsTable');
+                                            } else {
+                                              echo "Something went wrong";
+                                              return redirect()->to();
+                                            }
+
+
+                            }return redirect()->to();
+
+                          }else {
+                            return redirect()->to('AdminLogin');
+                          }
                         }
 
                         public function ModifyGPU(){
@@ -1149,6 +1399,39 @@ $newData = [
                           }
                           }
 
+                          public function UpdateModGPU(){
+                            if (session()->get('AdminisLoggedIn')){
+
+                              if ($this->request->getMethod() == 'post') {
+                                //Storing user registration into database
+                                $model = new gpu_model();
+                                $theid = $this->request->getVar('gpuId');
+
+                                $newData = [
+                                  'gpuPrice' => $this->request->getVar('gpuprice'),
+                                ];
+
+                                        $model->set($newData);
+                                        $model->where('gpuId', $theid);
+                                        $updatePromotionmodelResult = $model->update();
+                                              if($updatePromotionmodelResult) {
+                                                $session = session();
+                                                $session->setFlashdata('success', 'Successfully Updated');
+                                                return redirect()->to('GPUsTable');
+                                              } else {
+                                                echo "Something went wrong";
+                                                return redirect()->to();
+                                              }
+
+
+                              }return redirect()->to();
+
+                            }else {
+                              return redirect()->to('AdminLogin');
+                            }
+                          }
+
+
                           public function ModifyAdmin(){
                             if (session()->get('AdminisLoggedIn')){
                               $StaffId = session('StaffId');
@@ -1170,6 +1453,35 @@ $newData = [
                               return redirect()->to('AdminLogin');
                             }
                             }
+                            public function UpdateModAdmin(){
+                              if (session()->get('AdminisLoggedIn')){
 
+                                if ($this->request->getMethod() == 'post') {
+                                  //Storing user registration into database
+                                  $model = new admin_model();
+                                  $theid = $this->request->getVar('StaffId');
+                                  $newUserData = [
+                                    'staffName' => $this->request->getVar('staffname'),
+                                    'staffEmail' => $this->request->getVar('staffemail'),
+                                    'stafPassword' => $this->request->getVar('staffpassword'),
+                                  ];
+
+                                          $model->set($newUserData);
+                                          $model->where('StaffId', $theid);
+                                          $updateAdminResult = $model->update();
+                                                if($updateAdminResult) {
+                                                  $session = session();
+                                                  $session->setFlashdata('success', 'Successfully Updated');
+                                                  return redirect()->to('AdminsTable');
+                                                } else {
+                                                  echo "Something went wrong";
+                                                  return redirect()->to();
+                                                }
+                                }return redirect()->to('');
+
+                              }else {
+                                return redirect()->to('AdminLogin');
+                              }
+                            }
 
 }

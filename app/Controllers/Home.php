@@ -390,7 +390,6 @@ public function AddCart3(){
   }
 }
 // AMD CPU
-
     $amdCpuComponent = $this->request->getVar('amdCpu');
 
     if ($amdCpuComponent != ""){
@@ -718,13 +717,10 @@ public function RemoveComponentItem()
 
        public function Payment()
        {
-
          $id = session('id');
          $cart_model = new cart_model();
          $data['cart'] = $cart_model->where('uid', $id)->findAll();
-
          helper(['form']);
-
          if ($this->request->getMethod() == 'post') {
          //Validation
          $rules = [
@@ -739,9 +735,7 @@ public function RemoveComponentItem()
            'expmonth' => 'required|min_length[3]|max_length[9]|alpha',
            'expyear' => 'required|min_length[3]|max_length[9]|integer',
            'cvv' => 'required|min_length[3]|max_length[3]|integer',
-
          ];
-
          $PaymentAddress = $this->request->getVar('address').",".$this->request->getVar('city').",".$this->request->getVar('state').","
                             .$this->request->getVar('zip');
          $CardDetails = $this->request->getVar('cardname').",".$this->request->getVar('cardnumber').",".$this->request->getVar('expmonth').","
@@ -749,7 +743,6 @@ public function RemoveComponentItem()
          $total_price_sum = $this->request->getVar('totalPrice');
          date_default_timezone_set("Asia/Kuala_Lumpur");
          $paymentTime= date("Y-m-d H:i:s");
-
          if (! $this->validate($rules)) {
            $data['validation'] = $this->validator;
          }else{
@@ -840,7 +833,6 @@ public function RemoveComponentItem()
 
       public function GameReward($RewardID = null)
       {
-
         if (session()->get('isLoggedIn')){
           $rewardData = new reward_model();
           $data['rewards'] = $rewardData->where('RewardID', $RewardID)->first();
@@ -866,7 +858,6 @@ public function RemoveComponentItem()
             'itemsOrdered' => $freeItem,
             'grandTotal' => "0000",
             'orderStatus' => "0",
-
           ];
           $freeRewardOrderResult = $freeOrder->save($freeRewardOrder);
              if($freeRewardOrderResult) {

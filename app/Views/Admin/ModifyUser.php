@@ -60,6 +60,7 @@
        <input type="hidden" class="form-control" name="userid" id="userid" value="<?php echo $viewuser["id"];?>">  </input>
 
         <button type="submit" class="btn btn-primary" >Update User</button>
+        <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
         </form>
         <br>
         <form class="" action="/DeleteModUser" method="post">

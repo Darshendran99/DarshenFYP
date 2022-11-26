@@ -4,7 +4,9 @@
 <div class="col-sm-12 col-xl-6">
     <div class="bg-secondary rounded h-100 p-4">
         <h6 class="mb-4" style="text-align: center;">View Product</h6>
-      <!-- <form class="" action="/AddUser" method="post"> -->
+
+        <form class="" action="/UpdateModProduct" method="post" enctype="multipart/form-data">
+
       <div class="form-floating mb-3">
           <input type="text" class="form-control" name="productname" id="productname"
               placeholder="" value="<?php echo $viewproduct["ProductName"];?>">
@@ -21,6 +23,11 @@
           <input type="text" class="form-control" name="productprice" id="productprice"
               placeholder="" value="<?php echo $viewproduct["ProductPrice"];?>">
           <label for="productprice">Product's Price</label>
+      </div>
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" name="productLink" id="productLink"
+              placeholder="" value="<?php echo $viewproduct["productLink"];?>">
+          <label for="productcpu">Product's Youtube Link</label>
       </div>
       <div class="form-floating mb-3">
           <input type="text" class="form-control" name="productcpu" id="productcpu"
@@ -97,10 +104,24 @@
               placeholder="" value="<?php echo $viewproduct["CreatedOn"];?>" readonly>
           <label for="createdon">Created on</label>
       </div>
+      <?php if (isset($validation)): ?>
+       <div class="col-12">
+         <div class="alert alert-danger" role="alert">
+           <?= $validation->listErrors() ?>
+         </div>
+       </div>
+     <?php endif; ?>
 
+     <?php if (session()->get('msg')): ?>
+       <div class="alert alert-danger" role="alert">
+         <?= session()->get('msg') ?>
+       </div>
+     <?php endif; ?>
 
+       <input type="hidden" class="form-control" name="productid" id="productid" value="<?php echo $viewproduct["ProductId"];?>">  </input>
+        <button type="submit" class="btn btn-primary" >Update Product</button>
+        <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
 
-        <button type="submit" class="btn btn-primary" >Update User</button>
         </form>
       </div>
   </div>

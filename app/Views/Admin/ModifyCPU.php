@@ -4,7 +4,7 @@
 <div class="col-sm-12 col-xl-6">
     <div class="bg-secondary rounded h-100 p-4">
         <h6 class="mb-4" style="text-align: center;">Edit CPU price for graph</h6>
-        <!-- <form class="" action="/AddCPU" method="post"> -->
+        <form class="" action="/UpdateModCPU" method="post">
 
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="cpuprice" id="cpuprice"
@@ -17,9 +17,23 @@
                 placeholder="" value="<?php echo $viewcpu["cpuUpdatedDate"];?>" readonly>
             <label for="createdon">Created on</label>
         </div>
+        <?php if (isset($validation)): ?>
+         <div class="col-12">
+           <div class="alert alert-danger" role="alert">
+             <?= $validation->listErrors() ?>
+           </div>
+         </div>
+       <?php endif; ?>
 
+       <?php if (session()->get('msg')): ?>
+         <div class="alert alert-danger" role="alert">
+           <?= session()->get('msg') ?>
+         </div>
+       <?php endif; ?>
 
+         <input type="hidden" class="form-control" name="cpuId" id="cpuId" value="<?php echo $viewcpu["cpuId"];?>">  </input>
         <button type="submit" class="btn btn-primary" >Add CPU Price</button>
+        <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
         </form>
       </div>
   </div>

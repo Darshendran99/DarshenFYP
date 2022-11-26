@@ -22,6 +22,11 @@
             <label for="productprice">Product's Price</label>
         </div>
         <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="productLink" id="productLink"
+                placeholder="" value="<?= set_value('productLink') ?>">
+            <label for="productcpu">Product's Youtube Link</label>
+        </div>
+        <div class="form-floating mb-3">
             <input type="text" class="form-control" name="productcpu" id="productcpu"
                 placeholder="" value="<?= set_value('productcpu') ?>">
             <label for="productcpu">CPU</label>

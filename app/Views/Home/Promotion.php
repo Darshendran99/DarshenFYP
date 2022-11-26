@@ -24,12 +24,10 @@
 					<?php }}  ?>
 
 						<?php foreach ($promotion as $notready => $NoreadyPromo) {  ?>
-						<?php if ($NoreadyPromo["PromotionStatus"] != "ready") { ?>
-
+							<?php if ($NoreadyPromo["PromotionStatus"] != "ready") { ?>
 					<div class="heading-section">
 					<h4><em>Whats Next? </em> Sneak Peak of Whats to Come</h4>
 					</div>
-
 							<div class="col-lg-3 col-sm-6">
 								<img class="productImg" src="data:image/png;base64,<?php echo base64_encode($NoreadyPromo["PromotionImage"]); ?>"/>
 								<h4 class="productName"> <?php echo $NoreadyPromo["PromotionName"]; ?> </h4>

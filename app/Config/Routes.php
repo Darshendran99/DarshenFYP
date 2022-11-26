@@ -101,6 +101,22 @@ $routes->match(['get','post'],'ModifyGPU', 'Admin::ModifyGPU');
 $routes->match(['get','post'],'ModifyAdmin', 'Admin::ModifyAdmin');
 $routes->match(['get','post'],'UpdateModUser', 'Admin::UpdateModUser');
 $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModProduct', 'Admin::UpdateModProduct');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModPromotion', 'Admin::UpdateModPromotion');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModComponent', 'Admin::UpdateModComponent');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModReward', 'Admin::UpdateModReward');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModOrder', 'Admin::UpdateModOrder');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModCPU', 'Admin::UpdateModCPU');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModGPU', 'Admin::UpdateModGPU');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
+$routes->match(['get','post'],'UpdateModAdmin', 'Admin::UpdateModAdmin');
+// $routes->match(['get','post'],'DeleteModUser', 'Admin::DeleteModUser');
 
 /*
  * --------------------------------------------------------------------

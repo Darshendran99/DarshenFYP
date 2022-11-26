@@ -4,7 +4,8 @@
 <div class="col-sm-12 col-xl-6">
     <div class="bg-secondary rounded h-100 p-4">
         <h6 class="mb-4" style="text-align: center;">View Promotion</h6>
-        <!-- <form class="" action="/AddPromotion" method="post" enctype="multipart/form-data"> -->
+
+        <form class="" action="/UpdateModPromotion" method="post" enctype="multipart/form-data">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="promotionname" id="promotionname"
                 placeholder="" value="<?php echo $viewpromotion["PromotionName"];?>">
@@ -105,10 +106,23 @@
                 placeholder="" value="<?php echo $viewpromotion["PromoCreatedOn"];?>" readonly>
             <label for="createdon">Created on</label>
         </div>
+        <?php if (isset($validation)): ?>
+         <div class="col-12">
+           <div class="alert alert-danger" role="alert">
+             <?= $validation->listErrors() ?>
+           </div>
+         </div>
+       <?php endif; ?>
 
+       <?php if (session()->get('msg')): ?>
+         <div class="alert alert-danger" role="alert">
+           <?= session()->get('msg') ?>
+         </div>
+       <?php endif; ?>
 
-
-        <button type="submit" class="btn btn-primary" >Add Promotion</button>
+       <input type="hidden" class="form-control" name="promotionid" id="promotionid" value="<?php echo $viewpromotion["PromotionId"];?>">  </input>
+        <button type="submit" class="btn btn-primary" >Update Promotion</button>
+        <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
         </form>
       </div>
   </div>

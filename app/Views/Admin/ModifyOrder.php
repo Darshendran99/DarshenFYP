@@ -5,7 +5,7 @@
     <div class="bg-secondary rounded h-100 p-4">
         <h6 class="mb-4" style="text-align: center;">View Order</h6>
 
-        <!-- <form class="" action="/AddOrder" method="post" enctype="multipart/form-data"> -->
+        <form class="" action="/UpdateModOrder" method="post" enctype="multipart/form-data">
 
         <div class="form-floating mb-3">
           <select class="form-select mb-3" aria-label="Default select example" name="orderusrid" id="orderusrid">
@@ -53,10 +53,23 @@
           </select>
           <label for="orderstatus">Order Status</label>
         </div>
+        <?php if (isset($validation)): ?>
+         <div class="col-12">
+           <div class="alert alert-danger" role="alert">
+             <?= $validation->listErrors() ?>
+           </div>
+         </div>
+       <?php endif; ?>
 
+       <?php if (session()->get('msg')): ?>
+         <div class="alert alert-danger" role="alert">
+           <?= session()->get('msg') ?>
+         </div>
+       <?php endif; ?>
 
-
-        <button type="submit" class="btn btn-primary" >Add Order</button>
+         <input type="hidden" class="form-control" name="orderId" id="orderId" value="<?php echo $vieworder["orderId"];?>">  </input>
+        <button type="submit" class="btn btn-primary" >Update Order</button>
+        <button type="reset" class="btn btn-outline-info m-2" > Reset Changes</button>
         </form>
       </div>
   </div>
