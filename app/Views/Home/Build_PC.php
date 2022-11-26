@@ -253,14 +253,16 @@
 					</div>
 
           <div class="col-lg-12">
-            <div class="main-button">
+            <div class="main-button" style="margin-left: 20%;margin-top: 2em;">
               <?php if (session()->get('isLoggedIn')): ?>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-4" style="margin-left: 10%;">
                   <button type="submit" class="btn btn-primary">Add To Cart</button>
                 </div>
                   </form>
               <?php else: ?>
+              <div class="col-12 col-sm-4">
                 <a href="<?php echo base_url();?>/Home/Login">Login to Add to Cart</a>
+                </div>
               <?php endif; ?>
             </div>
           </div>

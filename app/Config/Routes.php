@@ -54,6 +54,7 @@ $routes->match(['get','post'],'RemoveProductItem', 'Home::RemoveProductItem');
 $routes->match(['get','post'],'RemovePromotionItem', 'Home::RemovePromotionItem');
 $routes->match(['get','post'],'RemoveComponentItem', 'Home::RemoveComponentItem');
 $routes->match(['get','post'],'Payment', 'Home::Payment');
+$routes->match(['get','post'],'CODPayment', 'Home::CODPayment');
 $routes->match(['get','post'],'Game', 'Home::Game');
 $routes->match(['get','post'],'GameReward', 'Home::GameReward');
 $routes->match(['get','post'],'OrderStatus', 'Home::OrderStatus');
@@ -109,6 +110,7 @@ $routes->match(['get','post'],'UpdateModComponent', 'Admin::UpdateModComponent')
 $routes->match(['get','post'],'DeleteModComponent', 'Admin::DeleteModComponent');
 $routes->match(['get','post'],'UpdateModReward', 'Admin::UpdateModReward');
 $routes->match(['get','post'],'DeleteModReward', 'Admin::DeleteModReward');
+$routes->match(['get','post'],'Deletepayment', 'Admin::Deletepayment');
 $routes->match(['get','post'],'UpdateModOrder', 'Admin::UpdateModOrder');
 $routes->match(['get','post'],'DeleteModOrder', 'Admin::DeleteModOrder');
 $routes->match(['get','post'],'UpdateModCPU', 'Admin::UpdateModCPU');
@@ -117,6 +119,7 @@ $routes->match(['get','post'],'UpdateModGPU', 'Admin::UpdateModGPU');
 $routes->match(['get','post'],'DeleteModGPU', 'Admin::DeleteModGPU');
 $routes->match(['get','post'],'UpdateModAdmin', 'Admin::UpdateModAdmin');
 $routes->match(['get','post'],'DeleteModAdmin', 'Admin::DeleteModAdmin');
+$routes->match(['get','post'],'ApproveOrder', 'Admin::ApproveOrder');
 
 /*
  * --------------------------------------------------------------------

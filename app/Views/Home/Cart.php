@@ -4,7 +4,11 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
-
+          <?php if (session()->get('msg')): ?>
+          <div class="alert alert-danger" role="alert" style="text-align:center;">
+          <?= session()->get('msg') ?>
+          </div>
+          <?php endif; ?>
           <!-- ***** Featured Games Start ***** -->
           <div class="row">
 

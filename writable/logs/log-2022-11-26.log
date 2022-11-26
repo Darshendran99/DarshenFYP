@@ -321,3 +321,133 @@ in SYSTEMPATH\HTTP\RedirectResponse.php on line 32.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:27:04 --> Cannot access offset of type string on string
+in APPPATH\Views\Admin\index.php on line 79.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 4 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:27:36 --> Trying to access array offset on value of type int
+in APPPATH\Views\Admin\index.php on line 79.
+ 1 APPPATH\Views\Admin\index.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Views\\Admin\\index.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:28:37 --> Trying to access array offset on value of type int
+in APPPATH\Views\Admin\index.php on line 79.
+ 1 APPPATH\Views\Admin\index.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Views\\Admin\\index.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:28:56 --> Trying to access array offset on value of type int
+in APPPATH\Views\Admin\index.php on line 80.
+ 1 APPPATH\Views\Admin\index.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Views\\Admin\\index.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:29:44 --> Trying to access array offset on value of type int
+in APPPATH\Views\Admin\index.php on line 79.
+ 1 APPPATH\Views\Admin\index.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Views\\Admin\\index.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:41:36 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Admin.php(1715): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->ApproveOrder()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:42:48 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Admin.php(1715): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->ApproveOrder()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:43:20 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Admin.php(1716): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->ApproveOrder()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:43:29 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Admin.php(1717): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->ApproveOrder()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:46:32 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Admin.php(1716): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->ApproveOrder()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:47:08 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Admin.php(1716): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->ApproveOrder()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:49:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\sections\AdminNavBar.php on line 18.
+ 1 APPPATH\Views\sections\AdminNavBar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sections\\AdminNavBar.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sections\\AdminNavBar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('sections/AdminNavBar.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(41): view('sections/AdminNavBar.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:49:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\sections\AdminNavBar.php on line 18.
+ 1 APPPATH\Views\sections\AdminNavBar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sections\\AdminNavBar.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sections\\AdminNavBar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('sections/AdminNavBar.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(306): view('sections/AdminNavBar.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->PaymentsTable()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

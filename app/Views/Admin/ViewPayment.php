@@ -41,7 +41,10 @@
                 placeholder="" value="<?php echo $viewpayment["paymentTime"];?>" readonly>
             <label for="paymttime">Payment Made on</label>
         </div>
-
+        <form class="" action="/Deletepayment" method="post">
+         <input type="hidden" class="form-control" name="PaymentId" id="PaymentId" value="<?php echo $viewpayment["PaymentId"];?>">  </input>
+          <button type="submit" class="btn btn-outline-warning m-2" >Delete Payment</button>
+        </form>
 
 
 

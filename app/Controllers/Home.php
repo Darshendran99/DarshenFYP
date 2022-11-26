@@ -720,6 +720,11 @@ public function RemoveComponentItem()
          $id = session('id');
          $cart_model = new cart_model();
          $data['cart'] = $cart_model->where('uid', $id)->findAll();
+         $cart = $data['cart'];
+
+         $NumberOfCartItem = count($cart);
+
+         if ($NumberOfCartItem > 0 ) {
          helper(['form']);
          if ($this->request->getMethod() == 'post') {
          //Validation
@@ -813,10 +818,118 @@ public function RemoveComponentItem()
            }
          }
          }
+       }else{
+         $session = session();
+         $session->setFlashdata('msg', 'Cart is Empty');
+         return redirect()->to('Cart');
+       }
          echo view("sections/Header.php");
          return view("Home/Payment.php",$data);
        }
 
+       public function CODPayment()
+       {
+         $id = session('id');
+         $cart_model = new cart_model();
+         $data['cart'] = $cart_model->where('uid', $id)->findAll();
+         $cart = $data['cart'];
+
+         $NumberOfCartItem = count($cart);
+
+         if ($NumberOfCartItem > 0 ) {
+         helper(['form']);
+         if ($this->request->getMethod() == 'post') {
+         //Validation
+         $rules = [
+           'name' => 'required|min_length[2]|max_length[25]|alpha_space',
+           'email' => 'required|min_length[6]|max_length[50]|valid_email',
+           'address' => 'required|min_length[10]|max_length[255]|alpha_numeric_punct',
+           'city' => 'required|min_length[4]|max_length[50]|alpha_space',
+           'state' => 'required|min_length[4]|max_length[50]|alpha_space',
+           'zip' => 'required|min_length[4]|max_length[50]|integer',
+
+         ];
+         $PaymentAddress = $this->request->getVar('address').",".$this->request->getVar('city').",".$this->request->getVar('state').","
+                            .$this->request->getVar('zip');
+         $total_price_sum = $this->request->getVar('totalPrice');
+         date_default_timezone_set("Asia/Kuala_Lumpur");
+         $paymentTime= date("Y-m-d H:i:s");
+         if (! $this->validate($rules)) {
+           $data['validation'] = $this->validator;
+         }else{
+           $payment_model = new payment_model();
+
+           $newData = [
+             'userid' => session('id'),
+             'Name' => $this->request->getVar('name'),
+             'PaymentEmail' => $this->request->getVar('email'),
+             'PaymentAddress' => $PaymentAddress,
+             'CardDetails' => "COD",
+             'PaymentTotal' => $total_price_sum,
+             'PaidItems' => $this->request->getVar('totalItem'),
+             'paymentTime' => $paymentTime,
+           ];
+           $paymentReward = $payment_model->save($newData);
+
+
+           if($paymentReward) {
+
+           $checkPaymentID = new payment_model();
+           $array = ['userId' => $id, 'paymentTime' => $paymentTime];
+           $data['paymentDate'] = $checkPaymentID->where($array)->findAll();
+           $paymentDate = $data['paymentDate'];
+
+           foreach ($paymentDate as $paymentDate ) {
+             $orderPaymentId = $paymentDate["PaymentId"];
+           }
+
+           $order_model = new order_model();
+
+           $newOrderData = [
+             'userId' => session('id'),
+             'paymentId' => $orderPaymentId,
+             'shippingAddress' => $PaymentAddress,
+             'itemsOrdered' => $this->request->getVar('totalItem'),
+             'grandTotal' => $total_price_sum,
+             'orderStatus' => "0",
+
+           ];
+           $orderStatusResult = $order_model->save($newOrderData);
+              if($orderStatusResult) {
+                echo "Added To OrderTable.";
+                echo "<br>";
+
+                $deleteCart = new cart_model();
+                $data['post'] = $deleteCart->where('uid', $id)->delete();
+                $abc = $data['post'];
+                  if($abc) {
+                    echo "Removed Paid items from cart";
+                  }else{
+                    echo "SQL Error Payment()";
+                  }
+
+              } else {
+                echo "Something went wrong when adding order";
+              }
+
+         } else {
+           echo "Something went wrong when completing payment";
+         }
+         if ($total_price_sum > 6000) {
+           return redirect()->to('Game');
+         }else{
+          return redirect()->to('OrderStatus');
+           }
+         }
+         }
+       }else{
+         $session = session();
+         $session->setFlashdata('msg', 'Cart is Empty');
+         return redirect()->to('Cart');
+       }
+         echo view("sections/Header.php");
+         return view("Home/CODPayment.php",$data);
+       }
 
 
 

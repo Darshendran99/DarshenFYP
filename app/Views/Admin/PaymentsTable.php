@@ -2,7 +2,11 @@
     <div class="row g-4">
       <div class="container-fluid pt-4 px-4">
           <div class="row g-4">
-
+            <?php if (session()->get('deleted')): ?>
+            <div class="alert alert-danger" role="alert">
+            <?= session()->get('deleted') ?>
+            </div>
+            <?php endif; ?>
               <div class="col-12">
                   <div class="bg-secondary rounded h-100 p-4">
                       <h6 class="mb-4">Payment Table</h6>

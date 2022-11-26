@@ -39,9 +39,7 @@
                           <input type="text" id="zip" name="zip" placeholder="10001" value="<?= set_value('zip') ?>">
                         </div>
                       </div>
-                      <input type="checkbox" id="cod" name="cod" value="cod">
-                      <label for="cod" style="float: left;"><i class="fa fa-money"></i> Cash On Delivery?</label>
-                    </input>
+
                     </div>
 
                     <div class="col-50">
@@ -97,16 +95,16 @@
                     $total_items =$total_items."&emsp; ".$cartValues["itemName"];
                   } ?>
 
-                  <div class="row">
-
-                  <div class="col-12 col-sm-4">
+                  <div class="row" style="margin-left: 40%;margin-top: 1em;">
+                    <a href="<?php echo base_url();?>/Home/CODPayment" style="float: right;"><i class="fa fa-money"></i> Cash On Delivery?</a>
+                  <div class="buttonplacement"  >
                     <br>
                     <input type="hidden" id="totalPrice" name="totalPrice" value="<?php echo $total_price_sum; ?>">
                     <input type="hidden" id="totalItem" name="totalItem" value="<?php echo $total_items; ?>">
                     <?php if ($total_price_sum > 6000) { ?>
                     <button type="submit" class="btn btn-primary">Try your luck and get a free Reward</button>
                   <?php }else{ ?>
-                    <button type="submit" class="btn btn-primary">Place Order</button>
+                    <button type="submit" class="btn btn-primary" >Place Order</button>
                   <?php } ?>
                   </div>
                 </form>

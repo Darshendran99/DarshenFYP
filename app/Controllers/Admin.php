@@ -35,7 +35,7 @@ class Admin extends BaseController
           $data['payment'] = $paymentRev->findAll();
 
           $order_model = new order_model();
-          $data['ordersTable'] = $order_model->orderBy('orderId', 'ASC')->first();
+          $data['ordersTable'] = $order_model->orderBy('orderId', 'ASC') ->findAll();
 
         echo view("sections/AdminHeader.php");
         echo view("sections/AdminNavBar.php",$data1);
@@ -1348,6 +1348,30 @@ $newData = [
                     }
                     }
 
+                    public function Deletepayment(){
+                      if (session()->get('AdminisLoggedIn')){
+
+                        if ($this->request->getMethod() == 'post') {
+
+                          $deletepayment = new payment_model();
+                          $theid = $this->request->getVar('PaymentId');
+                          $data['post'] = $deletepayment->where('PaymentId', $theid)->delete();
+                          $deletepaymentResult = $data['post'];
+                                        if($deletepaymentResult) {
+                                          $session = session();
+                                          $session->setFlashdata('deleted', 'Successfully Deleted');
+                                          return redirect()->to('PaymentsTable');
+                                        } else {
+                                          echo "Something went wrong";
+                                          return redirect()->to();
+                                        }
+                        }return redirect()->to();
+
+                      }else {
+                        return redirect()->to('AdminLogin');
+                      }
+                    }
+
                     public function ModifyOrder(){
                       if (session()->get('AdminisLoggedIn')){
                         $StaffId = session('StaffId');
@@ -1669,6 +1693,37 @@ $newData = [
                                                   return redirect()->to();
                                                 }
                                 }return redirect()->to();
+
+                              }else {
+                                return redirect()->to('AdminLogin');
+                              }
+                            }
+
+                            public function ApproveOrder(){
+                              if (session()->get('AdminisLoggedIn')){
+
+                                if ($this->request->getMethod() == 'post') {
+                                  //Storing user registration into database
+                                  $model = new order_model();
+                                  $theid = $this->request->getVar('ordrId');
+
+                                  $newUserData = [
+                                    'orderStatus' => "1",
+                                  ];
+
+                                          $model->set($newUserData);
+                                          $model->where('orderId', $theid);
+                                          $approveOrderResult = $model->update();
+
+                                                if($approveOrderResult) {
+                                                  $session = session();
+                                                  $session->setFlashdata('success', 'Successfully Approved');
+                                                  return redirect()->to('/AdminPage');
+                                                } else {
+                                                  echo "Something went wrong";
+                                                  return redirect()->to();
+                                                }
+                                }return redirect()->to('');
 
                               }else {
                                 return redirect()->to('AdminLogin');
