@@ -46,9 +46,6 @@
           <button type="submit" class="btn btn-outline-warning m-2" >Delete Payment</button>
         </form>
 
-
-
-
       </div>
   </div>
 </div>

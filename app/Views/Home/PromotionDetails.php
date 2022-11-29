@@ -1,5 +1,4 @@
-
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
 
 	  <div class="container">
 	    <div class="row">
@@ -18,15 +17,15 @@
 											<div class="col-lg-6">
 												<div class="left-info">
 													<div class="left">
-														<h4> <?php echo $promotion["PromotionName"];?></h4>
+														<h4> <?php echo $promotion["PromotionName"]; ?></h4>
 													</div>
 												</div>
 											</div>
 											<div class="col-lg-6">
 												<div class="right-info">
-													<h4>RM <?php echo $promotion["PromotionPrice"];?> </h4>
-                          <span>BEFORE [RM <?php echo $promotion["PromotionOriPrice"];?>] </span>
-                            <h4> SAVE UP TO <?php echo round((($promotion["PromotionOriPrice"] - $promotion["PromotionPrice"])/ $promotion["PromotionOriPrice"])*100);?> %</h4>
+													<h4>RM <?php echo $promotion["PromotionPrice"]; ?> </h4>
+                          <span>BEFORE [RM <?php echo $promotion["PromotionOriPrice"]; ?>] </span>
+                            <h4> SAVE UP TO <?php echo round((($promotion["PromotionOriPrice"] - $promotion["PromotionPrice"]) / $promotion["PromotionOriPrice"]) * 100); ?> %</h4>
 													</div>
 													</div>
 													<div class="col-lg-4">
@@ -34,80 +33,101 @@
 			                    </div>
 													<div class="col-lg-12">
 
-                            <?php if ($promotion["PromotionCPU"] != "") { ?>
+                            <?php if ($promotion["PromotionCPU"] != "")
+{ ?>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/cpuIcon.png'); ?>">
-														<h5>Processor: &emsp; <?php echo $promotion["PromotionCPU"];?></h5>
+														<h5>Processor: &emsp; <?php echo $promotion["PromotionCPU"]; ?></h5>
 														</div>
-                            <?php } ?>
+                            <?php
+} ?>
 
-                            <?php if ($promotion["PromotionGPU"] != "") { ?>
+                            <?php if ($promotion["PromotionGPU"] != "")
+{ ?>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/gpuIcon.png'); ?>">
-														<h5>Graphic Card: &emsp; <?php echo $promotion["PromotionGPU"];?></h5>
+														<h5>Graphic Card: &emsp; <?php echo $promotion["PromotionGPU"]; ?></h5>
 														</div>
-                            <?php } ?>
+                            <?php
+} ?>
 
-                            <?php if ($promotion["PromotionMobo"] != "") { ?>
+                            <?php if ($promotion["PromotionMobo"] != "")
+{ ?>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/moboIcon.png'); ?>">
-														<h5>Moptherboard: &emsp; <?php echo $promotion["PromotionMobo"];?></h5>
+														<h5>Moptherboard: &emsp; <?php echo $promotion["PromotionMobo"]; ?></h5>
 														</div>
-                            <?php } ?>
+                            <?php
+} ?>
 
-                            <?php if ($promotion["PromotionRAM"] != "") { ?>
+                            <?php if ($promotion["PromotionRAM"] != "")
+{ ?>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/ramIcon.png'); ?>">
-														<h5>RAM: &emsp; <?php echo $promotion["PromotionRAM"];?></h5>
+														<h5>RAM: &emsp; <?php echo $promotion["PromotionRAM"]; ?></h5>
 														</div>
-                            <?php } ?>
+                            <?php
+} ?>
 
-                            <?php if ($promotion["PromotionSSD"] != "") { ?>
+                            <?php if ($promotion["PromotionSSD"] != "")
+{ ?>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/ssdIcon.png'); ?>">
-														<h5>SSD: &emsp; <?php echo $promotion["PromotionSSD"];?></h5>
+														<h5>SSD: &emsp; <?php echo $promotion["PromotionSSD"]; ?></h5>
 														</div>
-                            <?php } ?>
+                            <?php
+} ?>
 
-                            <?php if ($promotion["PromotionPSU"] != "") { ?>
+                            <?php if ($promotion["PromotionPSU"] != "")
+{ ?>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/psuIcon.png'); ?>">
-														<h5>Power Supply: &emsp; <?php echo $promotion["PromotionPSU"];?></h5>
+														<h5>Power Supply: &emsp; <?php echo $promotion["PromotionPSU"]; ?></h5>
 														</div>
-                            <?php } ?>
+                            <?php
+} ?>
 
-                            <?php if ($promotion["PromotionCasing"] != "") { ?>
+                            <?php if ($promotion["PromotionCasing"] != "")
+{ ?>
 														<div class="productDetails">
 														<img class="iconImg" src="<?php echo base_url('assets/image/casingIcon.png'); ?>">
-														<h5>Casing: &emsp; <?php echo $promotion["PromotionCasing"];?></h5>
+														<h5>Casing: &emsp; <?php echo $promotion["PromotionCasing"]; ?></h5>
 														</div>
-                            <?php } ?>
+                            <?php
+} ?>
 
-														<?php if ($promotion["PromotionOther"] != "") { ?>
+														<?php if ($promotion["PromotionOther"] != "")
+{ ?>
 															<div class="productDetails">
-																<span>Additional parts include [ <?php echo $promotion["PromotionOther"];?> ] </span>
+																<span>Additional parts include [ <?php echo $promotion["PromotionOther"]; ?> ] </span>
 															</div>
-														<?php } ?>
+														<?php
+} ?>
 
-                            <?php if ($promotion["NonPCDetails"] != "") { ?>
+                            <?php if ($promotion["NonPCDetails"] != "")
+{ ?>
                               <div class="productDetails">
-                                <span> <?php echo $promotion["NonPCDetails"];?> </span>
+                                <span> <?php echo $promotion["NonPCDetails"]; ?> </span>
                               </div>
-                            <?php } ?>
+                            <?php
+} ?>
 
 													</div>
 													<div class="col-lg-12">
 			                      <div class="main-border-button">
-															<?php if ($promotion["PromotionStatus"] == "ready") { ?>
+															<?php if ($promotion["PromotionStatus"] == "ready")
+{ ?>
 																<?php if (session()->get('isLoggedIn')): ?>
-			                        			<a href="<?php echo base_url();?>/Home/AddCart2/<?php echo $promotion["PromotionId"]; ?>">Add To Cart</a>
-																	<?php else: ?>
-																		<a href="<?php echo base_url();?>/Home/Login">Login to Add to Cart</a>
-																	<?php endif; ?>
-																	<?php } ?>
+			                        			<a href="<?php echo base_url(); ?>/Home/AddCart2/<?php echo $promotion["PromotionId"]; ?>">Add To Cart</a>
+																	<?php
+    else: ?>
+																		<a href="<?php echo base_url(); ?>/Home/Login">Login to Add to Cart</a>
+																	<?php
+    endif; ?>
+																	<?php
+} ?>
 			                      </div>
 			                    </div>
-
 
 												</div>
 											</div>
@@ -123,38 +143,46 @@
 			                </div>
 			              </div>
 
-                    <?php if ($promotion["PromotionDetail1"] != "") { ?>
+                    <?php if ($promotion["PromotionDetail1"] != "")
+{ ?>
 										<div class="col-lg-6">
 											<div class="item">
 												<img class="iconImg2" src="<?php echo base_url('assets/image/infoIcon.png'); ?>">
-												<h5><?php echo $promotion["PromotionDetail1"];?></h5>
+												<h5><?php echo $promotion["PromotionDetail1"]; ?></h5>
 											</div>
                   	</div>
-                    <?php } ?>
-                    <?php if ($promotion["PromotionDetail2"] != "") { ?>
+                    <?php
+} ?>
+                    <?php if ($promotion["PromotionDetail2"] != "")
+{ ?>
 										<div class="col-lg-6">
 											<div class="item">
 												<img class="iconImg2" src="<?php echo base_url('assets/image/infoIcon.png'); ?>">
-												 <h5><?php echo $promotion["PromotionDetail2"];?></h5>
+												 <h5><?php echo $promotion["PromotionDetail2"]; ?></h5>
 											</div>
 										</div>
-                    <?php } ?>
-                    <?php if ($promotion["PromotionDetail3"] != "") { ?>
+                    <?php
+} ?>
+                    <?php if ($promotion["PromotionDetail3"] != "")
+{ ?>
 										<div class="col-lg-6">
 											<div class="item">
 												<img class="iconImg2" src="<?php echo base_url('assets/image/infoIcon.png'); ?>">
-												<h5><?php echo $promotion["PromotionDetail3"];?></h5>
+												<h5><?php echo $promotion["PromotionDetail3"]; ?></h5>
 											</div>
 										</div>
-                  <?php } ?>
-                  <?php if ($promotion["PromotionDetail4"] != "") { ?>
+                  <?php
+} ?>
+                  <?php if ($promotion["PromotionDetail4"] != "")
+{ ?>
 										<div class="col-lg-6">
 											<div class="item">
 												<img class="iconImg2" src="<?php echo base_url('assets/image/infoIcon.png'); ?>">
-												<h5><?php echo $promotion["PromotionDetail4"];?></h5>
+												<h5><?php echo $promotion["PromotionDetail4"]; ?></h5>
 											</div>
 										</div>
-                  <?php } ?>
+                  <?php
+} ?>
 
 										<div class="col-lg-6-p">
 												<p>Posted on <?php echo $promotion["PromoCreatedOn"]; ?></p>
@@ -173,4 +201,4 @@
 
 
 
-<?php echo view('sections/footer.php');?>
+<?php echo view('sections/footer.php'); ?>

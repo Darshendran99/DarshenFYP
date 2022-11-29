@@ -1,5 +1,4 @@
-
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
 
 	  <div class="container">
 	    <div class="row">
@@ -18,13 +17,13 @@
 											<div class="col-lg-6">
 												<div class="left-info">
 													<div class="left">
-														<h4> <?php echo $product["ProductName"];?></h4>
+														<h4> <?php echo $product["ProductName"]; ?></h4>
 													</div>
 												</div>
 											</div>
 											<div class="col-lg-6">
 												<div class="right-info">
-													<h4>RM <?php echo $product["ProductPrice"];?></h>
+													<h4>RM <?php echo $product["ProductPrice"]; ?></h>
 													</div>
 													</div>
 													<div class="col-lg-4">
@@ -63,23 +62,26 @@
 														<img class="iconImg" src="<?php echo base_url('assets/image/casingIcon.png'); ?>">
 														<h5>Casing: &emsp;<?php echo $product["ProductCasing"]; ?> </h5>
 														</div>
-														<?php if ($product["ProductOther"] != "") { ?>
+														<?php if ($product["ProductOther"] != "")
+{ ?>
 															<div class="productDetails">
 																<span>Additional parts include [ <?php echo $product["ProductOther"]; ?> ] </span>
 															</div>
-														<?php } ?>
+														<?php
+} ?>
 
 													</div>
 													<div class="col-lg-12">
 			                      <div class="main-border-button">
 															<?php if (session()->get('isLoggedIn')): ?>
-			                        		<a href="<?php echo base_url();?>/Home/AddCart1/<?php echo $product["ProductId"]; ?>">Add To Cart</a>
-															<?php else: ?>
-																<a href="<?php echo base_url();?>/Home/Login">Login to Add to Cart</a>
-															<?php endif; ?>
+			                        		<a href="<?php echo base_url(); ?>/Home/AddCart1/<?php echo $product["ProductId"]; ?>">Add To Cart</a>
+															<?php
+else: ?>
+																<a href="<?php echo base_url(); ?>/Home/Login">Login to Add to Cart</a>
+															<?php
+endif; ?>
 			                      </div>
 			                    </div>
-
 
 												</div>
 											</div>
@@ -144,14 +146,9 @@
 
 										</div>
 										</div>
-
-
-
 </div>
 </div>
 </div>
 </div>
 
-
-
-<?php echo view('sections/footer.php');?>
+<?php echo view('sections/footer.php'); ?>

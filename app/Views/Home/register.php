@@ -22,28 +22,28 @@
             <div class="col-12 col-sm-6">
               <div class="form-group">
                <label for="firstname">First Name</label>
-               <input type="text" class="form-control" name="firstname" id="firstname" value="<?= set_value('firstname') ?>"> </input>
+               <input type="text" class="form-control" name="firstname" id="firstname" value="<?=set_value('firstname') ?>"> </input>
               </div>
             </div>
 
             <div class="col-12 col-sm-6">
               <div class="form-group">
                <label for="lastname">Last Name</label>
-               <input type="text" class="form-control" name="lastname" id="lastname" value="<?= set_value('lastname') ?>"> </input>
+               <input type="text" class="form-control" name="lastname" id="lastname" value="<?=set_value('lastname') ?>"> </input>
               </div>
             </div>
 
 						<div class="col-12">
               <div class="form-group">
                <label for="address">Address</label>
-               <input type="text" class="form-control" name="address" id="address" value="<?= set_value('address') ?>"> </input>
+               <input type="text" class="form-control" name="address" id="address" value="<?=set_value('address') ?>"> </input>
               </div>
             </div>
 
 						<div class="col-12">
               <div class="form-group">
                <label for="email">Email</label>
-               <input type="text" class="form-control" name="email" id="email" value="<?= set_value('email') ?>"></input>
+               <input type="text" class="form-control" name="email" id="email" value="<?=set_value('email') ?>"></input>
               </div>
             </div>
 
@@ -70,16 +70,20 @@
 					<?php if (isset($validation)): ?>
 					 <div class="col-12">
 						 <div class="alert alert-danger" role="alert">
-							 <?= $validation->listErrors() ?>
+							 <?=$validation->listErrors() ?>
 						 </div>
 					 </div>
-				 <?php endif; ?>
+				 <?php
+endif; ?>
 
-         <?php if (session()->get('msg')): ?>
+         <?php if (session()
+    ->get('msg')): ?>
            <div class="alert alert-danger" role="alert">
-             <?= session()->get('msg') ?>
+             <?=session()
+        ->get('msg') ?>
            </div>
-         <?php endif; ?>
+         <?php
+endif; ?>
 
 
 				 </div>
@@ -91,7 +95,7 @@
 					              <button type="submit" class="btn btn-primary">Register</button>
 					            </div>
 					            <div class="col-12 col-sm-8 text-right">
-					              <a href='<?php echo base_url();?>/Home/Login'>Already have an account?</a>
+					              <a href='<?php echo base_url(); ?>/Home/Login'>Already have an account?</a>
 					            </div>
 
                     </form>

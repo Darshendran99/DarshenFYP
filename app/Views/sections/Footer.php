@@ -1,10 +1,6 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/footer.css'); ?>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-
-
 <footer>
 <div class="container">
   <div class="row">
@@ -24,8 +20,6 @@
     </div>
   </div>
 
-
-
 </footer>
 
 <!-- BOOTSTRAP JS -->
@@ -36,9 +30,6 @@
   <script type="text/javascript" src="<?php echo base_url('assets/JS/owl-carousel.js'); ?>"></script>
   <script type="text/javascript" src="<?php echo base_url('assets/JS/popup.js'); ?>"></script>
   <script type="text/javascript" src="<?php echo base_url('assets/JS/tabs.js'); ?>"></script>
-
-
-
 
 </body>
 </html>

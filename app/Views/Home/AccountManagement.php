@@ -14,28 +14,28 @@
                   <div class="col-12 col-sm-6">
                     <div class="form-group">
                      <label for="firstname">First Name</label>
-                     <input type="text" class="form-control" name="firstname" id="firstname" value="<?php echo $users["firstname"];?>">  </input>
+                     <input type="text" class="form-control" name="firstname" id="firstname" value="<?php echo $users["firstname"]; ?>">  </input>
                     </div>
                   </div>
 
                   <div class="col-12 col-sm-6">
                     <div class="form-group">
                      <label for="lastname">Last Name</label>
-                     <input type="text" class="form-control" name="lastname" id="lastname" value="<?php echo $users["lastname"];?>"> </input>
+                     <input type="text" class="form-control" name="lastname" id="lastname" value="<?php echo $users["lastname"]; ?>"> </input>
                     </div>
                   </div>
 
                   <div class="col-12">
                     <div class="form-group">
                      <label for="address">Address</label>
-                     <input type="text" class="form-control" name="address" id="address" value="<?php echo $users["address"];?>"> </input>
+                     <input type="text" class="form-control" name="address" id="address" value="<?php echo $users["address"]; ?>"> </input>
                     </div>
                   </div>
 
                   <div class="col-12">
                     <div class="form-group">
                      <label for="email">Email</label>
-                     <input type="text" class="form-control" name="email" id="email" value="<?php echo $users["email"];?>"> </input>
+                     <input type="text" class="form-control" name="email" id="email" value="<?php echo $users["email"]; ?>"> </input>
                     </div>
                   </div>
 
@@ -62,20 +62,23 @@
                 <?php if (isset($validation)): ?>
                  <div class="col-12">
                    <div class="alert alert-danger" role="alert">
-                     <?= $validation->listErrors() ?>
+                     <?=$validation->listErrors() ?>
                    </div>
                  </div>
-               <?php endif; ?>
+               <?php
+endif; ?>
 
-               <?php if (session()->get('msg')): ?>
+               <?php if (session()
+    ->get('msg')): ?>
                  <div class="alert alert-danger" role="alert">
-                   <?= session()->get('msg') ?>
+                   <?=session()
+        ->get('msg') ?>
                  </div>
-               <?php endif; ?>
+               <?php
+endif; ?>
 
                </div>
                <br>
-
 
                 <div class="row">
                             <div class="col-12 col-sm-4">
@@ -86,17 +89,11 @@
 
   						</div>
 
-
   					</div>
 
-
-
-
-
-
   			</div>
   			</div>
   			</div>
   			</div>
 
-	<?php echo view('sections/footer.php');?>
+	<?php echo view('sections/footer.php'); ?>

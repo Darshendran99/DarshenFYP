@@ -1,5 +1,4 @@
-
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/details.css'); ?>">
 
 <div class="container">
 	<div class="row">
@@ -19,19 +18,10 @@
 						</div>
 						</div>
 						<?php endforeach; ?>
-
 					</div>
-
-
-
-
-
-
 			</div>
-			</div>
-			</div>
-			</div>
+		</div>
+	</div>
+</div>
 
-
-
-	<?php echo view('sections/footer.php');?>
+<?php echo view('sections/footer.php');?>

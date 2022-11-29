@@ -1,4 +1,3 @@
-
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -34,21 +33,20 @@
 
                   <li id="theRewards1">
                   <img src="data:image/png;base64,<?php echo base64_encode($rewardTier1["RewardImage"]); ?>" style="width:75px;height:75px;"/></img>
-                  <a class="rewardBtn" href="<?php echo base_url();?>/Home/GameReward/<?php echo $rewardTier1["RewardID"]; ?>"/><?php echo $rewardTier1["RewardName"]; ?></a>
+                  <a class="rewardBtn" href="<?php echo base_url(); ?>/Home/GameReward/<?php echo $rewardTier1["RewardID"]; ?>"/><?php echo $rewardTier1["RewardName"]; ?></a>
                 </li>
                 <li id="theRewards2">
                 <img src="data:image/png;base64,<?php echo base64_encode($rewardTier2["RewardImage"]); ?>" style="width:75px;height:75px;"/></img>
-                <a class="rewardBtn" href="<?php echo base_url();?>/Home/GameReward/<?php echo $rewardTier2["RewardID"]; ?>"/><?php echo $rewardTier2["RewardName"]; ?></a>
+                <a class="rewardBtn" href="<?php echo base_url(); ?>/Home/GameReward/<?php echo $rewardTier2["RewardID"]; ?>"/><?php echo $rewardTier2["RewardName"]; ?></a>
               </li>
               <li id="theRewards3">
               <img src="data:image/png;base64,<?php echo base64_encode($rewardTier3["RewardImage"]); ?>" style="width:75px;height:75px;"/></img>
-              <a class="rewardBtn" href="<?php echo base_url();?>/Home/GameReward/<?php echo $rewardTier3["RewardID"]; ?>"/><?php echo $rewardTier3["RewardName"]; ?></a>
+              <a class="rewardBtn" href="<?php echo base_url(); ?>/Home/GameReward/<?php echo $rewardTier3["RewardID"]; ?>"/><?php echo $rewardTier3["RewardName"]; ?></a>
             </li>
 
               </ul>
               </div>
               </div>
-
 
             </div>
           </div>
@@ -59,4 +57,4 @@
     </div>
     </div>
   </div>
-	<?php echo view('sections/footer.php');?>
+	<?php echo view('sections/footer.php'); ?>

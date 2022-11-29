@@ -4,15 +4,31 @@
 			<div class="page-content">
 				<div class="helloText">
 			<?php if (session()->get('isLoggedIn')): ?>
-			<h1 style="text-align: center;">Hello, <?= session()->get('firstname') ?></h1>
-			<?php endif; ?>
+			<h1 style="text-align: center;">Hello, <?=session()
+        ->get('firstname') ?></h1>
+			<?php
+endif; ?>
 		</div>
 
-		<?php if (session()->get('success')): ?>
-			 <div class="alert alert-success" role="alert">
-					<?= session()->get('success') ?>
+		<?php if (session()
+    ->get('success')): ?>
+			<br>
+			 <div class="alert alert-success" role="alert" style="text-align:center;">
+					<?=session()
+        ->get('success') ?>
 				 </div>
-		<?php endif; ?>
+		<?php
+endif; ?>
+
+		<?php if (session()
+		->get('Error')): ?>
+			<br>
+	 		<div class="alert alert-danger" role="alert" style="text-align:center;">
+					<?=session()
+					->get('Error') ?>
+		 		</div>
+				<?php
+endif; ?>
 
 <!-- Banner -->
 			<div class="main-banner">
@@ -22,7 +38,7 @@
 							<h6>Welcome To StellarPC</h6>
 							<h4><em>Build Your Own </em>Custom PC</h4>
 							<div class="main-button">
-								<a href="<?php echo base_url();?>/Home/Build_PC">Check It Out Now</a>
+								<a href="<?php echo base_url(); ?>/Home/Build_PC">Check It Out Now</a>
 							</div>
 						</div>
 					</div>
@@ -44,7 +60,7 @@
 						<h4> <?php echo $product["ProductName"]; ?> </h4>
 					  <h4>Product <span>Prebuilt Custom PC</span></h4>
 						<ul>
-							<li><i class="fa fa-star"></i> RM <?php echo $product["ProductPrice"];?></li>
+							<li><i class="fa fa-star"></i> RM <?php echo $product["ProductPrice"]; ?></li>
 						</ul>
 					</div>
 				</div>
@@ -55,7 +71,7 @@
 						<h4> <?php echo $promotion["PromotionName"]; ?>	 </h4>
 						<h4>Promotion <span>Bang for the buck</span></h4>
 						<ul>
-							<li><i class="fa fa-star"></i> RM <?php echo $promotion["PromotionPrice"];?></li>
+							<li><i class="fa fa-star"></i> RM <?php echo $promotion["PromotionPrice"]; ?></li>
 						</ul>
 					</div>
 				</div>
@@ -68,7 +84,7 @@
 						<h4>BuildYourPC<span>Customise YOUR PC</span></h4>
 						<ul>
 							<br>
-							<li><i class="fa fa-star"></i> RM <?php echo $component["ComponentPrice"];?></li>
+							<li><i class="fa fa-star"></i> RM <?php echo $component["ComponentPrice"]; ?></li>
 						</ul>
 					</div>
 				</div>
@@ -88,9 +104,9 @@
 
 				<div class="col-lg-12">
 					<div class="main-button">
-						<a href="<?php echo base_url();?>/Home/Products">Discover Products</a>
-						<a href="<?php echo base_url();?>/Home/Promotion">Discover Promotion</a>
-						<a href="<?php echo base_url();?>/Home/Build_PC">Build Your Own PC</a>
+						<a href="<?php echo base_url(); ?>/Home/Products">Discover Products</a>
+						<a href="<?php echo base_url(); ?>/Home/Promotion">Discover Promotion</a>
+						<a href="<?php echo base_url(); ?>/Home/Build_PC">Build Your Own PC</a>
 						<a href="">More Soon</a>
 						</div>
 				</div>
@@ -150,9 +166,10 @@
 			var data = google.visualization.arrayToDataTable([
 				['Month', 'RTX 4090 price (RM)'],
 					<?php
-						foreach ($gpuchart as $row){
-							 echo "['".$row['month']."',".$row['sell']."],";
-					} ?>
+foreach ($gpuchart as $row)
+{
+    echo "['" . $row['month'] . "'," . $row['sell'] . "],";
+} ?>
 			]);
 			var options = {
 				title: 'Line chart of Nvidia GeForce RTX 4090 series Price',
@@ -189,9 +206,10 @@
 			var data = google.visualization.arrayToDataTable([
 				['Month', 'Intel i9-13900KF (RM) '],
 					<?php
-						foreach ($cpuchart as $row){
-							 echo "['".$row['month']."',".$row['sell']."],";
-					} ?>
+foreach ($cpuchart as $row)
+{
+    echo "['" . $row['month'] . "'," . $row['sell'] . "],";
+} ?>
 			]);
 			var options = {
 				title: 'Line chart of Intel® Core™ i9-13900KF series Price',
@@ -218,4 +236,4 @@
 		}
 
 	</script>
-	<?php echo view('sections/footer.php');?>
+	<?php echo view('sections/footer.php'); ?>

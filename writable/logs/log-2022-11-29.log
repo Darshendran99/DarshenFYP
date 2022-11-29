@@ -1,0 +1,28 @@
+CRITICAL - 2022-11-29 21:58:51 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 1039.
+ 1 APPPATH\Controllers\Home.php(1039): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 1039)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->CODPayment()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:09:49 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 1116.
+ 1 APPPATH\Controllers\Home.php(1116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 1116)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->GameReward('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:11:22 --> Undefined variable $gamedata
+in APPPATH\Controllers\Home.php on line 1117.
+ 1 APPPATH\Controllers\Home.php(1117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gamedata', 'APPPATH\\Controllers\\Home.php', 1117)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->GameReward('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:14:38 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 1119.
+ 1 APPPATH\Controllers\Home.php(1119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 1119)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->GameReward('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

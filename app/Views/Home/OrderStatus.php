@@ -28,8 +28,8 @@
 
                    </tr>
 
-
-                   <?php foreach ($orderView as $orderView){ ?>
+                   <?php foreach ($orderView as $orderView)
+{ ?>
                    <tr>
 
                      <td class="counterCell"></td>
@@ -38,22 +38,36 @@
                         <td><?php echo $orderView["itemsOrdered"]; ?></td>
                         <td>RM <?php echo $orderView["grandTotal"]; ?></td>
 
-                        <?php if ($orderView["orderStatus"] == 0){ ?>
+                        <?php if ($orderView["orderStatus"] == 0)
+    { ?>
                         <td>Procesing Payment</td>
-                      <?php }else if ($orderView["orderStatus"] == 1) { ?>
+                      <?php
+    }
+    else if ($orderView["orderStatus"] == 1)
+    { ?>
                         <td>Order Confirmed</td>
-                      <?php }else if ($orderView["orderStatus"] == 2) { ?>
+                      <?php
+    }
+    else if ($orderView["orderStatus"] == 2)
+    { ?>
                         <td>Shipping</td>
-                      <?php }else if ($orderView["orderStatus"] == 3) { ?>
+                      <?php
+    }
+    else if ($orderView["orderStatus"] == 3)
+    { ?>
                           <td>Order Received</td>
-                          <?php }else{ ?>
+                          <?php
+    }
+    else
+    { ?>
                             <td> BackEnd Error... Please Contact staf to rolve issue</td>
-                          <?php } ?>
-
+                          <?php
+    } ?>
 
                    </tr>
 
-                 <?php } ?>
+                 <?php
+} ?>
                  </table>
                 </div>
     					</div>
@@ -63,4 +77,4 @@
     	</div>
     	</div>
     </div>
-<?php echo view('sections/footer.php');?>
+<?php echo view('sections/footer.php'); ?>
