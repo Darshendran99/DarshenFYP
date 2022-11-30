@@ -26,3 +26,10 @@ in APPPATH\Controllers\Home.php on line 1119.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 22:18:51 --> Path cannot be empty
+in APPPATH\Controllers\Admin.php on line 1259.
+ 1 APPPATH\Controllers\Admin.php(1259): file_get_contents('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->UpdateModProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

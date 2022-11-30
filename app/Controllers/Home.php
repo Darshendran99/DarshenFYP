@@ -970,14 +970,20 @@ class Home extends BaseController
                 else
                 {
                     $payment_model = new payment_model();
+                    $codItem = "[COD]".$this
+                    ->request
+                    ->getVar('totalItem');
 
                     $newData = ['userid' => session('id') , 'Name' => $this
                         ->request
                         ->getVar('name') , 'PaymentEmail' => $this
                         ->request
-                        ->getVar('email') , 'PaymentAddress' => $PaymentAddress, 'CardDetails' => "COD", 'PaymentTotal' => $total_price_sum, 'PaidItems' => $this
-                        ->request
-                        ->getVar('totalItem') , 'paymentTime' => $paymentTime, ];
+                        ->getVar('email') ,
+                        'PaymentAddress' => $PaymentAddress,
+                        'CardDetails' => "COD",
+                        'PaymentTotal' => $total_price_sum,
+                        'PaidItems' => $codItem,
+                        'paymentTime' => $paymentTime, ];
                     $paymentReward = $payment_model->save($newData);
 
                     if ($paymentReward)
@@ -995,9 +1001,7 @@ class Home extends BaseController
 
                         $order_model = new order_model();
 
-                        $newOrderData = ['userId' => session('id') , 'paymentId' => $orderPaymentId, 'shippingAddress' => $PaymentAddress, 'itemsOrdered' => $this
-                            ->request
-                            ->getVar('totalItem') , 'grandTotal' => $total_price_sum, 'orderStatus' => "0",
+                        $newOrderData = ['userId' => session('id') , 'paymentId' => $orderPaymentId, 'shippingAddress' => $PaymentAddress, 'itemsOrdered' => $codItem , 'grandTotal' => $total_price_sum, 'orderStatus' => "0",
 
                         ];
                         $orderStatusResult = $order_model->save($newOrderData);

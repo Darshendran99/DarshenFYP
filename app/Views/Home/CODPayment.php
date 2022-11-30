@@ -77,7 +77,7 @@ foreach ($cart as $cartValues)
                     <input type="hidden" id="totalItem" name="totalItem" value="<?php echo $total_items; ?>">
                     <?php if ($total_price_sum > 6000)
 { ?>
-                    <button type="submit" class="btn btn-primary">Try your luck and get a free Reward</button>
+                    <button type="submit" class="btn btn-primary" style="margin-left: -8%">Try your luck and get a free Reward</button>
                   <?php
 }
 else

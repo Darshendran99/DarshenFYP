@@ -1223,6 +1223,7 @@ class Admin extends BaseController
                 $productId = $this
                     ->request
                     ->getVar('prodId');
+
                 $productModel = new product_model();
                 $data['viewproduct'] = $productModel->where('ProductId', $productId)->first();
 
@@ -1238,88 +1239,56 @@ class Admin extends BaseController
         }
     }
 
-    public function UpdateModProduct()
-    {
-        if (session()
-            ->get('AdminisLoggedIn'))
-        {
+    public function UpdateModProduct(){
+            if (session()->get('AdminisLoggedIn')){
 
-            if ($this
-                ->request
-                ->getMethod() == 'post')
-            {
+              if ($this->request->getMethod() == 'post') {
                 //Storing user registration into database
                 $updateProductmodel = new product_model();
-                $theid = $this
-                    ->request
-                    ->getVar('productid');
-                // $image = file_get_contents($this->request->getFile('productimage'));
-                $newData = ['ProductName' => $this
-                    ->request
-                    ->getVar('productname') ,
-                // 'ProductImage' => $image,
-                'ProductPrice' => $this
-                    ->request
-                    ->getVar('productprice') , 'ProductCPU' => $this
-                    ->request
-                    ->getVar('productcpu') , 'ProductGPU' => $this
-                    ->request
-                    ->getVar('productgpu') , 'ProductMobo' => $this
-                    ->request
-                    ->getVar('productmobo') , 'ProductRAM' => $this
-                    ->request
-                    ->getVar('productram') , 'ProductSSD' => $this
-                    ->request
-                    ->getVar('productssd') , 'ProductPSU' => $this
-                    ->request
-                    ->getVar('productpsu') , 'ProductCasing' => $this
-                    ->request
-                    ->getVar('productcasing') , 'ProductOther' => $this
-                    ->request
-                    ->getVar('productother') , 'ProductCSGO' => $this
-                    ->request
-                    ->getVar('productcsgo') , 'ProductFortnite' => $this
-                    ->request
-                    ->getVar('productfortnite') , 'ProductGTAV' => $this
-                    ->request
-                    ->getVar('productgtav') , 'ProductCyberpunk' => $this
-                    ->request
-                    ->getVar('productcyberpunk') , 'Product3DMark' => $this
-                    ->request
-                    ->getVar('product3dmark') , 'ProductGeekbench' => $this
-                    ->request
-                    ->getVar('productgeekbench') ,
+                $theid = $this->request->getVar('productid');
+                $image = file_get_contents($this->request->getFile('productimage'));
+
+                $newData = [
+                  'ProductName' => $this->request->getVar('productname'),
+                  'ProductImage' => $image,
+                  'ProductPrice' => $this->request->getVar('productprice'),
+                  'ProductCPU' => $this->request->getVar('productcpu'),
+                  'ProductGPU' => $this->request->getVar('productgpu'),
+                  'ProductMobo' => $this->request->getVar('productmobo'),
+                  'ProductRAM' => $this->request->getVar('productram'),
+                  'ProductSSD' => $this->request->getVar('productssd'),
+                  'ProductPSU' => $this->request->getVar('productpsu'),
+                  'ProductCasing' => $this->request->getVar('productcasing'),
+                  'ProductOther' => $this->request->getVar('productother'),
+                  'ProductCSGO' => $this->request->getVar('productcsgo'),
+                  'ProductFortnite' => $this->request->getVar('productfortnite'),
+                  'ProductGTAV' => $this->request->getVar('productgtav'),
+                  'ProductCyberpunk' => $this->request->getVar('productcyberpunk'),
+                  'Product3DMark' => $this->request->getVar('product3dmark'),
+                  'ProductGeekbench' => $this->request->getVar('productgeekbench'),
 
                 ];
 
-                $updateProductmodel->set($newData);
-                $updateProductmodel->where('ProductId', $theid);
-                $updateProductmodelResult = $updateProductmodel->update();
-                if ($updateProductmodelResult)
-                {
-                    $session = session();
-                    $session->setFlashdata('success', 'Successfully Updated');
-                    return redirect()
-                        ->to('ProductsTable');
-                }
-                else
-                {
-                    echo "Something went wrong";
-                    return redirect()
-                        ->to();
-                }
+                        $updateProductmodel->set($newData);
+                        $updateProductmodel->where('ProductId', $theid);
+                        $updateProductmodelResult = $updateProductmodel->update();
+                              if($updateProductmodelResult) {
+                                $session = session();
+                                $session->setFlashdata('success', 'Successfully Updated');
+                                return redirect()->to('ProductsTable');
+                              } else {
+                                echo "Something went wrong";
+                                return redirect()->to();
+                              }
 
+
+              }return redirect()->to('');
+
+            }else {
+              return redirect()->to('AdminLogin');
             }
-            return redirect()
-                ->to('');
+          }
 
-        }
-        else
-        {
-            return redirect()
-                ->to('AdminLogin');
-        }
-    }
 
     public function DeleteModProduct()
     {
@@ -1396,90 +1365,56 @@ class Admin extends BaseController
         }
     }
 
-    public function UpdateModPromotion()
-    {
-        if (session()
-            ->get('AdminisLoggedIn'))
-        {
+    public function UpdateModPromotion(){
+                 if (session()->get('AdminisLoggedIn')){
 
-            if ($this
-                ->request
-                ->getMethod() == 'post')
-            {
-                //Storing user registration into database
-                $model = new promotion_model();
-                $theid = $this
-                    ->request
-                    ->getVar('promotionid');
-                // $image = file_get_contents($this->request->getFile('productimage'));
-                $newData = ['PromotionName' => $this
-                    ->request
-                    ->getVar('promotionname') , 'PromotionStatus' => $this
-                    ->request
-                    ->getVar('promotionstatus') ,
-                // 'PromotionImage' => $image,
-                'PromotionOriPrice' => $this
-                    ->request
-                    ->getVar('promotionoriprice') , 'PromotionPrice' => $this
-                    ->request
-                    ->getVar('promotionprice') , 'PromotionCPU' => $this
-                    ->request
-                    ->getVar('promotioncpu') , 'PromotionGPU' => $this
-                    ->request
-                    ->getVar('promotiongpu') , 'PromotionMobo' => $this
-                    ->request
-                    ->getVar('promotionmobo') , 'PromotionRAM' => $this
-                    ->request
-                    ->getVar('promotionram') , 'PromotionSSD' => $this
-                    ->request
-                    ->getVar('promotionssd') , 'PromotionPSU' => $this
-                    ->request
-                    ->getVar('promotionpsu') , 'PromotionCasing' => $this
-                    ->request
-                    ->getVar('promotioncasing') , 'PromotionOther' => $this
-                    ->request
-                    ->getVar('promotionother') , 'NonPCDetails' => $this
-                    ->request
-                    ->getVar('nonpcdetails') , 'PromotionDetail1' => $this
-                    ->request
-                    ->getVar('promotiondetail1') , 'PromotionDetail2' => $this
-                    ->request
-                    ->getVar('promotiondetail2') , 'PromotionDetail3' => $this
-                    ->request
-                    ->getVar('promotiondetail3') , 'PromotionDetail4' => $this
-                    ->request
-                    ->getVar('promotiondetail4') ,
+                   if ($this->request->getMethod() == 'post') {
+                     //Storing user registration into database
+                     $model = new promotion_model();
+                     $theid = $this->request->getVar('promotionid');
+                     $image = file_get_contents($this->request->getFile('promotionimage'));
 
-                ];
+                     $newData = [
+                       'PromotionName' => $this->request->getVar('promotionname'),
+                       'PromotionStatus' => $this->request->getVar('promotionstatus'),
+                       'PromotionImage' => $image,
+                       'PromotionOriPrice' => $this->request->getVar('promotionoriprice'),
+                       'PromotionPrice' => $this->request->getVar('promotionprice'),
+                       'PromotionCPU' => $this->request->getVar('promotioncpu'),
+                       'PromotionGPU' => $this->request->getVar('promotiongpu'),
+                       'PromotionMobo' => $this->request->getVar('promotionmobo'),
+                       'PromotionRAM' => $this->request->getVar('promotionram'),
+                       'PromotionSSD' => $this->request->getVar('promotionssd'),
+                       'PromotionPSU' => $this->request->getVar('promotionpsu'),
+                       'PromotionCasing' => $this->request->getVar('promotioncasing'),
+                       'PromotionOther' => $this->request->getVar('promotionother'),
+                       'NonPCDetails' => $this->request->getVar('nonpcdetails'),
+                       'PromotionDetail1' => $this->request->getVar('promotiondetail1'),
+                       'PromotionDetail2' => $this->request->getVar('promotiondetail2'),
+                       'PromotionDetail3' => $this->request->getVar('promotiondetail3'),
+                       'PromotionDetail4' => $this->request->getVar('promotiondetail4'),
 
-                $model->set($newData);
-                $model->where('promotionid', $theid);
-                $updatePromotionmodelResult = $model->update();
-                if ($updatePromotionmodelResult)
-                {
-                    $session = session();
-                    $session->setFlashdata('success', 'Successfully Updated');
-                    return redirect()
-                        ->to('PromotionsTable');
-                }
-                else
-                {
-                    echo "Something went wrong";
-                    return redirect()
-                        ->to();
-                }
+                     ];
 
-            }
-            return redirect()
-                ->to('');
+                             $model->set($newData);
+                             $model->where('promotionid', $theid);
+                             $updatePromotionmodelResult = $model->update();
+                                   if($updatePromotionmodelResult) {
+                                     $session = session();
+                                     $session->setFlashdata('success', 'Successfully Updated');
+                                     return redirect()->to('PromotionsTable');
+                                   } else {
+                                     echo "Something went wrong";
+                                     return redirect()->to();
+                                   }
 
-        }
-        else
-        {
-            return redirect()
-                ->to('AdminLogin');
-        }
-    }
+
+                   }return redirect()->to('');
+
+                 }else {
+                   return redirect()->to('AdminLogin');
+                 }
+               }
     public function DeleteModPromotion()
     {
         if (session()
@@ -1555,65 +1490,43 @@ class Admin extends BaseController
         }
     }
 
-    public function UpdateModComponent()
-    {
-        if (session()
-            ->get('AdminisLoggedIn'))
-        {
+    public function UpdateModComponent(){
+      if (session()->get('AdminisLoggedIn')){
 
-            if ($this
-                ->request
-                ->getMethod() == 'post')
-            {
-                //Storing user registration into database
-                $model = new component_model();
-                $theid = $this
-                    ->request
-                    ->getVar('componentid');
-                // $image = file_get_contents($this->request->getFile('productimage'));
-                $newData = ['ComponentName' => $this
-                    ->request
-                    ->getVar('componentname') , 'ComponentType' => $this
-                    ->request
-                    ->getVar('componenttype') , 'ComponentBrand' => $this
-                    ->request
-                    ->getVar('compbrand') ,
-                // 'ComponentImage' => $image,
-                'ComponentDetails' => $this
-                    ->request
-                    ->getVar('componentdetails') , 'ComponentPrice' => $this
-                    ->request
-                    ->getVar('componentprice') ,
+        if ($this->request->getMethod() == 'post') {
+          //Storing user registration into database
+          $model = new component_model();
+          $theid = $this->request->getVar('componentid');
+          $image = file_get_contents($this->request->getFile('componentimage'));
 
-                ];
+          $newData = [
+            'ComponentName' => $this->request->getVar('componentname'),
+            'ComponentType' => $this->request->getVar('componenttype'),
+            'ComponentBrand' => $this->request->getVar('compbrand'),
+            'ComponentImage' => $image,
+            'ComponentDetails' => $this->request->getVar('componentdetails'),
+            'ComponentPrice' => $this->request->getVar('componentprice'),
 
-                $model->set($newData);
-                $model->where('componentid', $theid);
-                $updatePromotionmodelResult = $model->update();
-                if ($updatePromotionmodelResult)
-                {
-                    $session = session();
-                    $session->setFlashdata('success', 'Successfully Updated');
-                    return redirect()
-                        ->to('ComponentsTable');
-                }
-                else
-                {
-                    echo "Something went wrong";
-                    return redirect()
-                        ->to();
-                }
+          ];
 
-            }
-            return redirect()
-                ->to('');
+                  $model->set($newData);
+                  $model->where('componentid', $theid);
+                  $updatePromotionmodelResult = $model->update();
+                        if($updatePromotionmodelResult) {
+                          $session = session();
+                          $session->setFlashdata('success', 'Successfully Updated');
+                          return redirect()->to('ComponentsTable');
+                        } else {
+                          echo "Something went wrong";
+                          return redirect()->to();
+                        }
 
-        }
-        else
-        {
-            return redirect()
-                ->to('AdminLogin');
-        }
+
+        }return redirect()->to('');
+
+      }else {
+        return redirect()->to('AdminLogin');
+      }
     }
 
     public function DeleteModComponent()
@@ -1691,59 +1604,40 @@ class Admin extends BaseController
         }
     }
 
-    public function UpdateModReward()
-    {
-        if (session()
-            ->get('AdminisLoggedIn'))
-        {
+    public function UpdateModReward(){
+      if (session()->get('AdminisLoggedIn')){
 
-            if ($this
-                ->request
-                ->getMethod() == 'post')
-            {
-                //Storing user registration into database
-                $model = new reward_model();
-                $theid = $this
-                    ->request
-                    ->getVar('rewardId');
-                // $image = file_get_contents($this->request->getFile('productimage'));
-                $newData = ['RewardName' => $this
-                    ->request
-                    ->getVar('rewardname') ,
-                // 'RewardImage' => $image,
-                'RewardTier' => $this
-                    ->request
-                    ->getVar('rewardtier') ,
+        if ($this->request->getMethod() == 'post') {
+          //Storing user registration into database
+          $model = new reward_model();
+          $theid = $this->request->getVar('rewardId');
+          $image = file_get_contents($this->request->getFile('rewardimage'));
 
-                ];
+          $newData = [
+            'RewardName' => $this->request->getVar('rewardname'),
+            'RewardImage' => $image,
+            'RewardTier' => $this->request->getVar('rewardtier'),
 
-                $model->set($newData);
-                $model->where('RewardID', $theid);
-                $updatePromotionmodelResult = $model->update();
-                if ($updatePromotionmodelResult)
-                {
-                    $session = session();
-                    $session->setFlashdata('success', 'Successfully Updated');
-                    return redirect()
-                        ->to('RewardsTable');
-                }
-                else
-                {
-                    echo "Something went wrong";
-                    return redirect()
-                        ->to();
-                }
+          ];
 
-            }
-            return redirect()
-                ->to('');
+                  $model->set($newData);
+                  $model->where('RewardID', $theid);
+                  $updatePromotionmodelResult = $model->update();
+                        if($updatePromotionmodelResult) {
+                          $session = session();
+                          $session->setFlashdata('success', 'Successfully Updated');
+                          return redirect()->to('RewardsTable');
+                        } else {
+                          echo "Something went wrong";
+                          return redirect()->to();
+                        }
 
-        }
-        else
-        {
-            return redirect()
-                ->to('AdminLogin');
-        }
+
+        }return redirect()->to('');
+
+      }else {
+        return redirect()->to('AdminLogin');
+      }
     }
 
     public function DeleteModReward()

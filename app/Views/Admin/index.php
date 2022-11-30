@@ -37,21 +37,7 @@
     </div>
 </div>
 <!-- Sale & Revenue End -->
-<!-- Calander -->
-<div class="container-fluid pt-4 px-4">
-    <div class="row g-7" style="justify-content: center;">
-        <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="h-100 bg-secondary rounded p-4">
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h6 class="mb-0">Calender</h6>
-                    <a href="">Show All</a>
-                </div>
-                <div id="calender"></div>
-            </div>
-        </div>
 
-    </div>
-</div>
 
 <!-- Recent Sales Start -->
 <div class="container-fluid pt-4 px-4">
@@ -86,7 +72,10 @@
                         <td><?php echo $theordersTable["userId"]; ?></td>
                         <td><?php echo $theordersTable["paymentId"]; ?></td>
                         <td> <?php echo $theordersTable["itemsOrdered"]; ?></td>
-                        <td> <?php echo $theordersTable["orderStatus"]; ?></td>
+                        <td> <?php if ( $theordersTable["orderStatus"] == 0 ) {?>
+                              Processing
+                            <?php }?>
+                        </td>
                         <td>
                           <form class="" action="/ApproveOrder" method="post">
                             <input type="hidden" name="ordrId" id="ordrId" value="<?php echo $theordersTable["orderId"]; ?>">
