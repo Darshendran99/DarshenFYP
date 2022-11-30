@@ -38,12 +38,16 @@ $uri = service('uri');
 
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
+                        <?php if (session()->get('AbleToPlayGame')): ?>
+                          <li><a href="<?php echo base_url(); ?>/Home/Game">Continue Game</a></li>
+                          <?php
+endif; ?>
                           <li><a href="<?php echo base_url(); ?>/Home/Products">Products</a></li>
                           <li><a href="<?php echo base_url(); ?>/Home/Promotion">Promotion</a></li>
                           <li><a href="<?php echo base_url(); ?>/Home/Build_PC">Build Your PC</a></li>
                           <li><a href="<?php echo base_url(); ?>/Home/Cart">Check Cart</a></li>
                             <?php if (session()->get('isLoggedIn')): ?>
-                              <li><a href="<?php echo base_url(); ?>/Home/AccountManagement">Account Management <img src=""></a></li>
+                              <li><a href="<?php echo base_url(); ?>/Home/AccountManagement">Settings <img src=""></a></li>
                               <li><a href='/logout'>Logout</a></li>
                             <?php
 else: ?>

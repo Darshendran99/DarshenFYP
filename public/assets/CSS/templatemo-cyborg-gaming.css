@@ -1843,3 +1843,8 @@ margin-top: 2em;
 #theRewards1, #theRewards2, #theRewards3{
   visibility: hidden;
 }
+
+.exitBtn{
+  margin-left: 12em;
+  margin-top: 100em;
+}

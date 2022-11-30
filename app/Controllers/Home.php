@@ -810,7 +810,7 @@ class Home extends BaseController
                 ->getMethod() == 'post')
             {
                 //Validation
-                $rules = ['name' => 'required|min_length[2]|max_length[25]|alpha_space', 'email' => 'required|min_length[6]|max_length[50]|valid_email', 'address' => 'required|min_length[10]|max_length[255]|alpha_numeric_punct', 'city' => 'required|min_length[4]|max_length[50]|alpha_space', 'state' => 'required|min_length[4]|max_length[50]|alpha_space', 'zip' => 'required|min_length[4]|max_length[50]|integer', 'cardname' => 'required|min_length[4]|max_length[26]|alpha', 'cardnumber' => 'required|min_length[14]|max_length[16]|integer', 'expmonth' => 'required|min_length[3]|max_length[9]|alpha', 'expyear' => 'required|min_length[3]|max_length[9]|integer', 'cvv' => 'required|min_length[3]|max_length[3]|integer', ];
+                $rules = ['name' => 'required|min_length[2]|max_length[25]|alpha_space', 'email' => 'required|min_length[6]|max_length[50]|valid_email', 'address' => 'required|min_length[10]|max_length[255]|alpha_numeric_punct', 'city' => 'required|min_length[4]|max_length[50]|alpha_space', 'state' => 'required|min_length[4]|max_length[50]|alpha_space', 'zip' => 'required|min_length[4]|max_length[50]|integer', 'cardname' => 'required|min_length[4]|max_length[26]|alpha_space', 'cardnumber' => 'required|min_length[14]|max_length[16]|integer', 'expmonth' => 'required|min_length[3]|max_length[9]|alpha', 'expyear' => 'required|min_length[3]|max_length[9]|integer', 'cvv' => 'required|min_length[3]|max_length[3]|integer', ];
                 $PaymentAddress = $this
                     ->request
                     ->getVar('address') . "," . $this
@@ -1116,6 +1116,28 @@ class Home extends BaseController
             return redirect()->to('OrderStatus');
         }
         else
+        {
+            return redirect()
+                ->to('Login');
+        }
+    }
+
+    public function ExitGame()
+    {
+      if (session()->get('isLoggedIn'))
+      {
+        if (session()->get('AbleToPlayGame')) {
+        $session = session();
+        $session->remove('AbleToPlayGame');
+        return redirect()->to('OrderStatus');
+      }
+      else{
+        $session = session();
+        $session->setFlashdata('Error', 'Unable to do that');
+        return redirect()->to('');
+      }
+      }
+      else
         {
             return redirect()
                 ->to('Login');

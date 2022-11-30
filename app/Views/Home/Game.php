@@ -18,6 +18,8 @@
             <script type="text/javascript" src="<?php echo base_url('js/game.js'); ?>"></script>
             <br>
             <button id="accButton" onmousedown="accelerate(-0.3)" onmouseup="accelerate(0.03)">Click on Button To Accelerate</button>
+            <br><br><br><br><br><br><br><br>
+            <a style="padding-left: 12em;" href="<?php echo base_url(); ?>/Home/ExitGame"/>Exit Game</a>
           </div>
         </div>
           <div class="col-lg-4">
