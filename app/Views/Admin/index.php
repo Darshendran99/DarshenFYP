@@ -5,8 +5,15 @@
             <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                 <i class="fa fa-chart-line fa-3x text-primary"></i>
                 <div class="ms-3">
-                    <p class="mb-2">Today's Sale</p>
-                    <h6 class="mb-0">RM 7533</h6>
+                    <p class="mb-2">Confimed Sales</p>
+                    <?php
+                    $total_confimred_sum = 0;
+                    foreach ($ordersTable as $ordersTable => $theconfirmed) {
+                      if ($theconfirmed["orderStatus"] > 0) {
+                        $total_confimred_sum = $total_confimred_sum + $theconfirmed["grandTotal"];
+                      }
+                    }?>
+                    <h6 class="mb-0">RM <?php echo $total_confimred_sum; ?></h6>
                 </div>
             </div>
         </div>
@@ -24,7 +31,7 @@
             <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                 <i class="fa fa-chart-pie fa-3x text-primary"></i>
                 <div class="ms-3">
-                    <p class="mb-2">Total Revenue</p>
+                    <p class="mb-2">Potential Revenue</p>
                     <?php
                     $total_price_sum = 0;
                     foreach ($payment as $payment => $thepayment) {
@@ -64,7 +71,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                  <?php foreach ($ordersTable as $ordersTable => $theordersTable) {?>
+                  <?php foreach ($orderstable as $orderstable => $theordersTable) {?>
                     <tr>
                       <?php if ($theordersTable["orderStatus"] == 0){?>
                         <td scope="row"></td>

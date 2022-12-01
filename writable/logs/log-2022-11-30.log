@@ -18,3 +18,47 @@ in SYSTEMPATH\HTTP\RedirectResponse.php on line 32.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 19:59:25 --> Undefined array key "orderStatus"
+in APPPATH\Views\Admin\index.php on line 12.
+ 1 APPPATH\Views\Admin\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orderStatus"', 'APPPATH\\Views\\Admin\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 20:00:22 --> Undefined variable $total_confimred_sum
+in APPPATH\Views\Admin\index.php on line 13.
+ 1 APPPATH\Views\Admin\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_confimred_sum', 'APPPATH\\Views\\Admin\\index.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 20:00:48 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\Admin\index.php on line 74.
+ 1 APPPATH\Views\Admin\index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH\\Views\\Admin\\index.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 20:02:06 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\Admin\index.php on line 74.
+ 1 APPPATH\Views\Admin\index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH\\Views\\Admin\\index.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/index.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(42): view('Admin/index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -36,6 +36,8 @@ class Admin extends BaseController
             $order_model = new order_model();
             $data['ordersTable'] = $order_model->orderBy('orderId', 'ASC')
                 ->findAll();
+            $data['orderstable'] = $order_model->orderBy('orderId', 'ASC')
+                ->findAll();
 
             echo view("sections/AdminHeader.php");
             echo view("sections/AdminNavBar.php", $data1);
